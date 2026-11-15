@@ -1,0 +1,40 @@
+{
+  "n_AD": 36,
+  "n_CN": 29,
+  "accuracy": 73.85,
+  "balanced_acc": 74.04,
+  "f1": 73.92,
+  "auc": 0.748,
+  "auc_ci": [
+    0.613,
+    0.867
+  ],
+  "sensitivity": 72.22,
+  "specificity": 75.86,
+  "overfitting_gap": 0.26,
+  "best_C": 0.001,
+  "permutation_acc": 52.31,
+  "dummy_most_frequent": 55.38,
+  "k_distribution": {
+    "6": 19,
+    "9": 36,
+    "8": 18,
+    "7": 15
+  },
+  "alpha_distribution": {
+    "4000": 55,
+    "3000": 15,
+    "2000": 10,
+    "1000": 8
+  },
+  "confusion_matrix": [
+    [
+      22,
+      7
+    ],
+    [
+      10,
+      26
+    ]
+  ]
+}

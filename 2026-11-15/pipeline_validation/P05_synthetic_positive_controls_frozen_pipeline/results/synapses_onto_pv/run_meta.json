@@ -1,0 +1,8 @@
+{
+  "evidence_status": "SYNTHETIC",
+  "fingerprints": "EXPLORATORY",
+  "mechanistic_status": "PRIMARY",
+  "config_sha256": "445d9afe75a5034c385389716e281d721dd5a9c5f349dafd818219cc84d9edb3",
+  "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+  "analysis_sha256": "e0922bd595a4c78abd48fd2aaeffede1bacb56f0336205c1b806c8ecacc909fb"
+}

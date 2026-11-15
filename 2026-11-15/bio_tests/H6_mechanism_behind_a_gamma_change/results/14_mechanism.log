@@ -1,0 +1,91 @@
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/14_mechanism_tests.py:135: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  D["has_gamma"] = D[pres_col] >= pc["roi_fraction"] if pres_col in D else True
+       n_with_gamma   n  fraction
+group                            
+AD                5  36  0.138889
+CN                1  29  0.034483
+FTD               2  23  0.086957
+mechanistic status: DESCRIPTIVE_ONLY
+# Mechanism report: ds004504 / primary
+
+- Label status: **CONFIRMATORY**; fingerprints: **FROZEN**; mechanistic status: **DESCRIPTIVE_ONLY**
+- Subjects with a detectable gamma oscillation (presence gate):
+
+| group   |   n_with_gamma |   n |   fraction |
+|:--------|---------------:|----:|-----------:|
+| AD      |              5 |  36 |  0.138889  |
+| CN      |              1 |  29 |  0.0344828 |
+| FTD     |              2 |  23 |  0.0869565 |
+
+## Pre-registered tests (subjects with gamma; Holm across tests)
+
+| id   | name                                    |   p_holm | note                                                                                                        |
+|:-----|:----------------------------------------|---------:|:------------------------------------------------------------------------------------------------------------|
+| M01  | instability in AD                       |      nan | ValueError: roi__burst_freq_sd: fewer than 3 subjects with data in a group                                  |
+| M02  | FTD at frontal electrodes               |      nan | ValueError: ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group                          |
+| M03  | FTD vs AD frontally at matched MMSE     |      nan | ValueError: ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group                          |
+| M04  | AD effect temporoparietal minus frontal |      nan | ValueError: ad_temporoparietal_minus_ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group |
+| M05  | peak width (damping)                    |      nan | ValueError: roi__osc_width_hz: fewer than 3 subjects with data in a group                                   |
+| M06  | peak frequency                          |      nan | ValueError: roi__osc_f0: fewer than 3 subjects with data in a group                                         |
+| M07  | cycle-scale jitter beyond noise         |      nan | ValueError: roi__fast_sd_z: fewer than 3 subjects with data in a group                                      |
+| M08  | 1-10 s wander beyond noise              |      nan | ValueError: roi__slow_sd_z: fewer than 3 subjects with data in a group                                      |
+| M09  | share of slow wander                    |      nan | ValueError: roi__slow_frac: fewer than 3 subjects with data in a group                                      |
+| M10  | phase slips beyond noise                |      nan | ValueError: roi__slip_rate_z: fewer than 3 subjects with data in a group                                    |
+| M11  | slips under load beyond noise           |      nan | ValueError: roi__slip_rate_highamp_z: fewer than 3 subjects with data in a group                            |
+| M12  | heavy IF tails beyond noise             |      nan | ValueError: roi__tail_frac_z: fewer than 3 subjects with data in a group                                    |
+| M13  | frequency-envelope co-modulation        |      nan | ValueError: roi__if_env_coupling: fewer than 3 subjects with data in a group                                |
+| M14  | instability vs MMSE within AD           |      nan | ValueError: roi__burst_freq_sd vs mmse: only 5 subjects with data (need >= 7)                               |
+| M15  | instability vs alpha peak within AD     |      nan | ValueError: roi__burst_freq_sd vs roi__alpha_peak_freq: only 5 subjects with data (need >= 7)               |
+| M16  | AD effect explained by alpha slowing    |      nan | ValueError: roi__burst_freq_sd: fewer than 3 subjects with data in a group                                  |
+
+## Same tests, ALL subjects (descriptive: includes subjects without a detectable oscillation)
+
+| id   | name                                    |   n_target |   n_ref |     effect | effect_ci95                                |         p |   p_holm | equivalent   |
+|:-----|:----------------------------------------|-----------:|--------:|-----------:|:-------------------------------------------|----------:|---------:|:-------------|
+| M01  | instability in AD                       |         36 |      29 |  0.334835  | [-0.1829441970597671, 0.8908528341067973]  | 0.175765  | 1        | False        |
+| M02  | FTD at frontal electrodes               |         23 |      29 |  0.247829  | [-0.3455350456989191, 0.6928851918338872]  | 0.311338  | 1        | False        |
+| M03  | FTD vs AD frontally at matched MMSE     |         23 |      36 | -0.0242631 | [-0.5684820117294244, 0.46765704322825324] | 0.896021  | 1        | True         |
+| M04  | AD effect temporoparietal minus frontal |         36 |      29 |  0.259462  | [-0.27046652153995604, 0.72615472164487]   | 0.270546  | 1        | False        |
+| M05  | peak width (damping)                    |         20 |      17 |  0.437224  | [-0.14857328890317464, 0.8800552954081765] | 0.0977804 | 1        | False        |
+| M06  | peak frequency                          |         20 |      17 |  0.586558  | [0.0770881778722261, 1.037422055750145]    | 0.0385923 | 0.578884 | False        |
+| M07  | cycle-scale jitter beyond noise         |         36 |      29 |  0.0646967 | [-0.4007991293212804, 0.5926165359533468]  | 0.832633  | 1        | True         |
+| M08  | 1-10 s wander beyond noise              |         36 |      29 |  0.0115298 | [-0.5142661349537769, 0.4693273868506735]  | 0.962208  | 1        | True         |
+| M09  | share of slow wander                    |         36 |      29 | -0.252677  | [-0.7238618504761344, 0.2752876025791924]  | 0.256549  | 1        | False        |
+| M10  | phase slips beyond noise                |         36 |      29 |  0.536557  | [0.006379628550989011, 1.0493485790350636] | 0.0395921 | 0.578884 | False        |
+| M11  | slips under load beyond noise           |         36 |      29 | -0.225853  | [-0.7083889943766175, 0.2827827079731838]  | 0.288342  | 1        | False        |
+| M12  | heavy IF tails beyond noise             |         36 |      29 |  0.156272  | [-0.30953302556188483, 0.7050933090702249] | 0.488702  | 1        | False        |
+| M13  | frequency-envelope co-modulation        |         36 |      29 |  0.508134  | [-0.013933440577994508, 1.019074568977901] | 0.0291942 | 0.467107 | False        |
+| M14  | instability vs MMSE within AD           |         36 |     nan |  0.0535122 | [-0.3658360836228933, 0.45624589018401535] | 0.741652  | 1        | False        |
+| M15  | instability vs alpha peak within AD     |         36 |     nan | -0.208015  | [-0.5096024478547098, 0.13020190504945126] | 0.241152  | 1        | False        |
+| M16  | AD effect explained by alpha slowing    |         36 |      29 |  0.318262  | [-1.563117430019138, 2.3749102717521664]   | 0.110945  | 1        | False        |
+
+## Scorecard: verbal predictions
+
+| theory   |   consistent |   inconsistent |   inconclusive |   no_prediction |   not_run |
+|:---------|-------------:|---------------:|---------------:|----------------:|----------:|
+| T1       |            0 |              0 |              0 |               0 |        16 |
+| T2       |            0 |              0 |              0 |               2 |        14 |
+| T3       |            0 |              0 |              0 |               5 |        11 |
+| T4       |            0 |              0 |              0 |               2 |        14 |
+| T5       |            0 |              0 |              0 |               5 |        11 |
+| T6       |            0 |              0 |              0 |               7 |         9 |
+
+## Scorecard: model predictions (both simulator families agree)
+
+| theory   |   consistent |   inconsistent |   inconclusive |   no_prediction |
+|:---------|-------------:|---------------:|---------------:|----------------:|
+| T1       |            0 |              0 |              0 |               7 |
+| T2       |            0 |              0 |              0 |              11 |
+| T3       |            0 |              0 |              0 |              12 |
+| T4       |            0 |              0 |              0 |               9 |
+| T5       |            0 |              0 |              0 |              10 |
+| T6       |            0 |              0 |              0 |              10 |
+
+## Fingerprint comparison (AD vs CN, adjusted)
+
+- **rate**: local-loop share nan (95% CI nan-nan); best single None; max-cosine permutation p = nan; identifiability within 0.94, cross 0.30
+- **cycle**: local-loop share nan (95% CI nan-nan); best single None; max-cosine permutation p = nan; identifiability within 0.65, cross 0.47
+
+**First split claim:** no_claim  (requires agreement of both families, a CI excluding 0.5 and adequate identifiability)
+
+Interpretation rule: a test classed 'consistent' supports a theory only together with the other tests; no single test identifies a mechanism. If mechanistic status is DESCRIPTIVE_ONLY, report all of this as a limitation.

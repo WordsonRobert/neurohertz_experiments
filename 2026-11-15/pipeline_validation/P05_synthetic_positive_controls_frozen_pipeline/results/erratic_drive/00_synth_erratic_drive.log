@@ -1,0 +1,178 @@
+simulating 176 circuits x 170 s ...
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/scripts/00_make_synthetic_dataset.py:77: FutureWarning: Montage name 'standard_1020' is deprecated and will be removed in MNE 1.14. Use 'colin27_1020' instead.
+  raw.set_montage(mne.channels.make_standard_montage("standard_1020"), on_missing="ignore")
+wrote 88 subjects to /media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/results/synthetic_erratic_drive

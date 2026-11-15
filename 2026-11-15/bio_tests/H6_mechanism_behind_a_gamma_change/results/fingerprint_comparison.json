@@ -1,0 +1,34 @@
+{
+  "fingerprint_status": "FROZEN",
+  "rate": {
+    "n_features": 0,
+    "features": null,
+    "effect_vector": {},
+    "local_share_ci95": [
+      NaN,
+      NaN
+    ],
+    "best_single_bootstrap_freq": {},
+    "max_cosine_perm_p": NaN,
+    "identifiability_within": 0.9408333333333333,
+    "identifiability_cross": 0.305
+  },
+  "cycle": {
+    "n_features": 0,
+    "features": null,
+    "effect_vector": {},
+    "local_share_ci95": [
+      NaN,
+      NaN
+    ],
+    "best_single_bootstrap_freq": {},
+    "max_cosine_perm_p": NaN,
+    "identifiability_within": 0.6508333333333334,
+    "identifiability_cross": 0.46648793565683644
+  },
+  "first_split_claim": "no_claim",
+  "first_split_per_family": {
+    "rate": "undetermined",
+    "cycle": "undetermined"
+  }
+}

@@ -1,0 +1,2143 @@
+{
+  "features": [
+    "osc_f0",
+    "osc_width_hz",
+    "osc_contrast_db",
+    "fast_sd_z",
+    "slow_sd_z",
+    "slow_frac",
+    "slow_tau_s",
+    "if_env_coupling",
+    "slip_rate_z",
+    "slip_rate_highamp_z",
+    "tail_frac_z",
+    "jitter_amp_slope",
+    "burst_freq_sd"
+  ],
+  "k_ref": 0.5,
+  "theories": {
+    "T1": "synapses_onto_pv",
+    "T2": "nav11_pv_output",
+    "T3": "erratic_drive",
+    "T4": "acetylcholine",
+    "T5": "sst_loss",
+    "T6": "tau_silencing"
+  },
+  "local": [
+    "synapses_onto_pv",
+    "nav11_pv_output",
+    "sst_loss"
+  ],
+  "inputs": [
+    "erratic_drive",
+    "acetylcholine",
+    "tau_silencing"
+  ],
+  "families": {
+    "rate": {
+      "matrix": {
+        "acetylcholine": {
+          "osc_f0": 0.750597031012125,
+          "osc_width_hz": -0.18431261857640904,
+          "osc_contrast_db": 0.16534727425513665,
+          "fast_sd_z": 0.17975257883402668,
+          "slow_sd_z": 0.42764338919341416,
+          "slow_frac": 0.18190000224997477,
+          "slow_tau_s": 0.08536806169117012,
+          "if_env_coupling": 0.8747537017764937,
+          "slip_rate_z": -0.023159707821284646,
+          "slip_rate_highamp_z": 0.13366188147671995,
+          "tail_frac_z": -0.16805248013527746,
+          "jitter_amp_slope": 0.24420049110895076,
+          "burst_freq_sd": -0.19672330223468013
+        },
+        "erratic_drive": {
+          "osc_f0": -0.1006893404116517,
+          "osc_width_hz": -0.0886390877476356,
+          "osc_contrast_db": -0.037021881527941905,
+          "fast_sd_z": 0.6448532367182619,
+          "slow_sd_z": 0.5771772458012538,
+          "slow_frac": 0.39059485358080714,
+          "slow_tau_s": 0.4353853919924718,
+          "if_env_coupling": -0.5286774730792871,
+          "slip_rate_z": 0.17938870140067398,
+          "slip_rate_highamp_z": 0.34373810187420256,
+          "tail_frac_z": -0.16340941854757804,
+          "jitter_amp_slope": 0.6894126454028124,
+          "burst_freq_sd": -0.8463564421510859
+        },
+        "nav11_pv_output": {
+          "osc_f0": -2.043233554594602,
+          "osc_width_hz": 0.7062317186135598,
+          "osc_contrast_db": -3.0341310542352793,
+          "fast_sd_z": 0.19349355370561902,
+          "slow_sd_z": 0.20425217574483948,
+          "slow_frac": 0.8731248316353358,
+          "slow_tau_s": 0.4803680679994032,
+          "if_env_coupling": -0.41211903953524087,
+          "slip_rate_z": 0.6960381349537816,
+          "slip_rate_highamp_z": 0.41879235993904124,
+          "tail_frac_z": -0.30204756124649734,
+          "jitter_amp_slope": -1.6162480644814714,
+          "burst_freq_sd": 1.077407095418007
+        },
+        "sst_loss": {
+          "osc_f0": -1.4601917431543983,
+          "osc_width_hz": -0.2342143043507023,
+          "osc_contrast_db": -0.8606747133255477,
+          "fast_sd_z": 0.20919707731776882,
+          "slow_sd_z": -0.043055171784245505,
+          "slow_frac": 0.8395571807018706,
+          "slow_tau_s": 0.8306623862918082,
+          "if_env_coupling": -0.8984681406997413,
+          "slip_rate_z": -0.11290093136564955,
+          "slip_rate_highamp_z": -0.1512827195385719,
+          "tail_frac_z": -0.682424054563524,
+          "jitter_amp_slope": -0.4827762069780449,
+          "burst_freq_sd": -1.0571705139852132
+        },
+        "synapses_onto_pv": {
+          "osc_f0": -0.5235490772352602,
+          "osc_width_hz": -0.28113571063397214,
+          "osc_contrast_db": -0.018281656084435414,
+          "fast_sd_z": 0.06705261951378537,
+          "slow_sd_z": -0.07966274449946455,
+          "slow_frac": 0.16667391166102818,
+          "slow_tau_s": 0.67277329517865,
+          "if_env_coupling": -0.44444750505968106,
+          "slip_rate_z": -0.14753084658133866,
+          "slip_rate_highamp_z": 0.5937599157044302,
+          "tail_frac_z": -0.1847778194448462,
+          "jitter_amp_slope": -0.10812835689871933,
+          "burst_freq_sd": -1.6817479188949813
+        },
+        "tau_silencing": {
+          "osc_f0": 0.3188958956754276,
+          "osc_width_hz": 0.6105837366441902,
+          "osc_contrast_db": -0.3152051240473938,
+          "fast_sd_z": 0.1404791700085368,
+          "slow_sd_z": -0.30250262393452404,
+          "slow_frac": -0.021647878706834427,
+          "slow_tau_s": -0.0747525883531831,
+          "if_env_coupling": 0.10393474744032921,
+          "slip_rate_z": 0.2974308056979369,
+          "slip_rate_highamp_z": 0.3907028493614845,
+          "tail_frac_z": -0.10132781959915253,
+          "jitter_amp_slope": -0.23732196422529325,
+          "burst_freq_sd": -0.34524661126641415
+        }
+      }
+    },
+    "cycle": {
+      "matrix": {
+        "acetylcholine": {
+          "osc_f0": -0.885237471061054,
+          "osc_width_hz": -0.02230327538111785,
+          "osc_contrast_db": -0.12866413119654668,
+          "fast_sd_z": 0.2552794400486394,
+          "slow_sd_z": 0.0558855254893029,
+          "slow_frac": 0.7690922932741414,
+          "slow_tau_s": 0.9196387454354981,
+          "if_env_coupling": -0.6278615235491906,
+          "slip_rate_z": 0.15007443535039475,
+          "slip_rate_highamp_z": 0.37368153229959616,
+          "tail_frac_z": 0.6792019170112775,
+          "jitter_amp_slope": 0.061569323907038245,
+          "burst_freq_sd": -0.23538885790177216
+        },
+        "erratic_drive": {
+          "osc_f0": 0.06884778958731211,
+          "osc_width_hz": 1.077167471348855,
+          "osc_contrast_db": -0.13000280499380557,
+          "fast_sd_z": -0.27385290789131256,
+          "slow_sd_z": 0.8899267348752853,
+          "slow_frac": 2.4868629597063885,
+          "slow_tau_s": 2.4078863483700115,
+          "if_env_coupling": 0.32640151314966914,
+          "slip_rate_z": -0.09587016451993252,
+          "slip_rate_highamp_z": 0.5613080797925746,
+          "tail_frac_z": 0.09626723727703516,
+          "jitter_amp_slope": 0.024337069287276324,
+          "burst_freq_sd": 1.1960941647966397
+        },
+        "nav11_pv_output": {
+          "osc_f0": -0.3022892419017388,
+          "osc_width_hz": 0.5773183663424972,
+          "osc_contrast_db": -0.18816666798154982,
+          "fast_sd_z": -0.07565165567568481,
+          "slow_sd_z": -0.38077523473372604,
+          "slow_frac": 0.18318205596852297,
+          "slow_tau_s": 0.25708355455569093,
+          "if_env_coupling": -0.3020731894885105,
+          "slip_rate_z": -0.1031299241719242,
+          "slip_rate_highamp_z": 0.8971343718449378,
+          "tail_frac_z": -0.030954510792239865,
+          "jitter_amp_slope": -0.1530884251212994,
+          "burst_freq_sd": 0.15176301312484544
+        },
+        "sst_loss": {
+          "osc_f0": -0.0871191240993301,
+          "osc_width_hz": 0.4135860486680259,
+          "osc_contrast_db": -0.005939585211894539,
+          "fast_sd_z": 0.29541371067051575,
+          "slow_sd_z": 0.277233357993829,
+          "slow_frac": 0.3151050069428231,
+          "slow_tau_s": 0.18373170263146985,
+          "if_env_coupling": -0.04534382260760543,
+          "slip_rate_z": -0.29568303055673556,
+          "slip_rate_highamp_z": 0.4935026679644399,
+          "tail_frac_z": 0.4197399658371362,
+          "jitter_amp_slope": -0.02511048461922363,
+          "burst_freq_sd": 0.30518660418479615
+        },
+        "synapses_onto_pv": {
+          "osc_f0": -1.2416935240338616,
+          "osc_width_hz": -0.11262205793437027,
+          "osc_contrast_db": -0.14956402327849028,
+          "fast_sd_z": 0.2289583375910041,
+          "slow_sd_z": -0.34910859529167976,
+          "slow_frac": -0.2578828340798079,
+          "slow_tau_s": 0.0,
+          "if_env_coupling": -0.9217997130893936,
+          "slip_rate_z": 0.18797349491787285,
+          "slip_rate_highamp_z": 0.5876212731989453,
+          "tail_frac_z": 0.5230392244786776,
+          "jitter_amp_slope": -0.04034763392951664,
+          "burst_freq_sd": -0.07515706847168488
+        },
+        "tau_silencing": {
+          "osc_f0": -1.0420086178445225,
+          "osc_width_hz": -0.6353420150364516,
+          "osc_contrast_db": -0.05422752330909942,
+          "fast_sd_z": 0.2900732613860212,
+          "slow_sd_z": -0.31238283561686947,
+          "slow_frac": -0.09632568138118631,
+          "slow_tau_s": -0.0747525883531831,
+          "if_env_coupling": -0.7440002048011536,
+          "slip_rate_z": -0.11751510511239716,
+          "slip_rate_highamp_z": 0.29503027065342013,
+          "tail_frac_z": 0.23273605848127643,
+          "jitter_amp_slope": 0.09710143697867309,
+          "burst_freq_sd": -0.3268982134954065
+        }
+      }
+    }
+  },
+  "signs": [
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -21.828720897177092,
+      "d_at_k": -0.885237471061054
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": 0.49561222281661843,
+      "d_at_k": -0.02230327538111785
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -4.400153108438927,
+      "d_at_k": -0.12866413119654668
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.4819389137952038,
+      "d_at_k": 0.2552794400486394
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": 2.401675411112135,
+      "d_at_k": 0.0558855254893029
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "slow_frac",
+      "sign": "+",
+      "t": 6.299298803467328,
+      "d_at_k": 0.7690922932741414
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "slow_tau_s",
+      "sign": "+",
+      "t": 5.092939841091408,
+      "d_at_k": 0.9196387454354981
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "if_env_coupling",
+      "sign": "-",
+      "t": -5.016105089660143,
+      "d_at_k": -0.6278615235491906
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 0.5717374553420554,
+      "d_at_k": 0.15007443535039475
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 0.30507302340812836,
+      "d_at_k": 0.37368153229959616
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 1.5130093753626634,
+      "d_at_k": 0.6792019170112775
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": 0.21397120815274598,
+      "d_at_k": 0.061569323907038245
+    },
+    {
+      "family": "cycle",
+      "theory": "acetylcholine",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": 0.40227258679707345,
+      "d_at_k": -0.23538885790177216
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "osc_f0",
+      "sign": "0",
+      "t": 2.8481767662080983,
+      "d_at_k": 0.06884778958731211
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "osc_width_hz",
+      "sign": "+",
+      "t": 11.656226092047438,
+      "d_at_k": 1.077167471348855
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -5.422394147243238,
+      "d_at_k": -0.13000280499380557
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": -1.6496903683276358,
+      "d_at_k": -0.27385290789131256
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "slow_sd_z",
+      "sign": "+",
+      "t": 4.409556555218227,
+      "d_at_k": 0.8899267348752853
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "slow_frac",
+      "sign": "+",
+      "t": 9.984347722281868,
+      "d_at_k": 2.4868629597063885
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "slow_tau_s",
+      "sign": "+",
+      "t": 8.087598880099465,
+      "d_at_k": 2.4078863483700115
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "if_env_coupling",
+      "sign": "+",
+      "t": 3.519398737140645,
+      "d_at_k": 0.32640151314966914
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": -0.04621480412808533,
+      "d_at_k": -0.09587016451993252
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 2.298938429111252,
+      "d_at_k": 0.5613080797925746
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 1.2321906530704931,
+      "d_at_k": 0.09626723727703516
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": -0.37103533956229917,
+      "d_at_k": 0.024337069287276324
+    },
+    {
+      "family": "cycle",
+      "theory": "erratic_drive",
+      "feature": "burst_freq_sd",
+      "sign": "+",
+      "t": 7.118397153043611,
+      "d_at_k": 1.1960941647966397
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -7.225238717497962,
+      "d_at_k": -0.3022892419017388
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "osc_width_hz",
+      "sign": "+",
+      "t": 3.615846066665962,
+      "d_at_k": 0.5773183663424972
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -4.086701311203244,
+      "d_at_k": -0.18816666798154982
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": -1.0348457145686913,
+      "d_at_k": -0.07565165567568481
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "slow_sd_z",
+      "sign": "-",
+      "t": -3.366202669848213,
+      "d_at_k": -0.38077523473372604
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 0.07645770532781263,
+      "d_at_k": 0.18318205596852297
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 0.7403393701903511,
+      "d_at_k": 0.25708355455569093
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "if_env_coupling",
+      "sign": "0",
+      "t": -2.320856204016297,
+      "d_at_k": -0.3020731894885105
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 0.6184085641822684,
+      "d_at_k": -0.1031299241719242
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_highamp_z",
+      "sign": "+",
+      "t": 3.67425078647148,
+      "d_at_k": 0.8971343718449378
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 0.9860887767634492,
+      "d_at_k": -0.030954510792239865
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "jitter_amp_slope",
+      "sign": "-",
+      "t": -5.1971036267241555,
+      "d_at_k": -0.1530884251212994
+    },
+    {
+      "family": "cycle",
+      "theory": "nav11_pv_output",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": 1.7691961002401806,
+      "d_at_k": 0.15176301312484544
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "osc_f0",
+      "sign": "0",
+      "t": -2.755052545659794,
+      "d_at_k": -0.0871191240993301
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "osc_width_hz",
+      "sign": "+",
+      "t": 4.883442455191928,
+      "d_at_k": 0.4135860486680259
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "osc_contrast_db",
+      "sign": "0",
+      "t": 1.7528388016576593,
+      "d_at_k": -0.005939585211894539
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 1.5144243485005964,
+      "d_at_k": 0.29541371067051575
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": 0.7708133304106245,
+      "d_at_k": 0.277233357993829
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 2.911345998663845,
+      "d_at_k": 0.3151050069428231
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 0.8568004993889198,
+      "d_at_k": 0.18373170263146985
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "if_env_coupling",
+      "sign": "0",
+      "t": -1.1412449575775463,
+      "d_at_k": -0.04534382260760543
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": -1.499232903380822,
+      "d_at_k": -0.29568303055673556
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 0.6896341300589486,
+      "d_at_k": 0.4935026679644399
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 0.2965153480484029,
+      "d_at_k": 0.4197399658371362
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": 0.22389623593689534,
+      "d_at_k": -0.02511048461922363
+    },
+    {
+      "family": "cycle",
+      "theory": "sst_loss",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": 1.1665901208738987,
+      "d_at_k": 0.30518660418479615
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -33.86837196547783,
+      "d_at_k": -1.2416935240338616
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": 0.17264278400891456,
+      "d_at_k": -0.11262205793437027
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -4.9541027222063185,
+      "d_at_k": -0.14956402327849028
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.04841632768067856,
+      "d_at_k": 0.2289583375910041
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": -1.8333393916905572,
+      "d_at_k": -0.34910859529167976
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 1.700844252561327,
+      "d_at_k": -0.2578828340798079
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 2.1119883551880982,
+      "d_at_k": 0.0
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "if_env_coupling",
+      "sign": "-",
+      "t": -9.801896563744016,
+      "d_at_k": -0.9217997130893936
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 0.8603586556938092,
+      "d_at_k": 0.18797349491787285
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 2.030668083560369,
+      "d_at_k": 0.5876212731989453
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 1.0180139339053682,
+      "d_at_k": 0.5230392244786776
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": -1.400547235395484,
+      "d_at_k": -0.04034763392951664
+    },
+    {
+      "family": "cycle",
+      "theory": "synapses_onto_pv",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": -0.963572740324256,
+      "d_at_k": -0.07515706847168488
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -40.10785606745881,
+      "d_at_k": -1.0420086178445225
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "osc_width_hz",
+      "sign": "-",
+      "t": -5.053656079457528,
+      "d_at_k": -0.6353420150364516
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "osc_contrast_db",
+      "sign": "0",
+      "t": -2.106510262751701,
+      "d_at_k": -0.05422752330909942
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.9052501838916536,
+      "d_at_k": 0.2900732613860212
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": -0.9133369125077843,
+      "d_at_k": -0.31238283561686947
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 0.007004624075455801,
+      "d_at_k": -0.09632568138118631
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 0.9878752778816591,
+      "d_at_k": -0.0747525883531831
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "if_env_coupling",
+      "sign": "-",
+      "t": -10.021870762253812,
+      "d_at_k": -0.7440002048011536
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": -1.2190431496390077,
+      "d_at_k": -0.11751510511239716
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": -0.9716198922072663,
+      "d_at_k": 0.29503027065342013
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": -0.6375317236384606,
+      "d_at_k": 0.23273605848127643
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": 1.2128157732093203,
+      "d_at_k": 0.09710143697867309
+    },
+    {
+      "family": "cycle",
+      "theory": "tau_silencing",
+      "feature": "burst_freq_sd",
+      "sign": "-",
+      "t": -4.179757150265908,
+      "d_at_k": -0.3268982134954065
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "osc_f0",
+      "sign": "+",
+      "t": 23.957996526952524,
+      "d_at_k": 0.750597031012125
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": -1.9724133300535482,
+      "d_at_k": -0.18431261857640904
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "osc_contrast_db",
+      "sign": "0",
+      "t": 2.163992281340672,
+      "d_at_k": 0.16534727425513665
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.17246987425540466,
+      "d_at_k": 0.17975257883402668
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": 2.40045144252392,
+      "d_at_k": 0.42764338919341416
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 2.366193576257274,
+      "d_at_k": 0.18190000224997477
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 2.943846475788395,
+      "d_at_k": 0.08536806169117012
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "if_env_coupling",
+      "sign": "+",
+      "t": 7.066363093895642,
+      "d_at_k": 0.8747537017764937
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 0.5328644826115049,
+      "d_at_k": -0.023159707821284646
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 1.482898623812163,
+      "d_at_k": 0.13366188147671995
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": -0.3714371965595529,
+      "d_at_k": -0.16805248013527746
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": 2.3290226127794784,
+      "d_at_k": 0.24420049110895076
+    },
+    {
+      "family": "rate",
+      "theory": "acetylcholine",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": -1.2644108886700798,
+      "d_at_k": -0.19672330223468013
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -4.876991413949462,
+      "d_at_k": -0.1006893404116517
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": -2.395808366514785,
+      "d_at_k": -0.0886390877476356
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "osc_contrast_db",
+      "sign": "0",
+      "t": -1.8400279260911083,
+      "d_at_k": -0.037021881527941905
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "fast_sd_z",
+      "sign": "+",
+      "t": 4.662807865352385,
+      "d_at_k": 0.6448532367182619
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "slow_sd_z",
+      "sign": "+",
+      "t": 3.1931210358601256,
+      "d_at_k": 0.5771772458012538
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 2.813195631037228,
+      "d_at_k": 0.39059485358080714
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "slow_tau_s",
+      "sign": "+",
+      "t": 3.3061598674756993,
+      "d_at_k": 0.4353853919924718
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "if_env_coupling",
+      "sign": "-",
+      "t": -3.5222817115091734,
+      "d_at_k": -0.5286774730792871
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 1.7665050992808997,
+      "d_at_k": 0.17938870140067398
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 1.1874315091016183,
+      "d_at_k": 0.34373810187420256
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": -0.4753939767217511,
+      "d_at_k": -0.16340941854757804
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "jitter_amp_slope",
+      "sign": "+",
+      "t": 5.1247252483691295,
+      "d_at_k": 0.6894126454028124
+    },
+    {
+      "family": "rate",
+      "theory": "erratic_drive",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": -0.4577008801634286,
+      "d_at_k": -0.8463564421510859
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -15.460812585898433,
+      "d_at_k": -2.043233554594602
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": 2.150654469399881,
+      "d_at_k": 0.7062317186135598
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -13.150072134190514,
+      "d_at_k": -3.0341310542352793
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.6636714067609347,
+      "d_at_k": 0.19349355370561902
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": 1.0819170472305943,
+      "d_at_k": 0.20425217574483948
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "slow_frac",
+      "sign": "+",
+      "t": 4.414861452925834,
+      "d_at_k": 0.8731248316353358
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 2.469968671613554,
+      "d_at_k": 0.4803680679994032
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "if_env_coupling",
+      "sign": "0",
+      "t": -1.1255934367520608,
+      "d_at_k": -0.41211903953524087
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_z",
+      "sign": "+",
+      "t": 4.368030585558009,
+      "d_at_k": 0.6960381349537816
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 0.27689869767068265,
+      "d_at_k": 0.41879235993904124
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": -0.8582776878641336,
+      "d_at_k": -0.30204756124649734
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "jitter_amp_slope",
+      "sign": "-",
+      "t": -7.035862669500989,
+      "d_at_k": -1.6162480644814714
+    },
+    {
+      "family": "rate",
+      "theory": "nav11_pv_output",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": NaN,
+      "d_at_k": 1.077407095418007
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -16.77360912281442,
+      "d_at_k": -1.4601917431543983
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": -0.27435212818848387,
+      "d_at_k": -0.2342143043507023
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -5.525214288055141,
+      "d_at_k": -0.8606747133255477
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.7076978895317367,
+      "d_at_k": 0.20919707731776882
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": -0.40115265748006884,
+      "d_at_k": -0.043055171784245505
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "slow_frac",
+      "sign": "+",
+      "t": 3.2260392182996656,
+      "d_at_k": 0.8395571807018706
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 2.488434787634129,
+      "d_at_k": 0.8306623862918082
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "if_env_coupling",
+      "sign": "-",
+      "t": -3.1147632870497555,
+      "d_at_k": -0.8984681406997413
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 2.307629569145309,
+      "d_at_k": -0.11290093136564955
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": -0.05182307815527783,
+      "d_at_k": -0.1512827195385719
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 0.2887104706803517,
+      "d_at_k": -0.682424054563524
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "jitter_amp_slope",
+      "sign": "-",
+      "t": -3.3355243983030327,
+      "d_at_k": -0.4827762069780449
+    },
+    {
+      "family": "rate",
+      "theory": "sst_loss",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": -0.5253251031465126,
+      "d_at_k": -1.0571705139852132
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_f0",
+      "sign": "-",
+      "t": -18.990171035101238,
+      "d_at_k": -0.5235490772352602
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_width_hz",
+      "sign": "0",
+      "t": -2.660992473951529,
+      "d_at_k": -0.28113571063397214
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "osc_contrast_db",
+      "sign": "0",
+      "t": -1.1007157553224576,
+      "d_at_k": -0.018281656084435414
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.44637521079361225,
+      "d_at_k": 0.06705261951378537
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": 0.103012853221414,
+      "d_at_k": -0.07966274449946455
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 1.0649809960734589,
+      "d_at_k": 0.16667391166102818
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": 0.633637324777847,
+      "d_at_k": 0.67277329517865
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "if_env_coupling",
+      "sign": "0",
+      "t": -2.769967742516981,
+      "d_at_k": -0.44444750505968106
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 0.0153473783910747,
+      "d_at_k": -0.14753084658133866
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": 0.24600299310444554,
+      "d_at_k": 0.5937599157044302
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": -2.1471311158597506,
+      "d_at_k": -0.1847778194448462
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": 0.4362087259451298,
+      "d_at_k": -0.10812835689871933
+    },
+    {
+      "family": "rate",
+      "theory": "synapses_onto_pv",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": -0.7794073807631481,
+      "d_at_k": -1.6817479188949813
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "osc_f0",
+      "sign": "+",
+      "t": 11.270802752255737,
+      "d_at_k": 0.3188958956754276
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "osc_width_hz",
+      "sign": "+",
+      "t": 7.762002126628442,
+      "d_at_k": 0.6105837366441902
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "osc_contrast_db",
+      "sign": "-",
+      "t": -6.364915530937443,
+      "d_at_k": -0.3152051240473938
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "fast_sd_z",
+      "sign": "0",
+      "t": 0.9315692492721226,
+      "d_at_k": 0.1404791700085368
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "slow_sd_z",
+      "sign": "0",
+      "t": -1.167543122036493,
+      "d_at_k": -0.30250262393452404
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "slow_frac",
+      "sign": "0",
+      "t": 0.9052723941021533,
+      "d_at_k": -0.021647878706834427
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "slow_tau_s",
+      "sign": "0",
+      "t": -0.6034365772360505,
+      "d_at_k": -0.0747525883531831
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "if_env_coupling",
+      "sign": "0",
+      "t": 1.5144496833432286,
+      "d_at_k": 0.10393474744032921
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "slip_rate_z",
+      "sign": "0",
+      "t": 2.097048467203148,
+      "d_at_k": 0.2974308056979369
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "slip_rate_highamp_z",
+      "sign": "0",
+      "t": -0.22241269436962727,
+      "d_at_k": 0.3907028493614845
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "tail_frac_z",
+      "sign": "0",
+      "t": 0.20039243978367907,
+      "d_at_k": -0.10132781959915253
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "jitter_amp_slope",
+      "sign": "0",
+      "t": -2.284196557286653,
+      "d_at_k": -0.23732196422529325
+    },
+    {
+      "family": "rate",
+      "theory": "tau_silencing",
+      "feature": "burst_freq_sd",
+      "sign": "0",
+      "t": 0.03127420985058226,
+      "d_at_k": -0.34524661126641415
+    }
+  ],
+  "agreement": [
+    {
+      "theory": "acetylcholine",
+      "feature": "burst_freq_sd",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "if_env_coupling",
+      "cycle": "-",
+      "rate": "+",
+      "verdict": "conflict",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "jitter_amp_slope",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "osc_contrast_db",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "osc_f0",
+      "cycle": "-",
+      "rate": "+",
+      "verdict": "conflict",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "osc_width_hz",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "slow_frac",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "slow_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "slow_tau_s",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T4"
+    },
+    {
+      "theory": "acetylcholine",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T4"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "burst_freq_sd",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "+",
+      "verdict": "weak_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "if_env_coupling",
+      "cycle": "+",
+      "rate": "-",
+      "verdict": "conflict",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "jitter_amp_slope",
+      "cycle": "0",
+      "rate": "+",
+      "verdict": "weak_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "osc_contrast_db",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "osc_f0",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "osc_width_hz",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "slow_frac",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "slow_sd_z",
+      "cycle": "+",
+      "rate": "+",
+      "verdict": "firm_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "slow_tau_s",
+      "cycle": "+",
+      "rate": "+",
+      "verdict": "firm_up",
+      "code": "T3"
+    },
+    {
+      "theory": "erratic_drive",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T3"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "burst_freq_sd",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "if_env_coupling",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "jitter_amp_slope",
+      "cycle": "-",
+      "rate": "-",
+      "verdict": "firm_down",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "osc_contrast_db",
+      "cycle": "-",
+      "rate": "-",
+      "verdict": "firm_down",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "osc_f0",
+      "cycle": "-",
+      "rate": "-",
+      "verdict": "firm_down",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "osc_width_hz",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "+",
+      "verdict": "weak_up",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "slow_frac",
+      "cycle": "0",
+      "rate": "+",
+      "verdict": "weak_up",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "slow_sd_z",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "slow_tau_s",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T2"
+    },
+    {
+      "theory": "nav11_pv_output",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T2"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "burst_freq_sd",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "if_env_coupling",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "jitter_amp_slope",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "osc_contrast_db",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "osc_f0",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "osc_width_hz",
+      "cycle": "+",
+      "rate": "0",
+      "verdict": "weak_up",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "slow_frac",
+      "cycle": "0",
+      "rate": "+",
+      "verdict": "weak_up",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "slow_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "slow_tau_s",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "sst_loss",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T5"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "burst_freq_sd",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "if_env_coupling",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "jitter_amp_slope",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "osc_contrast_db",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "osc_f0",
+      "cycle": "-",
+      "rate": "-",
+      "verdict": "firm_down",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "osc_width_hz",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "slow_frac",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "slow_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "slow_tau_s",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "synapses_onto_pv",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T1"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "burst_freq_sd",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "fast_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "if_env_coupling",
+      "cycle": "-",
+      "rate": "0",
+      "verdict": "weak_down",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "jitter_amp_slope",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "osc_contrast_db",
+      "cycle": "0",
+      "rate": "-",
+      "verdict": "weak_down",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "osc_f0",
+      "cycle": "-",
+      "rate": "+",
+      "verdict": "conflict",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "osc_width_hz",
+      "cycle": "-",
+      "rate": "+",
+      "verdict": "conflict",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "slip_rate_highamp_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "slip_rate_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "slow_frac",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "slow_sd_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "slow_tau_s",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    },
+    {
+      "theory": "tau_silencing",
+      "feature": "tail_frac_z",
+      "cycle": "0",
+      "rate": "0",
+      "verdict": "firm_none",
+      "code": "T6"
+    }
+  ],
+  "settings": {
+    "families": [
+      "rate",
+      "cycle"
+    ],
+    "levels": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "seeds": 24,
+    "dur_s": 120.0,
+    "n_surr": 5,
+    "gamma_snr": 0.35,
+    "slope_t_threshold": 3.0,
+    "features": [
+      "osc_f0",
+      "osc_width_hz",
+      "osc_contrast_db",
+      "fast_sd_z",
+      "slow_sd_z",
+      "slow_frac",
+      "slow_tau_s",
+      "if_env_coupling",
+      "slip_rate_z",
+      "slip_rate_highamp_z",
+      "tail_frac_z",
+      "jitter_amp_slope"
+    ],
+    "recovery_resamples": 200,
+    "recovery_n": {
+      "patients": 36,
+      "controls": 29
+    }
+  },
+  "quick": false,
+  "labels_used": false,
+  "config_sha256": "445d9afe75a5034c385389716e281d721dd5a9c5f349dafd818219cc84d9edb3",
+  "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+  "analysis_sha256": "e0922bd595a4c78abd48fd2aaeffede1bacb56f0336205c1b806c8ecacc909fb"
+}

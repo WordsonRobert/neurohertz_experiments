@@ -1,0 +1,33 @@
+id,name,kind,feature,subset,note,p_holm,n_target,n_ref,estimate,effect,effect_ci90,effect_ci95,p,equivalent
+M01,instability in AD,group,burst_freq_sd,with_gamma,ValueError: roi__burst_freq_sd: fewer than 3 subjects with data in a group,,,,,,,,,
+M02,FTD at frontal electrodes,group,burst_freq_sd,with_gamma,ValueError: ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group,,,,,,,,,
+M03,FTD vs AD frontally at matched MMSE,matched_severity,burst_freq_sd,with_gamma,ValueError: ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group,,,,,,,,,
+M04,AD effect temporoparietal minus frontal,region_contrast,burst_freq_sd,with_gamma,ValueError: ad_temporoparietal_minus_ftd_frontal__burst_freq_sd: fewer than 3 subjects with data in a group,,,,,,,,,
+M05,peak width (damping),group,osc_width_hz,with_gamma,ValueError: roi__osc_width_hz: fewer than 3 subjects with data in a group,,,,,,,,,
+M06,peak frequency,group,osc_f0,with_gamma,ValueError: roi__osc_f0: fewer than 3 subjects with data in a group,,,,,,,,,
+M07,cycle-scale jitter beyond noise,group,fast_sd_z,with_gamma,ValueError: roi__fast_sd_z: fewer than 3 subjects with data in a group,,,,,,,,,
+M08,1-10 s wander beyond noise,group,slow_sd_z,with_gamma,ValueError: roi__slow_sd_z: fewer than 3 subjects with data in a group,,,,,,,,,
+M09,share of slow wander,group,slow_frac,with_gamma,ValueError: roi__slow_frac: fewer than 3 subjects with data in a group,,,,,,,,,
+M10,phase slips beyond noise,group,slip_rate_z,with_gamma,ValueError: roi__slip_rate_z: fewer than 3 subjects with data in a group,,,,,,,,,
+M11,slips under load beyond noise,group,slip_rate_highamp_z,with_gamma,ValueError: roi__slip_rate_highamp_z: fewer than 3 subjects with data in a group,,,,,,,,,
+M12,heavy IF tails beyond noise,group,tail_frac_z,with_gamma,ValueError: roi__tail_frac_z: fewer than 3 subjects with data in a group,,,,,,,,,
+M13,frequency-envelope co-modulation,group,if_env_coupling,with_gamma,ValueError: roi__if_env_coupling: fewer than 3 subjects with data in a group,,,,,,,,,
+M14,instability vs MMSE within AD,within_corr,burst_freq_sd,with_gamma,ValueError: roi__burst_freq_sd vs mmse: only 5 subjects with data (need >= 7),,,,,,,,,
+M15,instability vs alpha peak within AD,within_corr,burst_freq_sd,with_gamma,ValueError: roi__burst_freq_sd vs roi__alpha_peak_freq: only 5 subjects with data (need >= 7),,,,,,,,,
+M16,AD effect explained by alpha slowing,attenuation,burst_freq_sd,with_gamma,ValueError: roi__burst_freq_sd: fewer than 3 subjects with data in a group,,,,,,,,,
+M01,instability in AD,group,burst_freq_sd,all,,1.0,36.0,29.0,0.15086700991505173,0.3348350788787748,"[-0.08889103748994341, 0.759387943042034]","[-0.1829441970597671, 0.8908528341067973]",0.1757648470305939,False
+M02,FTD at frontal electrodes,group,burst_freq_sd,all,,1.0,23.0,29.0,0.0747607324339855,0.24782948007018019,"[-0.21819853653900714, 0.6652742965538577]","[-0.3455350456989191, 0.6928851918338872]",0.3113377324535093,False
+M03,FTD vs AD frontally at matched MMSE,matched_severity,burst_freq_sd,all,,1.0,23.0,36.0,-0.010799506137296078,-0.02426314021204266,"[-0.4679750724155425, 0.3861039789025555]","[-0.5684820117294244, 0.46765704322825324]",0.8960207958408318,True
+M04,AD effect temporoparietal minus frontal,region_contrast,burst_freq_sd,all,,1.0,36.0,29.0,0.10564993163318677,0.2594615471016069,"[-0.20316753596420933, 0.6349802528665315]","[-0.27046652153995604, 0.72615472164487]",0.2705458908218356,False
+M05,peak width (damping),group,osc_width_hz,all,,1.0,20.0,17.0,3.223827552702636,0.43722369447448955,"[-0.015843139381361285, 0.8185862635283744]","[-0.14857328890317464, 0.8800552954081765]",0.09778044391121776,False
+M06,peak frequency,group,osc_f0,all,,0.578884223155369,20.0,17.0,2.750431502549528,0.5865581434918461,"[0.21688033513632124, 0.9576590217835591]","[0.0770881778722261, 1.037422055750145]",0.038592281543691265,False
+M07,cycle-scale jitter beyond noise,group,fast_sd_z,all,,1.0,36.0,29.0,0.08690409995440099,0.06469674812677358,"[-0.3579898573709154, 0.4793571222933406]","[-0.4007991293212804, 0.5926165359533468]",0.8326334733053389,True
+M08,1-10 s wander beyond noise,group,slow_sd_z,all,,1.0,36.0,29.0,0.0133710296571535,0.011529799857316197,"[-0.4236100979859911, 0.3923842783757216]","[-0.5142661349537769, 0.4693273868506735]",0.9622075584883023,True
+M09,share of slow wander,group,slow_frac,all,,1.0,36.0,29.0,-0.003506383629232756,-0.25267748223376457,"[-0.6584562713631825, 0.15138815921740584]","[-0.7238618504761344, 0.2752876025791924]",0.2565486902619476,False
+M10,phase slips beyond noise,group,slip_rate_z,all,,0.578884223155369,36.0,29.0,0.3771236648901952,0.5365569559127358,"[0.11257760239641074, 0.9377217573903689]","[0.006379628550989011, 1.0493485790350636]",0.03959208158368326,False
+M11,slips under load beyond noise,group,slip_rate_highamp_z,all,,1.0,36.0,29.0,-0.2002336772054446,-0.22585339748361835,"[-0.649043253282152, 0.2192644078008276]","[-0.7083889943766175, 0.2827827079731838]",0.28834233153369326,False
+M12,heavy IF tails beyond noise,group,tail_frac_z,all,,1.0,36.0,29.0,0.14929584451826178,0.15627232518832312,"[-0.26743369793445826, 0.5714103831526439]","[-0.30953302556188483, 0.7050933090702249]",0.4887022595480904,False
+M13,frequency-envelope co-modulation,group,if_env_coupling,all,,0.46710657868426314,36.0,29.0,0.060484777922063505,0.5081339968538514,"[0.060646415735461756, 0.9394574143509579]","[-0.013933440577994508, 1.019074568977901]",0.029194161167766446,False
+M14,instability vs MMSE within AD,within_corr,burst_freq_sd,all,,1.0,36.0,,0.053512168772392114,0.053512168772392114,"[-0.28308296676116845, 0.40516446413716306]","[-0.3658360836228933, 0.45624589018401535]",0.7416516696660668,False
+M15,instability vs alpha peak within AD,within_corr,burst_freq_sd,all,,1.0,36.0,,-0.20801529677046718,-0.20801529677046718,"[-0.4622396308116609, 0.060744169683024936]","[-0.5096024478547098, 0.13020190504945126]",0.2411517696460708,False
+M16,AD effect explained by alpha slowing,attenuation,burst_freq_sd,all,,1.0,36.0,29.0,0.3182615606449021,0.3182615606449021,"[-0.5628399450669902, 1.6324578879540568]","[-1.563117430019138, 2.3749102717521664]",0.11094452773613193,False

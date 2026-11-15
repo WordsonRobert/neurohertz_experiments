@@ -1,0 +1,246 @@
+{
+  "fingerprints_rate__data_rate": {
+    "confusion": {
+      "acetylcholine": {
+        "acetylcholine": 191,
+        "erratic_drive": 0,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 26
+      },
+      "erratic_drive": {
+        "acetylcholine": 5,
+        "erratic_drive": 195,
+        "nav11_pv_output": 0,
+        "sst_loss": 1,
+        "synapses_onto_pv": 55,
+        "tau_silencing": 4
+      },
+      "nav11_pv_output": {
+        "acetylcholine": 0,
+        "erratic_drive": 4,
+        "nav11_pv_output": 198,
+        "sst_loss": 0,
+        "synapses_onto_pv": 1,
+        "tau_silencing": 29
+      },
+      "sst_loss": {
+        "acetylcholine": 0,
+        "erratic_drive": 1,
+        "nav11_pv_output": 2,
+        "sst_loss": 199,
+        "synapses_onto_pv": 124,
+        "tau_silencing": 0
+      },
+      "synapses_onto_pv": {
+        "acetylcholine": 0,
+        "erratic_drive": 0,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 16,
+        "tau_silencing": 23
+      },
+      "tau_silencing": {
+        "acetylcholine": 4,
+        "erratic_drive": 0,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 4,
+        "tau_silencing": 118
+      }
+    },
+    "accuracy_per_theory": {
+      "acetylcholine": 0.955,
+      "erratic_drive": 0.975,
+      "nav11_pv_output": 0.99,
+      "sst_loss": 0.995,
+      "synapses_onto_pv": 0.08,
+      "tau_silencing": 0.59
+    },
+    "local_vs_input_accuracy": 0.9408333333333333
+  },
+  "fingerprints_rate__data_cycle": {
+    "confusion": {
+      "acetylcholine": {
+        "acetylcholine": 0,
+        "erratic_drive": 36,
+        "nav11_pv_output": 0,
+        "sst_loss": 28,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 0
+      },
+      "erratic_drive": {
+        "acetylcholine": 16,
+        "erratic_drive": 2,
+        "nav11_pv_output": 0,
+        "sst_loss": 43,
+        "synapses_onto_pv": 1,
+        "tau_silencing": 13
+      },
+      "nav11_pv_output": {
+        "acetylcholine": 4,
+        "erratic_drive": 5,
+        "nav11_pv_output": 1,
+        "sst_loss": 38,
+        "synapses_onto_pv": 14,
+        "tau_silencing": 12
+      },
+      "sst_loss": {
+        "acetylcholine": 116,
+        "erratic_drive": 102,
+        "nav11_pv_output": 0,
+        "sst_loss": 28,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 34
+      },
+      "synapses_onto_pv": {
+        "acetylcholine": 64,
+        "erratic_drive": 55,
+        "nav11_pv_output": 61,
+        "sst_loss": 12,
+        "synapses_onto_pv": 82,
+        "tau_silencing": 78
+      },
+      "tau_silencing": {
+        "acetylcholine": 0,
+        "erratic_drive": 0,
+        "nav11_pv_output": 138,
+        "sst_loss": 51,
+        "synapses_onto_pv": 103,
+        "tau_silencing": 63
+      }
+    },
+    "accuracy_per_theory": {
+      "acetylcholine": 0.0,
+      "erratic_drive": 0.01,
+      "nav11_pv_output": 0.005,
+      "sst_loss": 0.14,
+      "synapses_onto_pv": 0.41,
+      "tau_silencing": 0.315
+    },
+    "local_vs_input_accuracy": 0.305
+  },
+  "fingerprints_cycle__data_rate": {
+    "confusion": {
+      "acetylcholine": {
+        "acetylcholine": 0,
+        "erratic_drive": 104,
+        "nav11_pv_output": 0,
+        "sst_loss": 4,
+        "synapses_onto_pv": 1,
+        "tau_silencing": 0
+      },
+      "erratic_drive": {
+        "acetylcholine": 174,
+        "erratic_drive": 14,
+        "nav11_pv_output": 1,
+        "sst_loss": 0,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 33
+      },
+      "nav11_pv_output": {
+        "acetylcholine": 0,
+        "erratic_drive": 1,
+        "nav11_pv_output": 174,
+        "sst_loss": 0,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 143
+      },
+      "sst_loss": {
+        "acetylcholine": 19,
+        "erratic_drive": 36,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 24
+      },
+      "synapses_onto_pv": {
+        "acetylcholine": 0,
+        "erratic_drive": 0,
+        "nav11_pv_output": 25,
+        "sst_loss": 25,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 0
+      },
+      "tau_silencing": {
+        "acetylcholine": 7,
+        "erratic_drive": 45,
+        "nav11_pv_output": 0,
+        "sst_loss": 171,
+        "synapses_onto_pv": 199,
+        "tau_silencing": 0
+      }
+    },
+    "accuracy_per_theory": {
+      "acetylcholine": 0.0,
+      "erratic_drive": 0.07,
+      "nav11_pv_output": 0.87,
+      "sst_loss": 0.0,
+      "synapses_onto_pv": 0.0,
+      "tau_silencing": 0.0
+    },
+    "local_vs_input_accuracy": 0.46648793565683644
+  },
+  "fingerprints_cycle__data_cycle": {
+    "confusion": {
+      "acetylcholine": {
+        "acetylcholine": 101,
+        "erratic_drive": 0,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 5
+      },
+      "erratic_drive": {
+        "acetylcholine": 46,
+        "erratic_drive": 200,
+        "nav11_pv_output": 0,
+        "sst_loss": 185,
+        "synapses_onto_pv": 0,
+        "tau_silencing": 0
+      },
+      "nav11_pv_output": {
+        "acetylcholine": 29,
+        "erratic_drive": 0,
+        "nav11_pv_output": 156,
+        "sst_loss": 2,
+        "synapses_onto_pv": 14,
+        "tau_silencing": 2
+      },
+      "sst_loss": {
+        "acetylcholine": 0,
+        "erratic_drive": 0,
+        "nav11_pv_output": 0,
+        "sst_loss": 0,
+        "synapses_onto_pv": 8,
+        "tau_silencing": 0
+      },
+      "synapses_onto_pv": {
+        "acetylcholine": 24,
+        "erratic_drive": 0,
+        "nav11_pv_output": 34,
+        "sst_loss": 13,
+        "synapses_onto_pv": 151,
+        "tau_silencing": 147
+      },
+      "tau_silencing": {
+        "acetylcholine": 0,
+        "erratic_drive": 0,
+        "nav11_pv_output": 10,
+        "sst_loss": 0,
+        "synapses_onto_pv": 27,
+        "tau_silencing": 46
+      }
+    },
+    "accuracy_per_theory": {
+      "acetylcholine": 0.505,
+      "erratic_drive": 1.0,
+      "nav11_pv_output": 0.78,
+      "sst_loss": 0.0,
+      "synapses_onto_pv": 0.755,
+      "tau_silencing": 0.23
+    },
+    "local_vs_input_accuracy": 0.6508333333333334
+  }
+}

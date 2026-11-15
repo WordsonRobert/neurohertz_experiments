@@ -1,0 +1,193 @@
+{
+ "plus_emg": {
+  "feature": "roi__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.221977777398155,
+  "mean_ref": 2.110662790106031,
+  "beta_adj": 0.046979873118109784,
+  "beta_ci95": [
+   -0.17536740438402165,
+   0.2693271506202412
+  ],
+  "t_HC3": 0.41412182035318135,
+  "p_param": 0.6787848932885523,
+  "p_perm_freedman_lane": 0.6483516483516484,
+  "hedges_g_unadj": 0.26635027149200596,
+  "hedges_g_ci95": [
+   -0.20712923099223787,
+   0.840981260983354
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "roi__aperiodic_exponent",
+   "emg_sentinel__emg_logpow"
+  ]
+ },
+ "plus_clean_seconds": {
+  "feature": "roi__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.221977777398155,
+  "mean_ref": 2.110662790106031,
+  "beta_adj": 0.05743034311819009,
+  "beta_ci95": [
+   -0.16128544628540067,
+   0.2761461325217809
+  ],
+  "t_HC3": 0.5146469051839855,
+  "p_param": 0.6067997818468431,
+  "p_perm_freedman_lane": 0.5774225774225774,
+  "hedges_g_unadj": 0.26635027149200596,
+  "hedges_g_ci95": [
+   -0.20712923099223787,
+   0.840981260983354
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "roi__aperiodic_exponent",
+   "clean_seconds"
+  ]
+ },
+ "region_frontal": {
+  "feature": "frontal__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.4119718004713806,
+  "mean_ref": 2.443399653108638,
+  "beta_adj": -0.050680181804283776,
+  "beta_ci95": [
+   -0.21890755354254954,
+   0.117547189933982
+  ],
+  "t_HC3": -0.590458794190054,
+  "p_param": 0.5548831034074968,
+  "p_perm_freedman_lane": 0.5704295704295704,
+  "hedges_g_unadj": -0.12349514514338533,
+  "hedges_g_ci95": [
+   -0.5432865576307648,
+   0.4080630506954981
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "frontal__aperiodic_exponent"
+  ]
+ },
+ "region_central": {
+  "feature": "central__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.193894989465018,
+  "mean_ref": 2.163480437499131,
+  "beta_adj": -0.07977239860455435,
+  "beta_ci95": [
+   -0.3119967818966285,
+   0.1524519846875198
+  ],
+  "t_HC3": -0.6732756741941838,
+  "p_param": 0.5007719256469306,
+  "p_perm_freedman_lane": 0.4745254745254745,
+  "hedges_g_unadj": 0.07413814322210154,
+  "hedges_g_ci95": [
+   -0.4149622295697595,
+   0.5282378799030039
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "central__aperiodic_exponent"
+  ]
+ },
+ "region_temporal": {
+  "feature": "temporal__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.4366633010859804,
+  "mean_ref": 2.4435281226193615,
+  "beta_adj": 0.07579821208596123,
+  "beta_ci95": [
+   -0.10640445410199915,
+   0.2580008782739216
+  ],
+  "t_HC3": 0.8153654877242918,
+  "p_param": 0.4148631332707018,
+  "p_perm_freedman_lane": 0.4305694305694306,
+  "hedges_g_unadj": -0.022438297341040508,
+  "hedges_g_ci95": [
+   -0.5754623895716593,
+   0.4650830252652921
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "temporal__aperiodic_exponent"
+  ]
+ },
+ "region_parietal": {
+  "feature": "parietal__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.1596897816820784,
+  "mean_ref": 1.9943686484351326,
+  "beta_adj": 0.07194388671888251,
+  "beta_ci95": [
+   -0.17348489274724893,
+   0.317372666185014
+  ],
+  "t_HC3": 0.5745350124935038,
+  "p_param": 0.5656058146885243,
+  "p_perm_freedman_lane": 0.5464535464535465,
+  "hedges_g_unadj": 0.35449369915068424,
+  "hedges_g_ci95": [
+   -0.13541007756528994,
+   0.8959854445689989
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "parietal__aperiodic_exponent"
+  ]
+ },
+ "region_occipital": {
+  "feature": "occipital__burst_freq_sd",
+  "contrast": "AD-CN",
+  "n_target": 36,
+  "n_ref": 29,
+  "mean_target": 2.320849918095748,
+  "mean_ref": 2.28808959331422,
+  "beta_adj": 0.02589906708266337,
+  "beta_ci95": [
+   -0.23244285279701593,
+   0.2842409869623427
+  ],
+  "t_HC3": 0.19648858667168184,
+  "p_param": 0.8442277650693674,
+  "p_perm_freedman_lane": 0.8411588411588412,
+  "hedges_g_unadj": 0.07153964428895733,
+  "hedges_g_ci95": [
+   -0.37882228737353824,
+   0.6523646569713204
+  ],
+  "hedges_g_ci_method": "BCa",
+  "covariates": [
+   "age",
+   "sex",
+   "occipital__aperiodic_exponent"
+  ]
+ }
+}

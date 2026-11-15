@@ -1,0 +1,19 @@
+{
+  "interpretable_primary": {
+    "auc_mean": 0.5257662835249042,
+    "auc_2.5_97.5": [
+      0.4470545977011494,
+      0.6113026819923372
+    ]
+  },
+  "tabpfn_ceiling": {
+    "skipped": "ModuleNotFoundError: No module named 'tabpfn'"
+  },
+  "riemann_ceiling": {
+    "auc_mean": 0.644396551724138,
+    "auc_2.5_97.5": [
+      0.5562021072796934,
+      0.7096982758620689
+    ]
+  }
+}

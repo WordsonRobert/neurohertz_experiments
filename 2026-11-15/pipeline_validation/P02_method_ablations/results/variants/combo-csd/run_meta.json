@@ -1,0 +1,21 @@
+{
+  "dataset": "ds004504",
+  "variant": "combo-csd",
+  "reference": null,
+  "no_ica": false,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 83,
+    "excluded": 5
+  },
+  "overrides": [
+    "preprocessing.reference=csd",
+    "preprocessing.muscle.method=bss_cca",
+    "preprocessing.epochs.method=autoreject",
+    "features.if_median.mode=single"
+  ],
+  "extraction_sha256": "1930693b637fe209f8194196d4a9ac81f4d014f258f8e016528abfb310312020",
+  "config_sha256": "c910062dc295fc035e0e6833187d36a5d004b35b02ae33dc2f664d97b3ccf0b7",
+  "code_sha256": "33ae3825ae10f56b04bac0671bb76acb9af77e485aa78b514da34d8a53ff6217",
+  "analysis_sha256": "4caa35e06c33dbdc204679ca166369097b0186b846984d763228319e63c85104"
+}

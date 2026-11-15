@@ -1,0 +1,16 @@
+{
+  "dataset": "ds004504",
+  "variant": "surr_chunk-s30",
+  "reference": null,
+  "no_ica": false,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 83,
+    "excluded": 5
+  },
+  "overrides": [],
+  "extraction_sha256": "b302f3c4661a5f1f4c896337d5542f7ea5539039787ad5268ac62a6355652aea",
+  "config_sha256": "616bcf08e09674d7e55cccb5e013d071659cdee4d55bb7871690ed1659bca2ba",
+  "code_sha256": "7b7472b673f04b55e929a7ec3294d455da8a3b85bf7243fc19c600be2d218b59",
+  "analysis_sha256": "fb92572450e2a46f3988cd3cfd9be9c4eadf99ccd5eba9977930084afb161e11"
+}

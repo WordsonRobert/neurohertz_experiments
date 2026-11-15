@@ -1,0 +1,16 @@
+{
+  "dataset": "ds004504",
+  "pooled_real_medians_label_free": {
+    "aperiodic_exponent": 1.1140115247683657,
+    "gamma_above_floor": -0.08854906808637317,
+    "burst_rate": 0.07295974164892324,
+    "burst_dur": 0.10125521978021977,
+    "env_cv": 0.5454694264776396
+  },
+  "base_overrides": {
+    "chi": 1.0,
+    "gamma_amp": 0.6,
+    "burst_dur_s": 0.1
+  },
+  "best_distance": 1.5166223579883706
+}

@@ -1,0 +1,20 @@
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+synthetic: 88 loadable recordings -> /media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/results/features/synthetic/synth-erratic_drive
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:  2.4min
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed: 17.2min
+[Parallel(n_jobs=8)]: Done  88 out of  88 | elapsed: 26.9min finished
+{
+  "dataset": "synthetic",
+  "variant": "synth-erratic_drive",
+  "reference": null,
+  "no_ica": true,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 88
+  },
+  "overrides": [],
+  "extraction_sha256": "e2eebed6ca9264fc542311d4fb4c3ae0e8f52ef474eb5b123f337e6fa0cabf6e",
+  "config_sha256": "445d9afe75a5034c385389716e281d721dd5a9c5f349dafd818219cc84d9edb3",
+  "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+  "analysis_sha256": "e0922bd595a4c78abd48fd2aaeffede1bacb56f0336205c1b806c8ecacc909fb"
+}

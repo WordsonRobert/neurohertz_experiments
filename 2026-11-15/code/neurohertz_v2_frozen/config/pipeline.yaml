@@ -1,0 +1,257 @@
+# NeuroHertz v2 — single source of truth for every analysis parameter.
+#
+# RULES (see docs/LEAKAGE_CONTRACT.md):
+#   * Nothing in this file may be chosen by looking at diagnostic labels or outcomes.
+#   * While `status: development`, discovery labels stay blinded and lockbox datasets are inaccessible.
+#   * `scripts/03_freeze.py` hashes this file + the code in nh/ into registry/freeze.json.
+#     After freezing, ANY edit changes the hash and the lockbox refuses to open.
+
+version: "2.0.0"
+status: frozen               # development | frozen
+
+common:
+  sfreq: 250.0               # every dataset is resampled to this rate before feature extraction
+  line_freq: 50.0            # Greece (ds004504) and India (hospital) are both 50 Hz; set per dataset if different
+  channels: [Fp1, Fp2, F7, F3, Fz, F4, F8, T3, C3, Cz, C4, T4, T5, P3, Pz, P4, T6, O1, O2]
+  rename: {T7: T3, T8: T4, P7: T5, P8: T6}
+  regions:
+    frontal:   [Fp1, Fp2, F7, F3, Fz, F4, F8]
+    central:   [C3, Cz, C4]
+    temporal:  [T3, T4, T5, T6]
+    parietal:  [P3, Pz, P4]
+    occipital: [O1, O2]
+    csd_roi:   [P3, Pz, P4, C3, Cz, C4]   # interior sites (full Laplacian neighbourhood); reported with the CSD variant
+    ftd_frontal: [Fz, F3, F4]             # mechanism plan: where FTD does its damage (theory-1 test)
+    ad_temporoparietal: [T5, P3, Pz, P4, T6]   # mechanism plan: where AD does its damage
+  primary_roi: [P3, Pz, P4, O1, O2]      # pre-specified posterior ROI (NOT chosen from results)
+  emg_sentinel_channels: [Fp1, Fp2, F7, F8, T3, T4, T5, T6]
+
+preprocessing:
+  highpass_hz: 1.0
+  lowpass_hz: 100.0          # capped at 0.45 * sfreq of the recording
+  notch_harmonics: true
+  reference: csd             # FINAL (label-free selection, registry/method_selection.json). ablation options: average | rest
+  muscle: {method: bss_cca, slope_threshold: -0.5, band: [15.0, 90.0]}   # FINAL. ablation option: none
+  bad_channels:
+    flat_uv: 0.5             # channel std below this (µV) -> bad
+    robust_z: 5.0            # |robust z| of log-variance or of HF power across channels -> bad
+    max_bad_fraction: 0.25   # more bad channels than this -> recording excluded
+    correlation: {threshold: 0.4, frac_bad: 0.01}   # PREP correlation criterion
+    two_pass: true           # electrode faults before ICA; variance/HF rules after ICA (blinks/muscle are not faults)
+    pre_ica_robust_z: 10.0   # pass-1 variance rule: only extreme outliers (a broken electrode, not a blink)
+  ica:
+    enabled: true
+    method: infomax          # extended infomax, as ICLabel expects
+    n_components: 0.999
+    random_state: 97
+    reject_labels: [muscle artifact, eye blink, heart beat, line noise, channel noise]
+    reject_prob: 0.80
+  epochs:
+    method: autoreject       # FINAL. ablation option: mad
+    length_s: 2.0
+    abs_ptp_uv: 250.0        # absolute peak-to-peak ceiling
+    ptp_mad_k: 5.0           # per-subject robust ptp outlier rule (median + k*MAD)
+    hf_mad_k: 3.0            # per-subject robust EMG-burst rule on 55-90 Hz power
+  duration:
+    max_clean_s: 240.0       # every subject contributes the SAME amount of clean data
+    min_clean_s: 120.0       # fewer clean seconds -> excluded (pre-specified)
+    selection: first         # first N clean epochs in time order (deterministic, label-blind)
+
+features:
+  gamma_band: [30.0, 45.0]   # primary band; avoids 50 Hz line and the 70 Hz hardware filter in ds004504
+  filter_transition_hz: 3.0
+  edge_trim_s: 0.25          # trimmed from both ends of every contiguous clean segment
+  if_median_filter_ms: 20.0  # used when if_median.mode = single
+  if_median: {mode: single, min_ms: 10.0, max_ms: 75.0, n: 10}   # FINAL: single (tie with multi in simulation, 0.6126 vs 0.6124; slightly more reliable)
+  if_estimator: hilbert      # ablation: sst | vmd
+  vmd: {K: 3, alpha: 2000, prefilter_hz: [22.0, 58.0]}   # FIXED when if_estimator = vmd: flank/gamma/flank modes on a 22-58 Hz pre-filtered signal; gamma mode = most in-band power
+  amp_gate_percentile: 50.0  # IF statistics only where the envelope is above the subject's own median
+  surrogates:
+    method: iaaft
+    n: 20
+    iterations: 50
+    chunk_s: 30.0
+    seam_matching: true      # chunk ends matched in value+slope; seams trimmed in real AND surrogate
+    seam_search_s: 0.3
+    seed: 20261109
+  individual_band:
+    enabled: true            # sensitivity analysis: band centred on the subject's own gamma peak
+    search_hz: [30.0, 45.0]
+    half_width_hz: 6.0
+  spectral:
+    welch_s: 2.0
+    specparam_range: [3.0, 30.0]   # below the high-frequency plateau (Gerster et al. 2022)
+    specparam_kwargs: {peak_width_limits: [1.0, 8.0], max_n_peaks: 6, min_peak_height: 0.05, aperiodic_mode: fixed}
+    bands: {delta: [1, 4], theta: [4, 8], alpha: [8, 13], beta: [13, 30], gamma: [30, 45]}
+    emg_band: [55.0, 90.0]   # used only for QC/EMG covariates; line harmonics +/-2 Hz excluded
+    aperiodic_method: specparam   # ablation: irasa
+    floor_fit: {range: [3.0, 65.0], exclude: [[6.0, 15.0]]}   # power law + constant floor; stops below the
+                                                               # 70 Hz amplifier low-pass of ds004504
+  dynamics:                  # nh/dynamics.py: mechanism-oriented IF descriptors (surrogate-normalised)
+    slow_window_s: 1.0       # cycle-scale vs >= 1 s "wander" split
+    slow_fs: 10.0
+    slip_margin_hz: 10.0     # phase slip = raw IF outside [band_lo - 10, band_hi + 10] Hz
+  oscillation:               # nh/oscfit.py: presence gate + damped-oscillator fit
+    max_fit_hz: 65.0         # background fitted only below the 70 Hz amplifier filter
+    fit_lo_hz: 3.0
+    chunk_s: 4.0
+    presence_min_db: 0.5     # 30-45 Hz must stand >= 0.5 dB above the 22-27 / 53-62 Hz flanks ...
+    presence_alpha: 0.01     # ... consistently across 4-s chunks (one-sided t-test)
+    min_fit_r2: 0.3          # oscillator parameters reported only if the fit explains >= 30% of the excess
+
+statistics:
+  alpha: 0.05
+  n_perm: 10000
+  n_boot: 10000
+  seed: 20261109
+  covariates: [age, sex]     # education is added for datasets that have it
+  feature_covariates: [aperiodic_exponent]   # added to H1/H2/E1/spec-curve models: the raw primary metric's worst simulated nuisance is the 1/f slope
+  primary_feature: burst_freq_sd   # FINAL: burst-to-burst gamma frequency variability (most jitter-specific metric in simulation; reliable only with CSD+BSS-CCA).
+                                   # 02 selects burst_freq_sd_z, whose real split-half reliability is ~0 -> freeze with --override-reason (see docs/METHODS_REVIEW.md)
+  secondary_order: [H2_mmse, H3_incremental, H4_ftd]   # fixed-sequence gatekeeping
+
+# ---------------------------------------------------------------------------------------------
+# Mechanism programme (docs/MECHANISMS.md). Everything here is fixed BEFORE labels are opened and
+# hashed by 03_freeze.py. Predictions: "+" higher in patients (or positive r), "-" lower, "0" no
+# difference (tested as EQUIVALENCE within the smallest effect of interest), "?" no prediction.
+mechanism:
+  theories:
+    T1: synapses_onto_pv     # weaker pyramidal->PV synapses (NPTX2 / GluA4)
+    T2: nav11_pv_output      # PV output failure under load (Nav1.1)
+    T3: erratic_drive        # erratic amyloid-driven excitatory input
+    T4: acetylcholine        # basal-forebrain cholinergic loss
+    T5: sst_loss             # somatostatin interneuron loss
+    T6: tau_silencing        # tau-driven loss of excitatory drive (Busche et al. 2019)
+  local_loop: [T1, T2, T5]
+  input_driven: [T3, T4, T6]
+  presence:
+    roi_fraction: 0.5        # a subject "has gamma" if >= half of the ROI channels pass the presence test
+    min_present_fraction: 0.5   # mechanistic results are PRIMARY only if >= 50% of subjects in EVERY group pass;
+                                # otherwise every mechanistic result is reported as descriptive (limitation)
+    restrict_to_present: true
+  covariates: [age, sex]
+  sensitivity_covariates:      # each group test is re-run with each set added
+    muscle: [emg_sentinel__emg_logpow]
+    vigilance: ["roi__vigilance_mean", "roi__vigilance_sd"]
+    recording_length: [qc__raw_seconds]
+  sesoi_d: 0.5                 # smallest effect of interest for equivalence ("0") predictions, Hedges g
+  sesoi_r: 0.3                 # same for correlations
+  sesoi_attenuation: 0.25      # alpha slowing "explains" the AD effect only if it removes >= 25% of it
+  multiplicity: holm           # across all tests below
+  n_perm: 5000
+  n_boot: 2000
+  fingerprint:
+    families: [rate, cycle]    # nh/mechsim.py (dynamical) and nh/cyclemodel.py (theory as stated)
+    levels: [0.0, 0.25, 0.5, 0.75]
+    seeds: 24                  # simulated "subjects" per level; each has its own baseline perturbation
+    dur_s: 120.0
+    n_surr: 5
+    gamma_snr: 0.35            # median circuit-to-background ratio; varied per simulated subject (log-sd 0.3)
+    slope_t_threshold: 3.0     # a fingerprint entry is "+"/"-" only if |t| of its slope across seeds >= 3
+    features: [osc_f0, osc_width_hz, osc_contrast_db, fast_sd_z, slow_sd_z, slow_frac, slow_tau_s,
+               if_env_coupling, slip_rate_z, slip_rate_highamp_z, tail_frac_z, jitter_amp_slope]
+    recovery_resamples: 200
+    recovery_n: {patients: 36, controls: 29}
+  tests:
+    - {id: M01, name: instability in AD, kind: group, feature: "{primary}", region: roi, contrast: [AD, CN],
+       predict: {T1: "+", T2: "+", T3: "+", T4: "+", T5: "+", T6: "+"}}
+    - {id: M02, name: FTD at frontal electrodes, kind: group, feature: "{primary}", region: ftd_frontal, contrast: [FTD, CN],
+       predict: {T1: "+", T2: "0", T3: "0", T4: "0", T5: "?", T6: "?"}}
+    - {id: M03, name: FTD vs AD frontally at matched MMSE, kind: matched_severity, feature: "{primary}", region: ftd_frontal,
+       contrast: [FTD, AD], predict: {T1: "+", T2: "-", T3: "-", T4: "-", T5: "?", T6: "?"}}
+    - {id: M04, name: AD effect temporoparietal minus frontal, kind: region_contrast, feature: "{primary}",
+       regions: [ad_temporoparietal, ftd_frontal], contrast: [AD, CN],
+       predict: {T1: "+", T2: "?", T3: "?", T4: "0", T5: "+", T6: "+"}}
+    - {id: M05, name: peak width (damping), kind: group, feature: osc_width_hz, region: roi, contrast: [AD, CN],
+       predict: {T1: "+", T2: "+", T3: "0", T4: "0", T5: "+", T6: "?"}}
+    - {id: M06, name: peak frequency, kind: group, feature: osc_f0, region: roi, contrast: [AD, CN],
+       predict: {T1: "-", T2: "0", T3: "?", T4: "-", T5: "?", T6: "-"}}
+    - {id: M07, name: cycle-scale jitter beyond noise, kind: group, feature: fast_sd_z, region: roi, contrast: [AD, CN],
+       predict: {T1: "+", T2: "+", T3: "0", T4: "0", T5: "+", T6: "0"}}
+    - {id: M08, name: 1-10 s wander beyond noise, kind: group, feature: slow_sd_z, region: roi, contrast: [AD, CN],
+       predict: {T1: "0", T2: "0", T3: "+", T4: "+", T5: "0", T6: "?"}}
+    - {id: M09, name: share of slow wander, kind: group, feature: slow_frac, region: roi, contrast: [AD, CN],
+       predict: {T1: "-", T2: "-", T3: "+", T4: "+", T5: "-", T6: "?"}}
+    - {id: M10, name: phase slips beyond noise, kind: group, feature: slip_rate_z, region: roi, contrast: [AD, CN],
+       predict: {T1: "0", T2: "+", T3: "?", T4: "?", T5: "?", T6: "0"}}
+    - {id: M11, name: slips under load beyond noise, kind: group, feature: slip_rate_highamp_z, region: roi, contrast: [AD, CN],
+       predict: {T1: "0", T2: "+", T3: "?", T4: "0", T5: "0", T6: "0"}}
+    - {id: M12, name: heavy IF tails beyond noise, kind: group, feature: tail_frac_z, region: roi, contrast: [AD, CN],
+       predict: {T1: "0", T2: "+", T3: "?", T4: "0", T5: "?", T6: "0"}}
+    - {id: M13, name: frequency-envelope co-modulation, kind: group, feature: if_env_coupling, region: roi, contrast: [AD, CN],
+       predict: {T1: "0", T2: "0", T3: "+", T4: "?", T5: "0", T6: "0"}}
+    - {id: M14, name: instability vs MMSE within AD, kind: within_corr, feature: "{primary}", region: roi, group: AD, with: mmse,
+       predict: {T1: "-", T2: "?", T3: "+", T4: "-", T5: "-", T6: "-"}}
+    - {id: M15, name: instability vs alpha peak within AD, kind: within_corr, feature: "{primary}", region: roi, group: AD,
+       with: "roi__alpha_peak_freq", predict: {T1: "0", T2: "0", T3: "0", T4: "-", T5: "0", T6: "?"}}
+    - {id: M16, name: AD effect explained by alpha slowing, kind: attenuation, feature: "{primary}", region: roi, contrast: [AD, CN],
+       mediator: "roi__alpha_peak_freq", predict: {T1: "0", T2: "0", T3: "0", T4: "+", T5: "0", T6: "?"}}
+    # M17 (eyes-open change in ds006036) DROPPED before freezing: flicker-free eyes-open time is median 4 s (max 49 s).
+
+prediction:
+  outer: {scheme: repeated_stratified_kfold, n_splits: 5, n_repeats: 50}
+  inner: {n_splits: 5}
+  C_grid: [0.001, 0.01, 0.1, 1.0, 10.0, 100.0]
+  penalty: l2                # default; a model may override with penalty: elasticnet
+  classifier_candidates: [lr_l2, lr_en, linear_svm, ebm]   # used by models with classifier: auto
+  n_perm_pipeline: 1000      # full-pipeline permutations for the PRIMARY model
+  n_perm_secondary: 200      # for every other model
+  seed: 20261109
+  # Multi-feature models. Every feature list is fixed HERE, before labels are seen.
+  # Spec syntax: see nh/featuresets.py. {primary} = statistics.primary_feature.
+  # select_k: the model picks the k most AD-vs-CN-discriminative columns, but INSIDE each
+  #           training fold only (k itself tuned by the inner CV), so the test fold never
+  #           influences which electrodes are used.
+  primary_model: M2_posterior_electrodes
+  models:
+    M1_roi_single:                 # reference: one number per person (ROI mean), as before
+      features: ["roi:{primary}"]
+    M2_posterior_electrodes:       # PRIMARY: 5 posterior electrodes as separate predictors
+      features: ["ch:P3:{primary}", "ch:Pz:{primary}", "ch:P4:{primary}", "ch:O1:{primary}", "ch:O2:{primary}"]
+    M3_best_k_electrodes:          # 3 or 4 electrodes chosen from all 19 inside each training fold
+      features: ["allch:{primary}"]
+      select_k: [3, 4]
+    M4_regions:                    # 5 scalp regions
+      features: ["region:frontal:{primary}", "region:central:{primary}", "region:temporal:{primary}",
+                 "region:parietal:{primary}", "region:occipital:{primary}"]
+    M5_multi_metric:               # instability + the spectral measures it must beat + EMG
+      features: ["roi:{primary}", "roi:gamma_above_floor", "roi:aperiodic_exponent",
+                 "roi:alpha_peak_freq", "roi:theta_alpha_ratio", "emg:emg_logpow"]
+    M2b_posterior_auto_classifier: # M2 inputs; inner CV picks among the interpretable families
+      features: ["ch:P3:{primary}", "ch:Pz:{primary}", "ch:P4:{primary}", "ch:O1:{primary}", "ch:O2:{primary}"]
+      classifier: auto
+      n_perm: 100                  # secondary; EBM in the candidate set makes each permutation ~20x slower (compute, label-free)
+    M6_electrodes_plus_spectral:   # M2 + spectral measures, elastic net to handle correlated inputs
+      features: ["ch:P3:{primary}", "ch:Pz:{primary}", "ch:P4:{primary}", "ch:O1:{primary}", "ch:O2:{primary}",
+                 "roi:gamma_above_floor", "roi:aperiodic_exponent", "roi:alpha_peak_freq", "roi:theta_alpha_ratio"]
+      penalty: elasticnet
+  # Incremental-value test (P2): does the instability set add to age, sex + conventional spectra?
+  base_features: ["cov:age", "cov:sex_m", "roi:theta_alpha_ratio", "roi:alpha_peak_freq",
+                  "roi:aperiodic_exponent", "roi:gamma_above_floor", "roi:relpow_gamma"]
+
+# Method ablations (see docs/METHODS_REVIEW.md). Stage-A options are extracted one at a time against
+# the primary pipeline and chosen LABEL-FREE by scripts/11_select_methods.py; the factorial grid
+# feeds the specification curve (scripts/12_specification_curve.py), which is reported, never used to pick.
+ablations:
+  stage_a:
+    reference: {average: ["preprocessing.reference=average"], csd: [], rest: ["preprocessing.reference=rest"]}   # [] = the FINAL base setting
+    muscle: {none: ["preprocessing.muscle.method=none"], bss_cca: []}
+    epochs: {mad: ["preprocessing.epochs.method=mad"], autoreject: []}
+    aperiodic: {specparam: [], irasa: ["features.spectral.aperiodic_method=irasa"]}
+    estimator: {hilbert: [], sst: ["features.if_estimator=sst"], vmd: ["features.if_estimator=vmd"]}
+    median: {multi: ["features.if_median.mode=multi"], single: []}
+    surr_chunk: {s30: [], s15: ["features.surrogates.chunk_s=15"], s60: ["features.surrogates.chunk_s=60"]}
+  selection_rule:
+    min_split_half_icc: 0.6          # reliability floor
+    criterion: min_abs_emg_coupling  # |Spearman(ROI primary metric, EMG-sentinel power)| -> smaller is better
+    simulation_first: [estimator, median, surr_chunk]   # these are decided by the simulation score (02 --tag), then ICC-checked
+    judged_on: {aperiodic: aperiodic_exponent, surr_chunk: burst_freq_sd_z}   # default: statistics.primary_feature
+  # Surrogates per ablation run. The selection rules (split-half ICC, EMG coupling) use the RAW metric,
+  # which does not depend on surrogates, so most dimensions run with few (7x faster). Dimensions judged on a
+  # surrogate-normalised metric get a moderate number for EVERY option, including their own baseline.
+  n_surr_selection: 4
+  n_surr_surrogate_dims: 10
+  surrogate_dims: [surr_chunk]
+  # factorial grid for the specification curve (3x2x3x2 = 36 pipelines). aperiodic is left out: it
+  # cannot change the gamma instability metric, only the spectral covariates.
+  multiverse: [reference, muscle, estimator, median]

@@ -1,0 +1,204 @@
+# Dataset registry. `role` decides which label gate applies (see nh/labels.py).
+#   discovery   : development + exploratory/confirmatory-within-cohort analyses (ds004504)
+#   paired      : same people as discovery, different condition (not independent evidence)
+#   reliability : test-retest in healthy people (no diagnosis labels)
+#   normative   : healthy ageing reference (no diagnosis labels)
+#   lockbox     : independent external validation; opened ONCE, after freezing
+#
+# `roots` may list several folders (the Drive export split ds004504 across parts).
+# Roots may use ${NH_DRIVE} (default /content/drive/MyDrive, i.e. "My Drive" on Colab), ~ and
+# wildcards; folders that do not exist are skipped, so local and Drive paths can sit side by side.
+# Fields marked VERIFY must be checked against the dataset documentation before freezing.
+
+synthetic:                     # scripts/00_make_synthetic_dataset.py: end-to-end dry run, known ground truth
+  role: synthetic
+  roots: ["${NH_SYNTH}", results/synthetic_dataset]
+  file_glob: "**/sub-*_eeg.fif"
+  exclude_dirs: []
+  subject_regex: "(sub-\\d{3})"
+  participants_glob: "participants.tsv"
+  column_map: {participant_id: subject, Group: group, Age: age, Gender: sex, MMSE: mmse}
+  group_map: {A: AD, C: CN, F: FTD}
+  line_freq: 50.0
+  notes: "Generated EEG with a known mechanism injected in AD (and optionally FTD). Not data."
+
+ds004504:
+  role: discovery
+  roots:
+    - "${NH_DRIVE}/data"
+    - "${NH_DRIVE}/ds004504-download*"
+    - /media/wordson22/Expansion/projects2/neurohertz2/data
+    - /media/wordson22/Expansion/projects2/neurohertz2/ds004504-download-20261108T220101Z-1-002
+  file_glob: "**/sub-*_task-eyesclosed_eeg.set"
+  exclude_dirs: [derivatives, "ds006036*", "on006036*"]   # ds006036 = SAME people (photic session): never mix it in
+  subject_regex: "(sub-\\d{3})"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject, Group: group, Age: age, Gender: sex, MMSE: mmse}
+  group_map: {A: AD, C: CN, F: FTD}
+  line_freq: 50.0
+  notes: "Raw, Cz reference, Nihon Kohden, 500 Hz, amplifier HF filter 70 Hz (dataset README)."
+
+ds004504_derivatives:
+  role: discovery
+  roots: []                    # download the derivatives/ folder of ds004504 and add its path
+  file_glob: "**/derivatives/**/sub-*_task-eyesclosed_eeg.set"
+  exclude_dirs: []
+  subject_regex: "(sub-\\d{3})"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject, Group: group, Age: age, Gender: sex, MMSE: mmse}
+  group_map: {A: AD, C: CN, F: FTD}
+  line_freq: 50.0
+  skip_ica: true               # already ASR + ICA cleaned by the dataset authors; 0.5-45 Hz
+  notes: "Sensitivity analysis only: independent cleaning pipeline, gamma limited to 30-45 Hz."
+
+ds006036:
+  role: paired
+  roots: ["${NH_DRIVE}/ds006036*", "${NH_DRIVE}/on006036*", "/media/wordson22/Expansion/projects2/neurohertz2/data/ds006036*",
+          "/media/wordson22/Expansion/projects2/neurohertz2/data/on006036*"]
+  file_glob: "**/sub-*_eeg.set"
+  exclude_dirs: [derivatives, "ds004504*"]
+  subject_regex: "(sub-\\d{3})"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject, Group: group, Age: age, Gender: sex, MMSE: mmse}
+  group_map: {A: AD, C: CN, F: FTD}
+  line_freq: 50.0
+  condition_mask:              # VERIFIED 2026-11-14 on all 88 events.tsv (zero-duration markers only)
+    flicker_marker: "Photo/HV mark"      # one pulse per flash; 4 blocks of ~10 s (5/10/15/20 Hz)
+    flicker_gap_s: 1.0
+    flicker_pad_s: [0.5, 1.0]
+    state_events: {open: "open eyes", closed: "closed eyes"}
+    keep_state: closed                   # eyes-open flicker-free time: median 4 s, max 49 s -> unusable
+    unknown_state: drop
+    transition_pad_s: 1.0
+    stop_markers: ["RESET condition", "CAL mode"]   # amplifier calibration at the end: nothing after it is EEG
+  notes: >-
+    Same 88 people as ds004504, recorded right after it: photic stimulation (5/10/15/20 Hz, ~10 s each)
+    with brief eye openings. The events show eyes CLOSED for most of the session; flicker-free eyes-open
+    time is median 4 s (max 49 s), so the planned eyes-open test (M17) is infeasible and was dropped
+    before freezing. Kept: flicker-free, eyes-closed time (median 266 s; 63 people >= 120 s), used as a
+    second eyes-closed session for label-free test-retest reliability (07_reliability.py --retest).
+    Paired, NOT independent: never used as a replication cohort.
+
+# ADFSU (Florida State Univ., OSF 2v5md) is NOT usable: 128 Hz, stored 0.5-30 Hz (no gamma band).
+# ADSZ (128 Hz, 1-30 Hz) and APAVA (released 0.5-40 Hz) are excluded for the same reason.
+
+ds007427:
+  role: lockbox
+  roots: []                    # OpenNeuro ds007427 (Universidad de Antioquia, CC0)
+  file_glob: "VERIFY"
+  exclude_dirs: [derivatives]
+  subject_regex: "(sub-[A-Z]+\\d+)"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject, MM_total: mmse}
+  group_map: {}                # group is encoded in the ID prefix: CTR / DCL (MCI) / DTA (AD) / G (PSEN1 study) - VERIFY
+  line_freq: 60.0
+  notes: "CN 36, MCI 24, AD 8 + 70 PSEN1-E280A carriers/non-carriers. VERIFY sampling rate and filters in sidecars."
+
+ds005048:
+  role: lockbox
+  roots: []                    # OpenNeuro ds005048 (Tehran, 40 Hz auditory entrainment)
+  file_glob: "VERIFY"
+  exclude_dirs: []
+  subject_regex: "(sub-\\d+)"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject, Group: group, Age: age, Gender: sex, MMSE: mmse}
+  group_map: {Normal: CN, "Mild AD": AD, MCI: MCI}
+  line_freq: 50.0
+  notes: "250 Hz, eyes open; use only the 20-s silent gaps between 40 Hz trials as rest. Released data already ASR/ICA cleaned."
+
+isfahan_mci:
+  role: lockbox
+  roots: []                    # misp.mui.ac.ir/en/eeg-data
+  file_glob: "**/*.edf"
+  exclude_dirs: []
+  subject_regex: "VERIFY"
+  participants_glob: "VERIFY"
+  column_map: {}
+  group_map: {}
+  line_freq: 50.0
+  notes: "MCI 11, normal 16; 19 ch, 256 Hz, ~30 min eyes closed. VERIFY hardware low-pass."
+
+pearl_neuro:
+  role: normative
+  roots: []                    # OpenNeuro ds004796
+  file_glob: "**/sub-*_task-rest_eeg.vhdr"
+  exclude_dirs: [derivatives]
+  subject_regex: "(sub-\\d+)"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject}
+  group_map: {}
+  line_freq: 50.0
+  exclude_annotation_regex: null   # TODO: keep only the eyes-closed block (markers S4..S11)
+  notes: "79 healthy 50-63 y with APOE/PICALM genotype; 1000 Hz, HW LP 280 Hz. Preclinical genetic-risk analysis."
+
+dortmund_vital:
+  role: normative
+  roots: []                    # OpenNeuro ds005385
+  file_glob: "VERIFY"
+  exclude_dirs: [derivatives]
+  subject_regex: "(sub-\\d+)"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject}
+  group_map: {}
+  line_freq: 50.0
+  notes: "608 adults 20-70 y, 1000 Hz, LP 250 Hz; 3 min EO/EC pre/post tasks; 208 with 5-year follow-up."
+
+brainlat:
+  role: lockbox
+  roots: []                    # Synapse syn51549340 (data use agreement)
+  file_glob: "VERIFY"
+  exclude_dirs: []
+  subject_regex: "VERIFY"
+  participants_glob: "VERIFY"
+  column_map: {}
+  group_map: {}
+  line_freq: VERIFY            # differs by recording site
+  notes: "Need RAW Biosemi recordings (processed release is 0.5-40 Hz). 128 ch -> map to 10-20."
+
+caueeg:
+  role: lockbox
+  roots: []                    # request form at github.com/ipis-mjkim/caueeg-dataset (ethics approval needed)
+  file_glob: "VERIFY"
+  exclude_dirs: []
+  subject_regex: "VERIFY"
+  participants_glob: "VERIFY"
+  column_map: {}
+  group_map: {}
+  line_freq: 60.0              # Korea; VERIFY
+  notes: "Normal 459 / MCI 417 / dementia 311 recordings; 19 ch, 200 Hz, analog 0.5-70 Hz, EDF, ~13 min. MMSE: ask."
+
+hospital:
+  role: lockbox
+  roots: []
+  file_glob: "VERIFY"
+  exclude_dirs: []
+  subject_regex: "VERIFY"
+  participants_glob: "VERIFY"
+  column_map: {}
+  group_map: {}
+  line_freq: 50.0
+  notes: "Unpublished local cohort. Must be de-identified, ethics must cover analysis + publication."
+
+ds004148:
+  role: reliability
+  roots: []
+  file_glob: "VERIFY"
+  exclude_dirs: [derivatives]
+  subject_regex: "(sub-\\d+)"
+  participants_glob: "**/participants.tsv"
+  column_map: {participant_id: subject}
+  group_map: {}
+  line_freq: VERIFY
+  notes: "VERIFY design (sessions, eyes-closed run naming) before use; healthy only."
+
+lemon:
+  role: normative
+  roots: []
+  file_glob: "VERIFY"
+  exclude_dirs: []
+  subject_regex: "VERIFY"
+  participants_glob: "VERIFY"
+  column_map: {}
+  group_map: {}
+  line_freq: 50.0
+  notes: "Healthy young vs older adults; tests whether the AD effect is just ageing."

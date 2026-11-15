@@ -1,0 +1,96 @@
+/media/wordson22/Expansion/projects2/neurohertz2/final_run/neurohertz_v2/nh/stats.py:200: RuntimeWarning: invalid value encountered in scalar divide
+  return float((msr - mse) / (msr + (k - 1) * mse + k * (msc - mse) / n))
+Between-session ICC (ds004504 vs ds006036, 54 shared subjects); primary burst_freq_sd: -0.05 (n=54)
+            feature  n  icc_2_1_between_sessions
+       relpow_theta 54                  0.496776
+          slow_frac 54                  0.430289
+            slow_sd 54                  0.409105
+slow_frac_surr_mean 54                  0.377017
+         osc_fit_r2 54                  0.279646
+         slow_tau_s 54                  0.263976
+  theta_alpha_ratio 54                  0.250054
+   slow_frac_excess 54                  0.228442
+          burst_dur 54                  0.219301
+         xjit_var_z 54                  0.218435
+     vigilance_mean 54                  0.217096
+        slow_frac_z 54                  0.198803
+    xjit_var_excess 54                  0.194135
+ aperiodic_exponent 54                  0.194102
+          slow_sd_z 54                  0.187339
+   aperiodic_offset 54                  0.187270
+         cycle_cv_z 54                  0.163227
+     slow_sd_excess 54                  0.151001
+    cycle_cv_excess 54                  0.144160
+           xjit_var 54                  0.130146
+          fast_sd_z 54                  0.128953
+              gii_z 54                  0.119505
+            if_sd_z 54                  0.119505
+      burst_if_sd_z 54                  0.116067
+     fast_sd_excess 54                  0.110157
+Split-half reliability:
+                      metric  n  icc_2_1_half  spearman_brown_full
+                   env_mean 88      0.975521             0.987609
+         aperiodic_exponent 88      0.975408             0.987551
+                  if_median 88      0.921205             0.958987
+  if_env_coupling_surr_mean 88      0.910224             0.953002
+        slip_rate_surr_mean 88      0.832164             0.908395
+                 legacy_std 88      0.819713             0.900925
+                  tail_frac 88      0.818135             0.899972
+    burst_freq_sd_surr_mean 88      0.791918             0.883878
+            if_env_coupling 88      0.790893             0.883239
+          slip_rate_highamp 88      0.767714             0.868595
+            if_sd_surr_mean 88      0.761738             0.864758
+                  slip_rate 88      0.755402             0.860660
+                 burst_rate 88      0.748005             0.855839
+                   cycle_cv 88      0.721917             0.838504
+          fast_sd_surr_mean 88      0.713976             0.833123
+         cycle_cv_surr_mean 88      0.710372             0.830663
+                    fast_sd 88      0.707118             0.828435
+ jitter_amp_slope_surr_mean 88      0.706632             0.828101
+slip_rate_highamp_surr_mean 88      0.700754             0.824051
+                    if_awsd 88      0.685372             0.813319
+                      if_sd 88      0.662958             0.797324
+                  slow_frac 88      0.653053             0.790118
+         xjit_var_surr_mean 88      0.647032             0.785694
+          slow_sd_surr_mean 88      0.640835             0.781108
+     surr_spectral_mismatch 88      0.604894             0.753811
+           jitter_amp_slope 88      0.601985             0.751549
+                    slow_sd 88      0.594951             0.746043
+                     env_cv 88      0.572065             0.727788
+                  slow_sd_z 88      0.557467             0.715864
+             slow_sd_excess 88      0.554376             0.713310
+                     if_iqr 88      0.537241             0.698967
+                     if_mad 88      0.536300             0.698171
+              burst_freq_sd 88      0.530815             0.693507
+                   xjit_var 88      0.511908             0.677168
+      burst_if_sd_surr_mean 88      0.495929             0.663038
+        tail_frac_surr_mean 88      0.490797             0.658435
+        slow_frac_surr_mean 88      0.463461             0.633376
+                slow_frac_z 88      0.445548             0.616441
+           slow_frac_excess 88      0.434475             0.605762
+                burst_if_sd 88      0.419105             0.590661
+     if_env_coupling_excess 88      0.390422             0.561588
+                  burst_dur 88      0.376071             0.546586
+          if_env_coupling_z 88      0.357191             0.526368
+                 cycle_cv_z 88      0.352973             0.521774
+         jitter_amp_slope_z 88      0.333498             0.500186
+                      gii_z 88      0.323638             0.489013
+                    if_sd_z 88      0.323638             0.489013
+               if_sd_excess 88      0.308441             0.471463
+                 slow_tau_s 88      0.303739             0.465951
+    jitter_amp_slope_excess 88      0.295808             0.456561
+            cycle_cv_excess 88      0.276853             0.433649
+                 xjit_var_z 88      0.193747             0.324602
+            xjit_var_excess 88      0.184731             0.311854
+                  fast_sd_z 88      0.177019             0.300793
+                tail_frac_z 88      0.116274             0.208325
+             fast_sd_excess 88      0.115046             0.206353
+           slip_rate_excess 88      0.094825             0.173225
+                slip_rate_z 88      0.073084             0.136213
+              burst_if_sd_z 88      0.052864             0.100420
+            burst_freq_sd_z 88      0.037494             0.072279
+       burst_freq_sd_excess 88     -0.000109            -0.000219
+   slip_rate_highamp_excess 88     -0.009780            -0.019753
+         burst_if_sd_excess 88     -0.011657            -0.023588
+        slip_rate_highamp_z 88     -0.026115            -0.053631
+           tail_frac_excess 88     -0.058293            -0.123803

@@ -1,0 +1,18 @@
+{
+  "dataset": "ds004504",
+  "variant": "muscle-bss_cca",
+  "reference": null,
+  "no_ica": false,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 83,
+    "excluded": 5
+  },
+  "overrides": [
+    "preprocessing.muscle.method=bss_cca"
+  ],
+  "extraction_sha256": "1f209de05270e62b6682163d39acc72253018b5c5f10cc6e3007b182f23dad3f",
+  "config_sha256": "616bcf08e09674d7e55cccb5e013d071659cdee4d55bb7871690ed1659bca2ba",
+  "code_sha256": "bf2f6e2e814c343af032c4aab0686e3ea440960fa42880bc1c14fc81acc938e6",
+  "analysis_sha256": "37522a4ea519919948f650666c3ee5da1b35d15a689b843c851ba1c1646443bf"
+}

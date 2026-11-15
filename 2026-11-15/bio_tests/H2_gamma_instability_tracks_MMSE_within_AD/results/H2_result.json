@@ -1,0 +1,34 @@
+{
+ "evidence_status": "CONFIRMATORY",
+ "config_sha256": "218638ff866a3132ce988a89f92f6937e2be034c10fd167e3074cf04c8d0aca0",
+ "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+ "analysis_sha256": "023c61273fad586ebe6aecb8c52b5d61a834e124e45bd7f7f7202246ccb8bf88",
+ "dataset": "ds004504",
+ "primary_column": "roi__burst_freq_sd",
+ "n_by_group": {
+  "AD": 36,
+  "CN": 29,
+  "FTD": 23
+ },
+ "H2": {
+  "x": "roi__burst_freq_sd",
+  "y": "mmse",
+  "n": 36,
+  "rho_partial": 0.01446326403252721,
+  "ci95": [
+   -0.4277716901451464,
+   0.43109737321402397
+  ],
+  "ci90": [
+   -0.3659977290450611,
+   0.36752464451809297
+  ],
+  "p_perm": 0.9305069493050695,
+  "covariates": [
+   "age",
+   "sex",
+   "roi__aperiodic_exponent"
+  ],
+  "tested_confirmatory": false
+ }
+}

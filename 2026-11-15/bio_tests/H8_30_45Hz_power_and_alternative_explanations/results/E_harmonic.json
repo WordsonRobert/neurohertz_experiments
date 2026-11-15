@@ -1,0 +1,8 @@
+{
+ "harmonic": {
+  "n_with_peak": 49,
+  "rho_f0_alpha": -0.13750732749622466,
+  "median_ratio": 3.0044412128928264,
+  "frac_within_0p15_of_integer": 0.32653061224489793
+ }
+}

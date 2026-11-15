@@ -1,0 +1,25 @@
+# NeuroHertz v2. Tested with Python 3.10-3.13 (Colab ships 3.11/3.12).
+mne>=1.6
+mne-icalabel>=0.6
+onnxruntime
+specparam                  # spectral parameterisation
+fooof                      # fallback used by nh/spectral.py if specparam lacks SpectralModel
+yasa                       # IRASA ablation
+ssqueezepy                 # synchrosqueezing estimator ablation
+vmdpy                      # VMD estimator ablation
+autoreject                 # epoch-rejection ablation
+numpy
+scipy
+pandas
+statsmodels
+scikit-learn
+pyyaml
+joblib
+matplotlib
+tabulate
+bottleneck>=1.5          # silences pandas' version warning on Colab
+pytest
+# optional, ceiling checks only (09_ceiling_check.py)
+pyriemann
+interpret                  # EBM classifier candidate
+# tabpfn                   # optional black-box ceiling; large download, uncomment if wanted

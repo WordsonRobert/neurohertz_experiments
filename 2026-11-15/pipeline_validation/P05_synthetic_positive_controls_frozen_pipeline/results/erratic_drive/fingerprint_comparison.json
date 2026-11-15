@@ -1,0 +1,155 @@
+{
+  "fingerprint_status": "EXPLORATORY",
+  "rate": {
+    "n_features": 13,
+    "cosine": {
+      "acetylcholine": 0.43231485062294045,
+      "erratic_drive": 0.49225529933787326,
+      "nav11_pv_output": 0.0422337774301617,
+      "sst_loss": -0.16230043967490107,
+      "synapses_onto_pv": -0.14406125806687067,
+      "tau_silencing": 0.039971459276978025
+    },
+    "weight": {
+      "acetylcholine": 0.9918494463297033,
+      "erratic_drive": 0.8537501303050978,
+      "nav11_pv_output": 0.5896358980112145,
+      "sst_loss": 0.0,
+      "synapses_onto_pv": 0.0,
+      "tau_silencing": 0.0
+    },
+    "share": {
+      "acetylcholine": 0.407290981367573,
+      "erratic_drive": 0.3505821671841399,
+      "nav11_pv_output": 0.242126851448287,
+      "sst_loss": 0.0,
+      "synapses_onto_pv": 0.0,
+      "tau_silencing": 0.0
+    },
+    "local_share": 0.242126851448287,
+    "input_share": 0.757873148551713,
+    "best_single": "erratic_drive",
+    "r2_mix": 0.44199501416564624,
+    "features": [
+      "osc_f0",
+      "osc_width_hz",
+      "osc_contrast_db",
+      "fast_sd_z",
+      "slow_sd_z",
+      "slow_frac",
+      "slow_tau_s",
+      "if_env_coupling",
+      "slip_rate_z",
+      "slip_rate_highamp_z",
+      "tail_frac_z",
+      "jitter_amp_slope",
+      "burst_freq_sd"
+    ],
+    "effect_vector": {
+      "osc_f0": 0.4297709539885446,
+      "osc_width_hz": 0.24105236369850397,
+      "osc_contrast_db": -0.0013866058490456803,
+      "fast_sd_z": 0.9778943239728227,
+      "slow_sd_z": 1.154068701546739,
+      "slow_frac": 0.44931872839419207,
+      "slow_tau_s": 0.440643390010881,
+      "if_env_coupling": 0.15002444909837373,
+      "slip_rate_z": 0.6518886991850535,
+      "slip_rate_highamp_z": 0.1892716977860282,
+      "tail_frac_z": 0.5592190096284243,
+      "jitter_amp_slope": 0.3383552719573834,
+      "burst_freq_sd": 0.26869835372224254
+    },
+    "local_share_ci95": [
+      0.0,
+      0.38825971912919255
+    ],
+    "best_single_bootstrap_freq": {
+      "erratic_drive": 0.6135,
+      "acetylcholine": 0.367,
+      "tau_silencing": 0.0115,
+      "nav11_pv_output": 0.008
+    },
+    "max_cosine_perm_p": 0.42857142857142855,
+    "identifiability_within": 0.9408333333333333,
+    "identifiability_cross": 0.305
+  },
+  "cycle": {
+    "n_features": 13,
+    "cosine": {
+      "acetylcholine": 0.2999966186410463,
+      "erratic_drive": 0.4696512796580578,
+      "nav11_pv_output": -0.1095199689395021,
+      "sst_loss": 0.533518368286119,
+      "synapses_onto_pv": -0.138967709385924,
+      "tau_silencing": -0.25875049518715837
+    },
+    "weight": {
+      "acetylcholine": 0.0,
+      "erratic_drive": 0.4539431624051984,
+      "nav11_pv_output": 0.0,
+      "sst_loss": 0.7779247706905694,
+      "synapses_onto_pv": 0.0,
+      "tau_silencing": 0.0
+    },
+    "share": {
+      "acetylcholine": 0.0,
+      "erratic_drive": 0.3684998612346442,
+      "nav11_pv_output": 0.0,
+      "sst_loss": 0.6315001387653558,
+      "synapses_onto_pv": 0.0,
+      "tau_silencing": 0.0
+    },
+    "local_share": 0.6315001387653558,
+    "input_share": 0.3684998612346442,
+    "best_single": "sst_loss",
+    "r2_mix": 0.31772218845412925,
+    "features": [
+      "osc_f0",
+      "osc_width_hz",
+      "osc_contrast_db",
+      "fast_sd_z",
+      "slow_sd_z",
+      "slow_frac",
+      "slow_tau_s",
+      "if_env_coupling",
+      "slip_rate_z",
+      "slip_rate_highamp_z",
+      "tail_frac_z",
+      "jitter_amp_slope",
+      "burst_freq_sd"
+    ],
+    "effect_vector": {
+      "osc_f0": 0.4297709539885446,
+      "osc_width_hz": 0.24105236369850397,
+      "osc_contrast_db": -0.0013866058490456803,
+      "fast_sd_z": 0.9778943239728227,
+      "slow_sd_z": 1.154068701546739,
+      "slow_frac": 0.44931872839419207,
+      "slow_tau_s": 0.440643390010881,
+      "if_env_coupling": 0.15002444909837373,
+      "slip_rate_z": 0.6518886991850535,
+      "slip_rate_highamp_z": 0.1892716977860282,
+      "tail_frac_z": 0.5592190096284243,
+      "jitter_amp_slope": 0.3383552719573834,
+      "burst_freq_sd": 0.26869835372224254
+    },
+    "local_share_ci95": [
+      0.0,
+      1.0
+    ],
+    "best_single_bootstrap_freq": {
+      "sst_loss": 0.688,
+      "erratic_drive": 0.2455,
+      "acetylcholine": 0.0665
+    },
+    "max_cosine_perm_p": 0.21978021978021978,
+    "identifiability_within": 0.6508333333333334,
+    "identifiability_cross": 0.46648793565683644
+  },
+  "first_split_claim": "no_claim",
+  "first_split_per_family": {
+    "rate": "input_driven",
+    "cycle": "undetermined"
+  }
+}

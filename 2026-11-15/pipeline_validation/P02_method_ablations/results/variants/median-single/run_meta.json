@@ -1,0 +1,18 @@
+{
+  "dataset": "ds004504",
+  "variant": "median-single",
+  "reference": null,
+  "no_ica": false,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 83,
+    "excluded": 5
+  },
+  "overrides": [
+    "features.if_median.mode=single"
+  ],
+  "extraction_sha256": "1008f35df4ac7c0f8e9741fc84be851b8b6f489f9930961bae98cffaa39d4f45",
+  "config_sha256": "616bcf08e09674d7e55cccb5e013d071659cdee4d55bb7871690ed1659bca2ba",
+  "code_sha256": "7b7472b673f04b55e929a7ec3294d455da8a3b85bf7243fc19c600be2d218b59",
+  "analysis_sha256": "fb92572450e2a46f3988cd3cfd9be9c4eadf99ccd5eba9977930084afb161e11"
+}

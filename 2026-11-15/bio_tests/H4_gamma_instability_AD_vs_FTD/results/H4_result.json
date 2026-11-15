@@ -1,0 +1,72 @@
+{
+ "evidence_status": "CONFIRMATORY",
+ "config_sha256": "218638ff866a3132ce988a89f92f6937e2be034c10fd167e3074cf04c8d0aca0",
+ "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+ "analysis_sha256": "023c61273fad586ebe6aecb8c52b5d61a834e124e45bd7f7f7202246ccb8bf88",
+ "dataset": "ds004504",
+ "primary_column": "roi__burst_freq_sd",
+ "n_by_group": {
+  "AD": 36,
+  "CN": 29,
+  "FTD": 23
+ },
+ "H4": {
+  "AD_vs_FTD": {
+   "feature": "roi__burst_freq_sd",
+   "contrast": "AD-FTD",
+   "n_target": 36,
+   "n_ref": 23,
+   "mean_target": 2.221977777398155,
+   "mean_ref": 2.1248403777702767,
+   "beta_adj": 0.07469234910466724,
+   "beta_ci95": [
+    -0.13703819071948306,
+    0.2864228889288175
+   ],
+   "t_HC3": 0.6914180367528747,
+   "p_param": 0.4893028724780989,
+   "p_perm_freedman_lane": 0.4747525247475253,
+   "hedges_g_unadj": 0.258283500655765,
+   "hedges_g_ci95": [
+    -0.261424352247914,
+    0.8129792793276853
+   ],
+   "hedges_g_ci_method": "BCa",
+   "covariates": [
+    "age",
+    "sex",
+    "roi__aperiodic_exponent"
+   ],
+   "p_holm": 0.9495050494950505
+  },
+  "FTD_vs_CN": {
+   "feature": "roi__burst_freq_sd",
+   "contrast": "FTD-CN",
+   "n_target": 23,
+   "n_ref": 29,
+   "mean_target": 2.1248403777702767,
+   "mean_ref": 2.110662790106031,
+   "beta_adj": -0.05104022383505974,
+   "beta_ci95": [
+    -0.32208379297350626,
+    0.22000334530338678
+   ],
+   "t_HC3": -0.36908088539994827,
+   "p_param": 0.7120674359604926,
+   "p_perm_freedman_lane": 0.7045295470452955,
+   "hedges_g_unadj": 0.0346409086387864,
+   "hedges_g_ci95": [
+    -0.507651100341386,
+    0.5743153768868611
+   ],
+   "hedges_g_ci_method": "BCa",
+   "covariates": [
+    "age",
+    "sex",
+    "roi__aperiodic_exponent"
+   ],
+   "p_holm": 0.9495050494950505
+  },
+  "tested_confirmatory": false
+ }
+}

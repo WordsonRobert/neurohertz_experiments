@@ -1,0 +1,97 @@
+id,test,theory,name,verbal_prediction,verbal_outcome,model_prediction,model_outcome
+M01,instability in AD,T1,synapses_onto_pv,+,inconclusive,0,inconclusive
+M01,instability in AD,T2,nav11_pv_output,+,inconclusive,0,inconclusive
+M01,instability in AD,T3,erratic_drive,+,inconclusive,?,no_prediction
+M01,instability in AD,T4,acetylcholine,+,inconclusive,0,inconclusive
+M01,instability in AD,T5,sst_loss,+,inconclusive,0,inconclusive
+M01,instability in AD,T6,tau_silencing,+,inconclusive,?,no_prediction
+M02,FTD at frontal electrodes,T1,synapses_onto_pv,+,inconclusive,?,no_prediction
+M02,FTD at frontal electrodes,T2,nav11_pv_output,0,inconclusive,?,no_prediction
+M02,FTD at frontal electrodes,T3,erratic_drive,0,inconclusive,?,no_prediction
+M02,FTD at frontal electrodes,T4,acetylcholine,0,inconclusive,?,no_prediction
+M02,FTD at frontal electrodes,T5,sst_loss,?,no_prediction,?,no_prediction
+M02,FTD at frontal electrodes,T6,tau_silencing,?,no_prediction,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T1,synapses_onto_pv,+,inconsistent,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T2,nav11_pv_output,-,consistent,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T3,erratic_drive,-,consistent,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T4,acetylcholine,-,consistent,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T5,sst_loss,?,no_prediction,?,no_prediction
+M03,FTD vs AD frontally at matched MMSE,T6,tau_silencing,?,no_prediction,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T1,synapses_onto_pv,+,inconclusive,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T2,nav11_pv_output,?,no_prediction,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T3,erratic_drive,?,no_prediction,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T4,acetylcholine,0,inconclusive,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T5,sst_loss,+,inconclusive,?,no_prediction
+M04,AD effect temporoparietal minus frontal,T6,tau_silencing,+,inconclusive,?,no_prediction
+M05,peak width (damping),T1,synapses_onto_pv,+,inconclusive,0,inconclusive
+M05,peak width (damping),T2,nav11_pv_output,+,inconclusive,?,no_prediction
+M05,peak width (damping),T3,erratic_drive,0,inconclusive,?,no_prediction
+M05,peak width (damping),T4,acetylcholine,0,inconclusive,0,inconclusive
+M05,peak width (damping),T5,sst_loss,+,inconclusive,?,no_prediction
+M05,peak width (damping),T6,tau_silencing,?,no_prediction,?,no_prediction
+M06,peak frequency,T1,synapses_onto_pv,-,inconsistent,-,inconsistent
+M06,peak frequency,T2,nav11_pv_output,0,consistent,-,inconsistent
+M06,peak frequency,T3,erratic_drive,?,no_prediction,?,no_prediction
+M06,peak frequency,T4,acetylcholine,-,inconsistent,?,no_prediction
+M06,peak frequency,T5,sst_loss,?,no_prediction,?,no_prediction
+M06,peak frequency,T6,tau_silencing,-,inconsistent,?,no_prediction
+M07,cycle-scale jitter beyond noise,T1,synapses_onto_pv,+,inconsistent,0,consistent
+M07,cycle-scale jitter beyond noise,T2,nav11_pv_output,+,inconsistent,0,consistent
+M07,cycle-scale jitter beyond noise,T3,erratic_drive,0,consistent,?,no_prediction
+M07,cycle-scale jitter beyond noise,T4,acetylcholine,0,consistent,0,consistent
+M07,cycle-scale jitter beyond noise,T5,sst_loss,+,inconsistent,0,consistent
+M07,cycle-scale jitter beyond noise,T6,tau_silencing,0,consistent,0,consistent
+M08,1-10 s wander beyond noise,T1,synapses_onto_pv,0,inconclusive,0,inconclusive
+M08,1-10 s wander beyond noise,T2,nav11_pv_output,0,inconclusive,?,no_prediction
+M08,1-10 s wander beyond noise,T3,erratic_drive,+,inconclusive,+,inconclusive
+M08,1-10 s wander beyond noise,T4,acetylcholine,+,inconclusive,0,inconclusive
+M08,1-10 s wander beyond noise,T5,sst_loss,0,inconclusive,0,inconclusive
+M08,1-10 s wander beyond noise,T6,tau_silencing,?,no_prediction,0,inconclusive
+M09,share of slow wander,T1,synapses_onto_pv,-,inconclusive,0,inconclusive
+M09,share of slow wander,T2,nav11_pv_output,-,inconclusive,?,no_prediction
+M09,share of slow wander,T3,erratic_drive,+,inconclusive,?,no_prediction
+M09,share of slow wander,T4,acetylcholine,+,inconclusive,?,no_prediction
+M09,share of slow wander,T5,sst_loss,-,inconclusive,?,no_prediction
+M09,share of slow wander,T6,tau_silencing,?,no_prediction,0,inconclusive
+M10,phase slips beyond noise,T1,synapses_onto_pv,0,inconclusive,0,inconclusive
+M10,phase slips beyond noise,T2,nav11_pv_output,+,inconclusive,?,no_prediction
+M10,phase slips beyond noise,T3,erratic_drive,?,no_prediction,0,inconclusive
+M10,phase slips beyond noise,T4,acetylcholine,?,no_prediction,0,inconclusive
+M10,phase slips beyond noise,T5,sst_loss,?,no_prediction,0,inconclusive
+M10,phase slips beyond noise,T6,tau_silencing,0,inconclusive,0,inconclusive
+M11,slips under load beyond noise,T1,synapses_onto_pv,0,consistent,0,consistent
+M11,slips under load beyond noise,T2,nav11_pv_output,+,inconsistent,?,no_prediction
+M11,slips under load beyond noise,T3,erratic_drive,?,no_prediction,0,consistent
+M11,slips under load beyond noise,T4,acetylcholine,0,consistent,0,consistent
+M11,slips under load beyond noise,T5,sst_loss,0,consistent,0,consistent
+M11,slips under load beyond noise,T6,tau_silencing,0,consistent,0,consistent
+M12,heavy IF tails beyond noise,T1,synapses_onto_pv,0,inconclusive,0,inconclusive
+M12,heavy IF tails beyond noise,T2,nav11_pv_output,+,inconclusive,0,inconclusive
+M12,heavy IF tails beyond noise,T3,erratic_drive,?,no_prediction,0,inconclusive
+M12,heavy IF tails beyond noise,T4,acetylcholine,0,inconclusive,0,inconclusive
+M12,heavy IF tails beyond noise,T5,sst_loss,?,no_prediction,0,inconclusive
+M12,heavy IF tails beyond noise,T6,tau_silencing,0,inconclusive,0,inconclusive
+M13,frequency-envelope co-modulation,T1,synapses_onto_pv,0,consistent,?,no_prediction
+M13,frequency-envelope co-modulation,T2,nav11_pv_output,0,consistent,0,consistent
+M13,frequency-envelope co-modulation,T3,erratic_drive,+,inconsistent,?,no_prediction
+M13,frequency-envelope co-modulation,T4,acetylcholine,?,no_prediction,?,no_prediction
+M13,frequency-envelope co-modulation,T5,sst_loss,0,consistent,?,no_prediction
+M13,frequency-envelope co-modulation,T6,tau_silencing,0,consistent,?,no_prediction
+M14,instability vs MMSE within AD,T1,synapses_onto_pv,-,inconclusive,?,no_prediction
+M14,instability vs MMSE within AD,T2,nav11_pv_output,?,no_prediction,?,no_prediction
+M14,instability vs MMSE within AD,T3,erratic_drive,+,inconclusive,?,no_prediction
+M14,instability vs MMSE within AD,T4,acetylcholine,-,inconclusive,?,no_prediction
+M14,instability vs MMSE within AD,T5,sst_loss,-,inconclusive,?,no_prediction
+M14,instability vs MMSE within AD,T6,tau_silencing,-,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T1,synapses_onto_pv,0,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T2,nav11_pv_output,0,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T3,erratic_drive,0,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T4,acetylcholine,-,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T5,sst_loss,0,inconclusive,?,no_prediction
+M15,instability vs alpha peak within AD,T6,tau_silencing,?,no_prediction,?,no_prediction
+M16,AD effect explained by alpha slowing,T1,synapses_onto_pv,0,inconclusive,?,no_prediction
+M16,AD effect explained by alpha slowing,T2,nav11_pv_output,0,inconclusive,?,no_prediction
+M16,AD effect explained by alpha slowing,T3,erratic_drive,0,inconclusive,?,no_prediction
+M16,AD effect explained by alpha slowing,T4,acetylcholine,+,inconclusive,?,no_prediction
+M16,AD effect explained by alpha slowing,T5,sst_loss,0,inconclusive,?,no_prediction
+M16,AD effect explained by alpha slowing,T6,tau_silencing,?,no_prediction,?,no_prediction

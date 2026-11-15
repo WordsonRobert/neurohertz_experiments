@@ -1,0 +1,18 @@
+{
+  "dataset": "ds004504",
+  "variant": "reference-rest",
+  "reference": null,
+  "no_ica": false,
+  "n_found": 88,
+  "status_counts": {
+    "ok": 83,
+    "excluded": 5
+  },
+  "overrides": [
+    "preprocessing.reference=rest"
+  ],
+  "extraction_sha256": "de4eb6019454fffe80788ad56d225e34304d9404f697ab322a2422a81f8ff7d6",
+  "config_sha256": "616bcf08e09674d7e55cccb5e013d071659cdee4d55bb7871690ed1659bca2ba",
+  "code_sha256": "bf2f6e2e814c343af032c4aab0686e3ea440960fa42880bc1c14fc81acc938e6",
+  "analysis_sha256": "37522a4ea519919948f650666c3ee5da1b35d15a689b843c851ba1c1646443bf"
+}

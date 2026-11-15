@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-14T15:12:21+00:00",
+  "config_sha256": "218638ff866a3132ce988a89f92f6937e2be034c10fd167e3074cf04c8d0aca0",
+  "code_sha256": "5ab5a4a7e300fb3cd04cb9d027f1f96db51698d0e5a51a4424724d3fcd3ee4a7",
+  "analysis_sha256": "023c61273fad586ebe6aecb8c52b5d61a834e124e45bd7f7f7202246ccb8bf88",
+  "extraction_sha256": "e2eebed6ca9264fc542311d4fb4c3ae0e8f52ef474eb5b123f337e6fa0cabf6e",
+  "analysis_plan_sha256": "a483b11de8cf4ba4ca6668341b49620c24aae98a840237b7ea7d8342c0a70981",
+  "metric_selection_sha256": "fb11eb001fd093b20dbe7e0089f76708c938bd7b68e0c27fdf39ca5aa15492f5",
+  "primary_feature": "burst_freq_sd",
+  "simulation_selected": "burst_freq_sd_z",
+  "override_reason": "Primary = burst_freq_sd (raw) with the 1/f exponent as covariate, not the simulation-selected burst_freq_sd_z: the z version has split-half ICC -0.01 to 0.13 on real data in every pipeline (label-free, registry/method_selection.json); the raw metric's main simulated nuisance (1/f slope) is handled by the covariate.",
+  "mechanism_fingerprints_sha256": "4a7fea340d54c5612a59093255d46c8f392307349bfb1f9972167ba25a3be7e7",
+  "method_selection_sha256": "c208d6d17a66cb50ab9806b3e9dc7d3bfc3ce7b5e1bc798e5bea438dfe1938d1",
+  "discovery_dev_unblindings_before_freeze": 0
+}

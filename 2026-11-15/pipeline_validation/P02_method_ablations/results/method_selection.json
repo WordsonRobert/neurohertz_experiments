@@ -1,0 +1,288 @@
+{
+  "dataset": "ds004504",
+  "primary_metric": "burst_freq_sd",
+  "rule": {
+    "min_split_half_icc": 0.6,
+    "criterion": "min_abs_emg_coupling",
+    "simulation_first": [
+      "estimator",
+      "median",
+      "surr_chunk"
+    ],
+    "judged_on": {
+      "aperiodic": "aperiodic_exponent",
+      "surr_chunk": "burst_freq_sd_z"
+    }
+  },
+  "choice": {
+    "reference": {
+      "option": "rest",
+      "overrides": [
+        "preprocessing.reference=rest"
+      ],
+      "why": "least EMG coupling ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    },
+    "muscle": {
+      "option": "bss_cca",
+      "overrides": [
+        "preprocessing.muscle.method=bss_cca"
+      ],
+      "why": "least EMG coupling ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    },
+    "epochs": {
+      "option": "autoreject",
+      "overrides": [
+        "preprocessing.epochs.method=autoreject"
+      ],
+      "why": "least EMG coupling ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    },
+    "aperiodic": {
+      "option": "specparam",
+      "overrides": [],
+      "why": "least EMG coupling among reliable options",
+      "reliability_floor_met": true
+    },
+    "estimator": {
+      "option": "hilbert",
+      "overrides": [],
+      "why": "highest simulation jitter-specificity score ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    },
+    "median": {
+      "option": "single",
+      "overrides": [
+        "features.if_median.mode=single"
+      ],
+      "why": "highest simulation jitter-specificity score ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    },
+    "surr_chunk": {
+      "option": "s30",
+      "overrides": [],
+      "why": "highest simulation jitter-specificity score ranked among ALL options (no option reached split-half ICC >= 0.6)",
+      "reliability_floor_met": false
+    }
+  },
+  "candidates": [
+    {
+      "n": 83,
+      "split_half_icc": 0.13509568513549075,
+      "abs_emg_coupling": 0.22641786658830443,
+      "dimension": "reference",
+      "option": "average",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.5666251037962197,
+      "abs_emg_coupling": 0.3405608496704588,
+      "dimension": "reference",
+      "option": "csd",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.3404629595974929,
+      "abs_emg_coupling": 0.22150623399521427,
+      "dimension": "reference",
+      "option": "rest",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.13509568513549075,
+      "abs_emg_coupling": 0.22641786658830443,
+      "dimension": "muscle",
+      "option": "none",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.33767637189640975,
+      "abs_emg_coupling": 0.011775324293690442,
+      "dimension": "muscle",
+      "option": "bss_cca",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.13509568513549075,
+      "abs_emg_coupling": 0.22641786658830443,
+      "dimension": "epochs",
+      "option": "mad",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.3372914020975124,
+      "abs_emg_coupling": 0.13410436169766174,
+      "dimension": "epochs",
+      "option": "autoreject",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.9759126645203114,
+      "abs_emg_coupling": 0.13983459972293355,
+      "dimension": "aperiodic",
+      "option": "specparam",
+      "judged_on": "aperiodic_exponent",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.9758934306697414,
+      "abs_emg_coupling": 0.20433650980227527,
+      "dimension": "aperiodic",
+      "option": "irasa",
+      "judged_on": "aperiodic_exponent",
+      "sim_score_primary_metric": NaN
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.13509568513549075,
+      "abs_emg_coupling": 0.22641786658830443,
+      "dimension": "estimator",
+      "option": "hilbert",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": 0.6123710865354902
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.4926953610343293,
+      "abs_emg_coupling": 0.19808152470509213,
+      "dimension": "estimator",
+      "option": "sst",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": 0.10179865048416362
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.5013910791390781,
+      "abs_emg_coupling": 0.16821292137189872,
+      "dimension": "estimator",
+      "option": "vmd",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": 0.1787041084975696
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.13509568513549075,
+      "abs_emg_coupling": 0.22641786658830443,
+      "dimension": "median",
+      "option": "multi",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": 0.6123710865354902
+    },
+    {
+      "n": 83,
+      "split_half_icc": 0.15598710308941688,
+      "abs_emg_coupling": 0.22971327819990764,
+      "dimension": "median",
+      "option": "single",
+      "judged_on": "burst_freq_sd",
+      "sim_score_primary_metric": 0.6125939108333637
+    },
+    {
+      "n": 83,
+      "split_half_icc": -0.14767802399943952,
+      "abs_emg_coupling": 0.09237647453927207,
+      "dimension": "surr_chunk",
+      "option": "s30",
+      "judged_on": "burst_freq_sd_z",
+      "sim_score_primary_metric": 0.6761205666721675
+    },
+    {
+      "n": 83,
+      "split_half_icc": -0.178504316365673,
+      "abs_emg_coupling": 0.016644977121027665,
+      "dimension": "surr_chunk",
+      "option": "s15",
+      "judged_on": "burst_freq_sd_z",
+      "sim_score_primary_metric": 0.2726548383269269
+    },
+    {
+      "n": 83,
+      "split_half_icc": -0.00828467432530239,
+      "abs_emg_coupling": 0.08710801393728222,
+      "dimension": "surr_chunk",
+      "option": "s60",
+      "judged_on": "burst_freq_sd_z",
+      "sim_score_primary_metric": 0.4397701349171765
+    }
+  ],
+  "labels_used": false,
+  "config_sha256": "c910062dc295fc035e0e6833187d36a5d004b35b02ae33dc2f664d97b3ccf0b7",
+  "code_sha256": "33ae3825ae10f56b04bac0671bb76acb9af77e485aa78b514da34d8a53ff6217",
+  "analysis_sha256": "4caa35e06c33dbdc204679ca166369097b0186b846984d763228319e63c85104",
+  "final_decision": {
+    "labels_used": false,
+    "decided_utc": "2026-11-14",
+    "why_a_second_step": "No one-at-a-time option met the reliability floor for burst_freq_sd, and one-at-a-time choices were never tested together.",
+    "rule_stated_before_results": "Primary metric burst_freq_sd (Hilbert) adjusted for age, sex and 1/f exponent; pipeline = whichever combined pipeline reaches Spearman-Brown full-length split-half ICC >= 0.6 with |Spearman(metric, EMG sentinel)| < 0.2, higher ICC wins; if neither: primary becomes slow_frac_excess.",
+    "combined_runs": {
+      "combo-csd": {
+        "overrides": [
+          "preprocessing.reference=csd",
+          "preprocessing.muscle.method=bss_cca",
+          "preprocessing.epochs.method=autoreject",
+          "features.if_median.mode=single"
+        ],
+        "split_half_icc": 0.49,
+        "full_length_icc": 0.66,
+        "full_length_icc_boot95": [
+          0.46,
+          0.79
+        ],
+        "abs_emg_coupling": 0.09,
+        "n": 83,
+        "passes": true
+      },
+      "combo-rest": {
+        "overrides": [
+          "preprocessing.reference=rest",
+          "preprocessing.muscle.method=bss_cca",
+          "preprocessing.epochs.method=autoreject",
+          "features.if_median.mode=single"
+        ],
+        "split_half_icc": 0.36,
+        "full_length_icc": 0.53,
+        "abs_emg_coupling": 0.14,
+        "n": 83,
+        "passes": false
+      }
+    },
+    "final_pipeline": {
+      "reference": "csd",
+      "muscle": "bss_cca",
+      "epochs": "autoreject",
+      "aperiodic": "specparam",
+      "estimator": "hilbert",
+      "median": "single",
+      "surr_chunk": "s30"
+    },
+    "primary_metric": "burst_freq_sd",
+    "primary_model_covariates": [
+      "age",
+      "sex",
+      "roi__aperiodic_exponent"
+    ],
+    "why_not_simulation_pick": "02_simulation_validation selects burst_freq_sd_z (specificity 0.68 vs 0.61) but its split-half ICC on real data is -0.01 to 0.13 in every pipeline; the raw metric's main simulated nuisance (1/f slope, E=2.18) is handled by the 1/f-exponent covariate (exponent ICC 0.98) instead.",
+    "caveats": [
+      "full-length ICC CI includes values below 0.6",
+      "only ~5-8% of subjects show a 30-45 Hz peak above background (presence gate): mechanistic analyses will be descriptive",
+      "ablation runs used single-pass bad-channel detection; the final run uses two-pass (recovers sub-043/045/069/076/077)",
+      "the REST/average options were rejected on EMG coupling or reliability, CSD alone had EMG coupling 0.34 (fixed by BSS-CCA)"
+    ]
+  }
+}

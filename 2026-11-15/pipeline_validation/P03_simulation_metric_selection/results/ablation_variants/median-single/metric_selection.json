@@ -1,0 +1,282 @@
+{
+  "primary_metric": "burst_freq_sd",
+  "rule": "argmax E_jitter / max nuisance E among metrics with Spearman(jitter) >= 0.9",
+  "ranking": [
+    {
+      "metric": "burst_freq_sd_z",
+      "score": 0.6740814806009746,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "burst_freq_sd_excess",
+      "score": 0.6596949335711787,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "burst_freq_sd",
+      "score": 0.6125939108333637,
+      "rho_jitter": 0.9999999999999999,
+      "eligible": true
+    },
+    {
+      "metric": "slow_frac_excess",
+      "score": 0.21170741121189598,
+      "rho_jitter": 0.9999999999999999,
+      "eligible": true
+    },
+    {
+      "metric": "burst_if_sd",
+      "score": 0.21026952908081198,
+      "rho_jitter": 0.7,
+      "eligible": false
+    },
+    {
+      "metric": "jitter_amp_slope_z",
+      "score": 0.17537363344421378,
+      "rho_jitter": -0.09999999999999999,
+      "eligible": false
+    },
+    {
+      "metric": "burst_if_sd_z",
+      "score": 0.17474853933991732,
+      "rho_jitter": 0.3,
+      "eligible": false
+    },
+    {
+      "metric": "if_env_coupling_excess",
+      "score": 0.15136869767638392,
+      "rho_jitter": 0.9999999999999999,
+      "eligible": true
+    },
+    {
+      "metric": "burst_if_sd_excess",
+      "score": 0.14912332380939408,
+      "rho_jitter": 0.3,
+      "eligible": false
+    },
+    {
+      "metric": "xjit_var_z",
+      "score": 0.1412287520341525,
+      "rho_jitter": 0.0,
+      "eligible": false
+    },
+    {
+      "metric": "if_env_coupling_z",
+      "score": 0.12445645150584594,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "slow_frac_z",
+      "score": 0.12172778202709361,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "slow_sd_excess",
+      "score": 0.12092137813361176,
+      "rho_jitter": 0.9999999999999999,
+      "eligible": true
+    },
+    {
+      "metric": "slip_rate_highamp_z",
+      "score": 0.12018011003120932,
+      "rho_jitter": -0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "slip_rate_z",
+      "score": 0.11242941002675133,
+      "rho_jitter": -0.6,
+      "eligible": false
+    },
+    {
+      "metric": "xjit_var_excess",
+      "score": 0.10112130059077899,
+      "rho_jitter": -0.3,
+      "eligible": false
+    },
+    {
+      "metric": "jitter_amp_slope_excess",
+      "score": 0.10005633168117448,
+      "rho_jitter": -0.09999999999999999,
+      "eligible": false
+    },
+    {
+      "metric": "slow_sd_z",
+      "score": 0.08815258974140715,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "xjit_var",
+      "score": 0.08382654425808454,
+      "rho_jitter": 0.0,
+      "eligible": false
+    },
+    {
+      "metric": "tail_frac_z",
+      "score": 0.0800731524206146,
+      "rho_jitter": -0.3,
+      "eligible": false
+    },
+    {
+      "metric": "tail_frac_excess",
+      "score": 0.06454486583315228,
+      "rho_jitter": -0.39999999999999997,
+      "eligible": false
+    },
+    {
+      "metric": "cycle_cv_z",
+      "score": 0.06336717961334697,
+      "rho_jitter": -0.7,
+      "eligible": false
+    },
+    {
+      "metric": "if_iqr",
+      "score": 0.06223197836423718,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "if_mad",
+      "score": 0.06110151510441519,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "fast_sd_z",
+      "score": 0.05660853647687065,
+      "rho_jitter": -0.3,
+      "eligible": false
+    },
+    {
+      "metric": "if_awsd",
+      "score": 0.053092203564477906,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "if_sd",
+      "score": 0.049820871545318154,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "slip_rate_highamp_excess",
+      "score": 0.04969849492662189,
+      "rho_jitter": -0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "if_sd_z",
+      "score": 0.04753761191160377,
+      "rho_jitter": -0.09999999999999999,
+      "eligible": false
+    },
+    {
+      "metric": "slip_rate_excess",
+      "score": 0.03528428831103401,
+      "rho_jitter": -0.49999999999999994,
+      "eligible": false
+    },
+    {
+      "metric": "cycle_cv_excess",
+      "score": 0.034484475728981084,
+      "rho_jitter": -0.7,
+      "eligible": false
+    },
+    {
+      "metric": "cycle_cv",
+      "score": 0.03432718728942498,
+      "rho_jitter": 0.8999999999999998,
+      "eligible": false
+    },
+    {
+      "metric": "if_sd_excess",
+      "score": 0.03240572854722732,
+      "rho_jitter": -0.09999999999999999,
+      "eligible": false
+    },
+    {
+      "metric": "legacy_std",
+      "score": 0.029365837496381098,
+      "rho_jitter": 0.7,
+      "eligible": false
+    },
+    {
+      "metric": "fast_sd_excess",
+      "score": 0.020020899647498522,
+      "rho_jitter": -0.6,
+      "eligible": false
+    }
+  ],
+  "base_signal": {
+    "sf": 250.0,
+    "dur_s": 240.0,
+    "chi": 1.5,
+    "alpha_amp": 1.0,
+    "gamma_f0": 36.0,
+    "gamma_amp": 0.6,
+    "jitter_hz": 2.0,
+    "jitter_tau_s": 0.05,
+    "burst_rate": 1.5,
+    "burst_dur_s": 0.25,
+    "emg_level": 0.0,
+    "scale_uv": 10.0
+  },
+  "sweeps": {
+    "jitter_hz": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "gamma_amp": [
+      0.2,
+      0.4,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "chi": [
+      1.0,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "gamma_f0": [
+      33.0,
+      36.0,
+      39.0
+    ],
+    "burst_dur_s": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "emg_level": [
+      0.0,
+      0.3,
+      0.6,
+      1.0
+    ]
+  },
+  "analysis_hash": {
+    "config_sha256": "c910062dc295fc035e0e6833187d36a5d004b35b02ae33dc2f664d97b3ccf0b7",
+    "code_sha256": "33ae3825ae10f56b04bac0671bb76acb9af77e485aa78b514da34d8a53ff6217",
+    "analysis_sha256": "4caa35e06c33dbdc204679ca166369097b0186b846984d763228319e63c85104"
+  },
+  "base_overrides_from_calibration": {
+    "chi": 1.0,
+    "gamma_amp": 0.6,
+    "burst_dur_s": 0.1
+  },
+  "variant_overrides": [
+    "features.if_median.mode=single"
+  ]
+}
