@@ -1,0 +1,8 @@
+PASS AD-CN posterior gamma cluster
+contrast  sign  f_lo  f_hi  f_peak ch_peak   p_fwer                                             channels
+   AD-CN    -1  27.5  47.5    37.5      O1 0.000999 C3 C4 Cz F3 F4 F7 F8 Fp1 Fp2 O1 O2 P3 P4 Pz T3 T4 T5
+PASS FTD-CN frontal gamma cluster
+contrast  sign  f_lo  f_hi  f_peak ch_peak   p_fwer                                                   channels
+  FTD-CN    -1  24.5  46.0    36.5      Fz 0.000999 C3 C4 Cz F3 F4 F7 F8 Fp1 Fp2 Fz O1 O2 P3 P4 Pz T3 T4 T5 T6
+PASS AD-CN gamma change not misattributed to the fractal part
+POSITIVE CONTROL PASSED

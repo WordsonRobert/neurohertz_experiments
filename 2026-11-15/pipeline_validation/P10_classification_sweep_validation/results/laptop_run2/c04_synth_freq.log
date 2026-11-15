@@ -1,0 +1,12 @@
+Could not find a adjacency matrix for the data. Computing adjacency based on Delaunay triangulations.
+-- number of adjacent vertices : 19
+/media/wordson22/Expansion/projects2/neurohertz2/classification/sweep/20_frequency_resolved.py:50: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  a_f = sparse.diags([1, 1], [-1, 1], shape=(n_f, n_f))
+[20] logpsd_csd done
+/media/wordson22/Expansion/projects2/neurohertz2/classification/sweep/20_frequency_resolved.py:50: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  a_f = sparse.diags([1, 1], [-1, 1], shape=(n_f, n_f))
+[20] periodic_csd done
+/media/wordson22/Expansion/projects2/neurohertz2/classification/sweep/20_frequency_resolved.py:50: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  a_f = sparse.diags([1, 1], [-1, 1], shape=(n_f, n_f))
+[20] fractal_csd done
+[20] done -> /media/wordson22/Expansion/projects2/neurohertz2/classification/results/synthetic/main/freq

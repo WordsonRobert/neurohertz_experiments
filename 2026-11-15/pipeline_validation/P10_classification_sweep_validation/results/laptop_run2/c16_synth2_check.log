@@ -1,0 +1,4 @@
+AD-CN: top gamma|if_sd_b2|roi t = 6.94 p_maxT = 0.0010 -> ok
+FTD-CN: top gamma|if_sd|global t = 7.98 p_maxT = 0.0010 -> ok
+family-wise significant gamma measure: True | no spurious other-band measure: True
+INSTABILITY CONTROL PASSED

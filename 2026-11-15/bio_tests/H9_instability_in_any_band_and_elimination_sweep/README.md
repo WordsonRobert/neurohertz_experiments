@@ -11,7 +11,7 @@
 - medication (untestable here).
 
 **Type.** Exploratory: run after the labels were opened (15 Nov 2026). It generates hypotheses for a new cohort.
-**Status at this snapshot.** The code is complete and validated (`pipeline_validation/P10`). Laptop run 2 was in progress when this snapshot was made, so **no real-data results are included yet**. When it finishes, its outputs go in `results/`.
+**When / where.** Laptop, run 2, 15 Nov 2026 (14:51–17:25 for the real-data stages). Both synthetic controls passed before any real-data stage ran (`pipeline_validation/P10`).
 
 **What the run does** (`../../code/classification_sweep/run_classification.sh`). Each stage is documented in `../../code/classification_sweep/docs/HYPOTHESIS_TREE.md`. Labels are used only from stage 20 on.
 - `00` Re-runs the frozen preprocessing, with and without BSS-CCA muscle removal.
@@ -39,7 +39,18 @@
     - nested prediction with in-fold selection and whole-pipeline permutation.
 - `60` Elimination table. Its verdict rules were written before any real result.
 
-**Expected outputs** (written by the run into `classification/results/ds004504/main/`; copy them into `results/` here):
-- `REPORT.md` (elimination verdicts) and `bandinst/REPORT_INSTABILITY.md`
-- `freq/clusters.csv`, `freq/window_35_45.csv`, `freq/tmap_*.png`
-- `bursts_p95/`, `bursts_p99/`, `stratify/`, `predict/prediction.csv`, `subject_table.csv`
+| Output in `results/` | Content |
+|---|---|
+| `main/REPORT.md`, `main/verdicts.json` | Elimination table (E0–E8), all significant clusters, subject-level tests, burst types, stratification, prediction |
+| `main/bandinst/REPORT_INSTABILITY.md` | Band-instability characterisation (sections A–G) |
+| `main/bandinst/A_reliability.csv` … `G_prediction.csv` | The tables behind each section |
+| `main/freq/clusters.csv`, `window_35_45.csv`, `tmaps.npz`, `tmap_*.png` | Frequency × electrode cluster tests; the 35–45 Hz window summary; t-maps (a subset of the figures) |
+| `main/freq/vigilance_strata*.csv` | 35–45 Hz test within vigilance strata |
+| `main/bursts_p95/`, `main/bursts_p99/` | Burst types (mixture model, label-free) and their group tests, at two detection thresholds |
+| `main/stratify/` | Normative z per mechanism axis; patient clusters with diagnosis hidden |
+| `main/predict/prediction.csv` | Nested-CV prediction by mechanism family |
+| `main/subject_table.csv`, `main/subject_group_tests.csv` | Per-subject summary measures and their group tests |
+| `nomuscle_no_BSS_CCA/` | The same spectra and cluster tests without BSS-CCA muscle removal |
+| `logs/` | Logs of every real-data step (`s00`–`s60`); repeated pandas warnings were removed from `s55` |
+
+The `s50_predict` log (39 MB of repeated warnings) is not included; its results are in `main/predict/prediction.csv`.

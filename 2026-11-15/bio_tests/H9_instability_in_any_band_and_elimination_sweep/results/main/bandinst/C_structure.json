@@ -1,0 +1,38 @@
+{
+ "raw": {
+  "n": 37,
+  "var_explained_pc1_3": [
+   0.254,
+   0.181,
+   0.103
+  ],
+  "pc1_top_loadings": {
+   "alpha|period_cv_b1|roi": 0.26,
+   "alpha|period_cv_b1|global": 0.23,
+   "beta_low|period_cv_b1|global": -0.22,
+   "beta_low|period_cv_b1|roi": -0.22,
+   "alpha|period_cv|roi": 0.22,
+   "beta_low|if_sd_b1|global": -0.21,
+   "alpha|if_sd_b1|global": 0.21,
+   "beta_low|if_sd_naive|global": -0.21
+  }
+ },
+ "excess": {
+  "n": 9,
+  "var_explained_pc1_3": [
+   0.424,
+   0.311,
+   0.165
+  ],
+  "pc1_top_loadings": {
+   "beta_high|if_sd_naive__excess|global": -0.46,
+   "beta_high|if_sd_b1__excess|global": -0.45,
+   "beta_high|period_cv_b1__excess|global": -0.41,
+   "beta_high|if_sd_naive__excess|roi": -0.4,
+   "alpha|if_sd_b1__excess|global": -0.31,
+   "alpha|if_sd_b1__excess|roi": -0.24,
+   "alpha|if_sd_naive__excess|global": -0.24,
+   "alpha|if_sd_naive__excess|roi": -0.19
+  }
+ }
+}

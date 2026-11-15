@@ -1,0 +1,6 @@
+[00] ds004504/main: 88 recordings -> /media/wordson22/Expansion/projects2/neurohertz2/classification/cache/ds004504/main  (frozen code: /media/wordson22/Expansion/projects2/neurohertz2/classification/../final_run/neurohertz_v2)
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:   28.5s
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed:  5.3min
+[Parallel(n_jobs=8)]: Done  88 out of  88 | elapsed:  7.3min finished
+[00] status: {'ok': 88}

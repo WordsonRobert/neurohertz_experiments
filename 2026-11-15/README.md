@@ -11,7 +11,7 @@
 | 14 Nov | Cloud (from laptop files) | ds006036 participant table opened to check subject IDs | `P08` |
 | 15 Nov | Cloud | Exploratory re-analysis of existing features: the old 73% result, and 30–45 Hz power against alternative explanations | `bio_tests/H7`, `H8` |
 | 15 Nov | Cloud | Classification-sweep code built, audited and pilot-tested on synthetic data | `P10`, `code/classification_sweep` |
-| 15 Nov | Laptop | Classification sweep, run 1: stopped at a synthetic check; method changed (IRASA → specparam); run 2 in progress at the time of this snapshot | `P10`, `bio_tests/H9` |
+| 15 Nov | Laptop | Classification sweep, run 1: stopped at a synthetic check; method changed (IRASA → specparam); run 2 completed: both controls passed, real-data results in H9 | `P10`, `bio_tests/H9` |
 
 ## Hypothesis map
 
@@ -25,7 +25,7 @@
 | H6 | A specific circuit mechanism explains a gamma change | Confirmatory, gated on gamma presence | Run (descriptive only) |
 | H7 | The earlier 73.8% accuracy of the v1 pipeline reproduces with clean preprocessing | Exploratory | Run |
 | H8 | 30–45 Hz power differs in AD beyond muscle, 1/f, slowing and harmonics | Exploratory | Run |
-| H9 | Frequency instability in **any** band separates AD, beyond slowing and 1/f | Exploratory | Code ready; laptop run in progress |
+| H9 | Frequency instability in **any** band separates AD, beyond slowing and 1/f | Exploratory | Run |
 
 ## Pipeline-validation map
 

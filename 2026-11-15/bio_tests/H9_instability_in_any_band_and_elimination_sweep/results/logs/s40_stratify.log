@@ -1,0 +1,23 @@
+[40] K=2 silhouette=0.14 stability ARI=0.43
+group    AD  FTD
+cluster         
+0        15   17
+1        21    6
+cluster                  0     1
+slowing_theta_alpha   1.02  2.44
+slowing_iaf          -1.13  1.85
+aperiodic_slope      -0.56 -1.06
+aperiodic_offset     -0.61 -1.04
+gamma_periodic_35_45 -0.68  1.02
+gamma_lowemg_35_45   -0.41 -0.00
+gamma_burst_excess   -0.37  0.80
+muscle               -0.56  0.09
+transients           -0.01  0.05
+pac_theta_gamma       0.00  0.20
+bursts_share_type0    0.18  0.50
+bursts_share_type1    0.66  0.72
+bursts_share_type2    0.28  0.11
+bursts_share_type3   -0.07 -0.36
+bursts_share_type4   -0.30 -0.56
+bursts_share_type5   -0.04  0.23
+bursts_share_type6   -0.19  0.19

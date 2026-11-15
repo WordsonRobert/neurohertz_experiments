@@ -1,0 +1,45 @@
+/media/wordson22/Expansion/projects2/neurohertz2/classification/sweep/55_band_instability_analysis.py:61: RuntimeWarning: invalid value encountered in scalar divide
+  return float((msr - mse) / (msr + (k - 1) * mse + k * (msc - mse) / n))
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+[55] AD-CN all eligible: alone 0.901  base 0.598  base+ 0.878
+[55] AD-CN excess only: alone 0.901  base 0.598  base+ 0.878
+[55] AD-CN raw only: alone 0.835  base 0.598  base+ 0.802
+[55] FTD-CN all eligible: alone 0.950  base 0.664  base+ 0.925
+[55] FTD-CN excess only: alone 0.950  base 0.664  base+ 0.925
+[55] FTD-CN raw only: alone 0.925  base 0.664  base+ 0.896
+[55] AD-FTD all eligible: alone 0.931  base 0.693  base+ 0.941
+[55] AD-FTD excess only: alone 0.931  base 0.693  base+ 0.941
+[55] AD-FTD raw only: alone 0.767  base 0.693  base+ 0.780
+[55] done -> /media/wordson22/Expansion/projects2/neurohertz2/classification/results/synthetic/main/bandinst

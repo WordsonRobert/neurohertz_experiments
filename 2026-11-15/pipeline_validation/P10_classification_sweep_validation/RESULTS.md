@@ -47,6 +47,19 @@
 - no non-gamma measure was significant;
 - in-fold selection chose gamma measures in 76–96% of folds.
 
+**Laptop run 2 (88 subjects, specparam-knee split; logs in `results/laptop_run2/`):**
+- Unit tests: 11 passed.
+- Control 1:
+    - check 1 passed: AD–CN cluster 27.5–47.5 Hz, peak O1 37.5 Hz, p = 0.001;
+    - check 2 passed: FTD–CN cluster 24.5–46 Hz, peak Fz 36.5 Hz, p = 0.001;
+    - check 3 passed: no aperiodic AD–CN cluster at 30–48 Hz.
+- Control 2:
+    - AD–CN: top measure gamma `if_sd_b2` (ROI), t = 6.94, p_maxT = 0.001;
+    - FTD–CN: top measure gamma `if_sd` (global), t = 7.98, p_maxT = 0.001;
+    - no non-gamma measure significant;
+    - in-fold prediction AUC: AD–CN 0.90, FTD–CN 0.95 (baseline 0.60, 0.66).
+- Result: POSITIVE CONTROL PASSED and INSTABILITY CONTROL PASSED. The run continued to the real-data stages (H9).
+
 ## Consequences
 - The sweep's primary periodic/aperiodic split is specparam-knee; IRASA is kept as a secondary estimate. With IRASA, peaks next to a band leak into its aperiodic estimate.
-- Controls 1 (checks 1–2) and 2 must pass in the laptop run before H9's real-data results are produced. Their full-size outcome will be in the run-2 logs, `code/classification_sweep` → `logs/`.
+- At full size (88 subjects), the sweep recovered both injected effects at the right frequency, place and band, with no spurious band and no aperiodic misattribution. H9's real-data results were produced with this validated pipeline.

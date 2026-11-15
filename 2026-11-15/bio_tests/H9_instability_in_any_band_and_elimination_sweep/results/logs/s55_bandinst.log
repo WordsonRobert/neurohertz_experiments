@@ -1,0 +1,49 @@
+/media/wordson22/Expansion/projects2/neurohertz2/classification/sweep/55_band_instability_analysis.py:61: RuntimeWarning: invalid value encountered in scalar divide
+  return float((msr - mse) / (msr + (k - 1) * mse + k * (msc - mse) / n))
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+  ok = A_[[c, sc_]].notna().all(1)
+[55] AD-CN all eligible: alone 0.711  base 0.818  base+ 0.801
+[55] AD-CN excess only: alone 0.479  base 0.818  base+ 0.810
+[55] AD-CN raw only: alone 0.674  base 0.818  base+ 0.809
+[55] FTD-CN all eligible: alone 0.667  base 0.728  base+ 0.714
+[55] FTD-CN excess only: alone 0.475  base 0.728  base+ 0.686
+[55] FTD-CN raw only: alone 0.500  base 0.728  base+ 0.671
+[55] AD-FTD all eligible: alone 0.592  base 0.548  base+ 0.585
+[55] AD-FTD excess only: alone 0.616  base 0.548  base+ 0.583
+[55] AD-FTD raw only: alone 0.665  base 0.548  base+ 0.616
+[55] done -> /media/wordson22/Expansion/projects2/neurohertz2/classification/results/ds004504/main/bandinst

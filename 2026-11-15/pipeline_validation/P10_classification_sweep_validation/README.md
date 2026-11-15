@@ -22,4 +22,5 @@
 |---|---|
 | `cloud_pilot_PV_loss_control_REPORT.md` | Pilot of control 1 (28 subjects, IRASA split, 300 permutations) |
 | `cloud_pilot_erratic_drive_control_REPORT.md` | Pilot of control 2 (28 subjects, 2 surrogates) |
-| `laptop_run1_c05_synth_check_FAILED.log` | The control-1 check of laptop run 1 (88 subjects); after re-running, this file holds run 2's log |
+| `laptop_run1_c05_synth_check_FAILED.log` | The control-1 check of laptop run 1 (88 subjects, IRASA) |
+| `laptop_run2/` | Run 2 (88 subjects, specparam-knee): unit tests, control-1 cluster test and check, control-2 instability stages, check and report |

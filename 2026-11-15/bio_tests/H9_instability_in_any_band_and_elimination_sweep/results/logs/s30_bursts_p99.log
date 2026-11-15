@@ -1,0 +1,18 @@
+[30] K=7 (stability ARI 0.26±0.26), 28637 bursts -> /media/wordson22/Expansion/projects2/neurohertz2/classification/results/ds004504/main/bursts_p99
+ type    share                                         auto_name  frac_roi
+    0 0.116039 high laterality, high spread, high log_dur_cycles  0.000000
+    1 0.047421         low laterality, low spread, low emg_coact  0.292342
+    2 0.046478  low laterality, high spread, high log_dur_cycles  0.190834
+    3 0.218494   high laterality, low log_dur_cycles, low spread  0.000000
+    4 0.042707     low laterality, low sharp, low log_dur_cycles  0.279640
+    5 0.330447       low spread, low log_dur_cycles, low log_amp  0.309627
+    6 0.198415      high spread, high log_dur_cycles, high sharp  0.283879
+contrast covariates     measure  n       t  p_perm  p_holm
+  FTD-CN    age_sex  fmad_type2 52  2.5184  0.0120  0.2759
+  FTD-CN    age_sex  fmad_type3 52 -2.7067  0.0135  0.2969
+  AD-FTD    age_sex  fmad_type2 59 -2.5442  0.0170  0.3908
+   AD-CN    age_sex  fmad_type5 65 -2.0500  0.0555  1.0000
+   AD-CN    age_sex share_type3 65 -2.0750  0.0575  1.0000
+  FTD-CN    age_sex share_type4 52  1.9636  0.0760  1.0000
+  AD-FTD    age_sex  rate_type5 59  1.8568  0.0810  1.0000
+  FTD-CN    age_sex  fmad_type5 52 -1.8726  0.0915  1.0000

@@ -1,0 +1,38 @@
+{
+ "E0 effect at 35-45 Hz": [
+  "PRESENT",
+  "clusters overlapping 35-45 Hz: logpsd_csd 0, periodic_csd 1"
+ ],
+ "E1 muscle": [
+  "NOT eliminated",
+  "ROI 35-45 Hz t: all epochs -0.23, lowest-EMG 25% -0.32, +EMG covariate 0.02, no BSS-CCA 0.20"
+ ],
+ "E2 ocular/frontal-polar": [
+  "eliminated",
+  "frontal-polar burst excess AD-CN t = 1.24, p = 0.253"
+ ],
+ "E3 aperiodic": [
+  "no fractal cluster",
+  "significant AD-CN clusters: fractal 0 (any frequency); periodic in 35-45 Hz 1; periodic ROI 35-45 t = 1.05"
+ ],
+ "E4 vigilance": [
+  "NOT eliminated",
+  "per-stratum t (low->high alpha/theta): 0.16, -0.42, -0.94, -0.21"
+ ],
+ "E5 alpha harmonics": [
+  "eliminated",
+  "1:4 locking AD-CN t = 0.06, p = 0.958; rho with periodic 35-45 = -0.12"
+ ],
+ "E6 sharp transients": [
+  "eliminated",
+  "transient rate AD-CN t = 0.03, p = 0.975; gamma change without transients t = 0.41, p = 0.694"
+ ],
+ "E7 notch/filter edge": [
+  "not suspected",
+  "periodic_csd 30.0-35.0 Hz"
+ ],
+ "E8 medication (signature only)": [
+  "untestable",
+  "beta-range (15-30 Hz) AD-CN clusters: 16.0-23.0 Hz sign -1 [O1 O2 P3 P4 Pz T3 T5 T6]"
+ ]
+}

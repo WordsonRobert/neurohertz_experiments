@@ -15,4 +15,4 @@ Each folder is one hypothesis about Alzheimer's disease. All use ds004504 (36 AD
 | `H6_mechanism_behind_a_gamma_change` | One of six circuit mechanisms explains the gamma pattern | Confirmatory, gated (descriptive) |
 | `H7_old_73pct_accuracy_reproduces` | The v1 pipeline's 73.8% accuracy reproduces with clean preprocessing | Exploratory |
 | `H8_30_45Hz_power_and_alternative_explanations` | 30–45 Hz power differs in AD beyond muscle, 1/f, slowing and harmonics | Exploratory |
-| `H9_instability_in_any_band_and_elimination_sweep` | Instability in any band separates AD beyond slowing and 1/f | Exploratory (run in progress) |
+| `H9_instability_in_any_band_and_elimination_sweep` | Instability in any band separates AD beyond slowing and 1/f | Exploratory |

@@ -1,0 +1,6 @@
+[12] ds004504/main: 88 clean subjects
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:  3.2min
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed: 25.0min
+[Parallel(n_jobs=8)]: Done  88 out of  88 | elapsed: 37.8min finished
+[12] done: {'ok': 88}

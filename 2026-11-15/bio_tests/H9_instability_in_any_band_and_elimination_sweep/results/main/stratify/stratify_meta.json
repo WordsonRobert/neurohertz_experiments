@@ -1,0 +1,36 @@
+{
+ "K": 2,
+ "silhouette": {
+  "2": 0.14178265093033834,
+  "3": 0.11419447849342092,
+  "4": 0.11370500178191659,
+  "5": 0.12484377317282912
+ },
+ "stability_ari_mean": 0.42997271781057605,
+ "stability_ari_sd": 0.3077738652451133,
+ "chi2_cluster_vs_diagnosis_p": 0.031018268372164474,
+ "mmse_by_cluster_median": {
+  "0": 20.0,
+  "1": 20.0
+ },
+ "kruskal_mmse_p": 0.444070290983026,
+ "axes_used": [
+  "slowing_theta_alpha",
+  "slowing_iaf",
+  "aperiodic_slope",
+  "aperiodic_offset",
+  "gamma_periodic_35_45",
+  "gamma_lowemg_35_45",
+  "gamma_burst_excess",
+  "muscle",
+  "transients",
+  "pac_theta_gamma",
+  "bursts_share_type0",
+  "bursts_share_type1",
+  "bursts_share_type2",
+  "bursts_share_type3",
+  "bursts_share_type4",
+  "bursts_share_type5",
+  "bursts_share_type6"
+ ]
+}
