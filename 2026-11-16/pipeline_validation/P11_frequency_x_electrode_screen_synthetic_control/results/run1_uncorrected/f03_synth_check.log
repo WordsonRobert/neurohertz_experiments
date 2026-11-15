@@ -1,0 +1,25 @@
+grid           feature contrast  sign   p_fwer  f_lo  f_hi peak_win ch_peak    t_peak
+   A             if_sd    AD-CN     1 0.031968    38  42.0    38-42      O1  4.454351
+   A             if_sd   AD-FTD    -1 0.047952    34  38.0    34-38      F3 -3.232520
+   A     if_sd__excess    AD-CN     1 0.000999    32  42.0    32-36      Pz  4.345655
+   A     if_sd__excess   FTD-CN     1 0.011988    34  40.0    34-38     Fp1  3.783509
+   A     if_sd__excess   AD-FTD    -1 0.024975    32  38.0    34-38      F8 -3.111885
+   A         slip_frac   AD-FTD    -1 0.006993    34  38.0    34-38      Fz -3.050568
+   A slip_frac__excess   FTD-CN     1 0.013986    32  36.0    32-36      F4  3.049640
+   A slip_frac__excess   AD-FTD    -1 0.007992    32  36.0    32-36      F4 -3.014459
+   A slip_frac__excess   AD-FTD    -1 0.012987    34  38.0    34-38      Fz -2.853866
+   A         period_cv    AD-CN     1 0.040959    34  38.0    34-38      O2  3.329831
+   A         period_cv   FTD-CN     1 0.005994    34  38.0    34-38     Fp1  4.857919
+   A         period_cv   FTD-CN    -1 0.005994    32  36.0    32-36      P4 -4.820324
+   A         period_cv   AD-FTD    -1 0.004995    34  38.0    34-38      F8 -4.631532
+   A period_cv__excess    AD-CN     1 0.044955    34  38.0    34-38      O2  4.340714
+   A period_cv__excess   FTD-CN     1 0.015984    34  38.0    34-38      Fz  3.479016
+   A period_cv__excess   AD-FTD     1 0.000999    34  38.0    34-38      P3  3.399771
+   A period_cv__excess   AD-FTD    -1 0.000999    34  38.0    34-38      Fz -5.539686
+   A        burst_f_sd    AD-CN     1 0.014985    38  42.0    38-42      O1  4.249731
+   A        burst_f_sd   AD-FTD    -1 0.019980    34  38.0    34-38     Fp1 -3.024598
+   B         slip_frac   FTD-CN    -1 0.015984    84  88.0    84-88      T3 -4.035286
+PASS injected gamma instability found (26-48 Hz, patients higher)
+PASS no significant cluster below 24 Hz
+FAIL no significant cluster in grid B
+FREQ-INSTABILITY CONTROL FAILED

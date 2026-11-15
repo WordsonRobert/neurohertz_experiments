@@ -11,15 +11,22 @@ neurohertz_experiments/
 ├── README.md                  <- you are here
 ├── GLOSSARY.md                <- every technical term used below, in plain English
 ├── DATASETS.md                <- which EEG recordings were used and where they come from
-└── 2026-11-15/                <- snapshot: everything run from the last Colab session up to 15 Nov 2026
-    ├── README.md              <- index of all runs, timeline, hypothesis map  (START HERE)
-    ├── pipeline_validation/   <- runs that test the PIPELINE (does the method measure what it claims?)
-    │   └── P01 … P10          one folder per validation run
-    ├── bio_tests/             <- runs that test a BIOLOGICAL HYPOTHESIS about AD
-    │   └── H1 … H9            one folder per hypothesis
-    ├── code/                  <- the exact code that produced every result
-    └── data_tables/           <- per-subject feature tables and participant lists
+├── 2026-11-15/                <- snapshot: everything run from the last Colab session up to 15 Nov 2026
+│   ├── README.md              <- index of all runs, timeline, hypothesis map  (START HERE)
+│   ├── pipeline_validation/   <- runs that test the PIPELINE (does the method measure what it claims?)
+│   │   └── P01 … P10          one folder per validation run
+│   ├── bio_tests/             <- runs that test a BIOLOGICAL HYPOTHESIS about AD
+│   │   └── H1 … H9            one folder per hypothesis
+│   ├── code/                  <- the exact code that produced every result
+│   └── data_tables/           <- per-subject feature tables and participant lists
+└── 2026-11-16/                <- frequency x electrode instability screen (same layout; numbering continues)
+    ├── README.md
+    ├── pipeline_validation/P11
+    ├── bio_tests/H10
+    └── code/                  <- only the files added or changed since 2026-11-15
 ```
+
+Each date folder holds the runs made on that date. Numbering continues across dates (P11 follows P10; H10 follows H9).
 
 Every run folder has the same three parts:
 
@@ -35,7 +42,7 @@ Every run folder has the same three parts:
 ## Two kinds of evidence
 
 - **Confirmatory.** The frozen, pre-registered analysis of ds004504 (bio tests H1–H6). Its hypotheses, methods and decision rules were fixed and hashed before any diagnosis label was opened (see `pipeline_validation/P09`).
-- **Exploratory.** Everything run after the labels were opened (H7, H8, H9). These analyses generate hypotheses; a result from them needs confirmation in a new cohort.
+- **Exploratory.** Everything run after the labels were opened (H7 onwards). These analyses generate hypotheses; a result from them needs confirmation in a new cohort.
 
 Each folder states which kind it is.
 
