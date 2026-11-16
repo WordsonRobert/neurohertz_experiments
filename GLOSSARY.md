@@ -31,3 +31,10 @@
 - **Positive control**: data where the true answer is known in advance. The method must find it.
 - **Pre-registration / freeze**: fixing the hypotheses, code and decision rules (and recording their hashes) before looking at diagnoses.
 - **Confirmatory / exploratory**: confirmatory = a pre-specified test on unseen labels; exploratory = analyses chosen after seeing data.
+- **CSD (current source density)**: a spatial filter that sharpens each electrode toward local sources.
+- **Flank-line bump**: 32–40 Hz log power minus a straight line in log–log fitted through 24–30 and 42–47 Hz (H11, H12).
+- **Transfer function H(f)**: how strongly a circuit responds at each frequency. Spontaneous and driven activity share it in a linear model.
+- **L2/3 IT neurons**: excitatory pyramidal neurons in superficial cortical layers that project within the cortex. SST, PV (Pvalb): two classes of inhibitory interneuron.
+- **SEA-AD / CPS**: Seattle Alzheimer's Disease Brain Cell Atlas; CPS is its continuous score of how far each donor's pathology has progressed, per region.
+- **Injective map**: different inputs give different outputs. Here: different mechanisms give different signatures across the characterizations.
+- **Non-commuting probes**: measurements that change the state being measured, so their order changes what is learned.

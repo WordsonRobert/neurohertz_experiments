@@ -1,0 +1,7 @@
+features,n_mechanisms,distinct_signatures,injective,consistent_with_observed
+REST,8,5,False,[]
+PHOTIC,8,3,False,"['PV->E inhibition down (M2)', 'slow/SST loop down (M4)', 'input E/I up (M5+)', 'input E/I down (M5-)']"
+TISSUE,8,3,False,"['gain_down / excitatory loss (M1-)', 'L2/3 loss, all outputs (tissue-scaled)']"
+REST+PHOTIC,8,6,False,[]
+REST+TISSUE,8,6,False,[]
+REST+PHOTIC+TISSUE,8,7,False,[]

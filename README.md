@@ -2,7 +2,7 @@
 
 This is the record of every NeuroHertz analysis that has been run: the code, the exact settings, the output files and a plain-English account of each run.
 
-NeuroHertz asks whether the **instability of brain rhythms** in resting EEG separates people with **Alzheimer's disease (AD)** from cognitively normal controls (CN) and from people with frontotemporal dementia (FTD). The study started with the gamma band (30–45 Hz) and has since widened to any frequency band.
+NeuroHertz asks whether the **instability of brain rhythms** in resting EEG separates people with **Alzheimer's disease (AD)** from cognitively normal controls (CN) and from people with frontotemporal dementia (FTD). The study started with the gamma band (30–45 Hz) and has since widened to any frequency band, and to a mechanistic account tested across EEG, a calibrated circuit model, driven responses and human brain tissue (`2026-11-16/MECHANISM_HYPOTHESIS.md`).
 
 ## How this repository is organised
 
@@ -22,7 +22,9 @@ neurohertz_experiments/
 └── 2026-11-16/                <- frequency x electrode instability screen (same layout; numbering continues)
     ├── README.md
     ├── pipeline_validation/P11
-    ├── bio_tests/H10, H11
+    ├── MECHANISM_HYPOTHESIS.md <- the mechanistic hypothesis and its multimodal evidence chain
+    ├── pipeline_validation/P11–P13
+    ├── bio_tests/H10–H17
     └── code/                  <- only the files added or changed since 2026-11-15
 ```
 
