@@ -1,0 +1,16 @@
+
+=== csd  (fit rms median 0.042)
+  chi                  AD +3.345 CN +4.036  g(AD-CN)=-0.66 p=0.009 | FTD-CN g=-0.63
+  neural_slope_24_47   AD -3.345 CN -4.036  g(AD-CN)=+0.66 p=0.009 | FTD-CN g=+0.63
+  logA                 AD +9.193 CN +10.427  g(AD-CN)=-0.75 p=0.004 | FTD-CN g=-0.69
+  logFloor             AD +3.516 CN +3.741  g(AD-CN)=-0.22 p=0.152 | FTD-CN g=-0.17
+  floor_share_32_40    AD +0.308 CN +0.326  g(AD-CN)=+0.04 p=0.984 | FTD-CN g=-0.08
+  p55_65               AD +3.895 CN +3.854  g(AD-CN)=-0.04 p=0.932 | FTD-CN g=-0.13
+
+=== avg  (fit rms median 0.044)
+  chi                  AD +3.211 CN +4.036  g(AD-CN)=-0.67 p=0.008 | FTD-CN g=-0.55
+  neural_slope_24_47   AD -3.211 CN -4.036  g(AD-CN)=+0.67 p=0.008 | FTD-CN g=+0.55
+  logA                 AD +3.505 CN +5.029  g(AD-CN)=-0.75 p=0.004 | FTD-CN g=-0.63
+  logFloor             AD -2.042 CN -1.940  g(AD-CN)=-0.36 p=0.227 | FTD-CN g=-0.40
+  floor_share_32_40    AD +0.404 CN +0.359  g(AD-CN)=+0.09 p=0.639 | FTD-CN g=+0.11
+  p55_65               AD -1.844 CN -1.849  g(AD-CN)=+0.03 p=0.942 | FTD-CN g=-0.16

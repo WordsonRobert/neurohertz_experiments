@@ -26,6 +26,7 @@ neurohertz_experiments/
     ├── pipeline_validation/P11–P13
     ├── bio_tests/H10–H17
     └── code/                  <- only the files added or changed since 2026-11-15
+└── 2026-11-17/                <- tests of the mechanistic hypothesis against its rivals (H18, H19)
 ```
 
 Each date folder holds the runs made on that date. Numbering continues across dates (P11 follows P10; H10 follows H9).
