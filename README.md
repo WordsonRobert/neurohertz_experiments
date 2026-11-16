@@ -22,7 +22,7 @@ neurohertz_experiments/
 └── 2026-11-16/                <- frequency x electrode instability screen (same layout; numbering continues)
     ├── README.md
     ├── pipeline_validation/P11
-    ├── bio_tests/H10
+    ├── bio_tests/H10, H11
     └── code/                  <- only the files added or changed since 2026-11-15
 ```
 

@@ -1,0 +1,2 @@
+11b0eb3f5f584f2ad5a9a07c5a28f874e33cea5938f74bef95be4840e6786686  explore/02_local_aperiodic_check.py
+hash recorded 2026-11-16 09:46:41 UTC, before the 88 spectra were staged into the analysis

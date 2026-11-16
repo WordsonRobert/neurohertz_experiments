@@ -10,3 +10,4 @@ Everything else is unchanged from `../../2026-11-15/code/classification_sweep/`.
 | `classification_sweep/run_freq_instability_b1.sh` | new | Re-analysis with the low-SNR sub-bin: synthetic check, then ds004504 |
 | `classification_sweep/run_freq_instability.sh` | new | Runner: tests → synthetic control → ds004504 |
 | `classification_sweep/tests/test_sweep.py` | one test added | Window layout never touches the 50 Hz notch |
+| `classification_sweep/explore/02_local_aperiodic_check.py` | new | H11: local-background test of the posterior 32–40 Hz excess |
