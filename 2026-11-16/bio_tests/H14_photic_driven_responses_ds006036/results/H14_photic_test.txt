@@ -1,0 +1,39 @@
+DATA: AD - CN evoked power (dB) per response cell (CN median SNR >= 3 dB):
+ fd  n  f  nA  nC  cn_snr  ad_snr  delta_db   se
+ 10  1 10  34  29     6.3     6.4     -2.97 1.20
+ 15  1 15  35  29     5.6     5.7     -0.67 1.16
+ 10  2 20  34  29     6.1     4.6     -3.83 1.44
+ 20  1 20  36  28     5.7     5.1     -2.03 1.28
+
+NULL (uniform AD-CN difference only): chi2 = 3.4, offset -2.23 dB, dof = 3
+
+MECHANISM PREDICTIONS at the k fitted to REST (no refit), + 1 free offset:
+mech  M1_drive_gain_up  M2_PV_to_E_down  M4_slow_inhib_down  M5_input_EI_up
+cal                                                                        
+0                  8.0              1.7                10.8             3.4
+1                 18.7              5.3                 9.4             3.4
+2                 18.7              5.3                 9.4             3.4
+3                 18.7              5.3                 9.4             3.4
+4                 18.7              5.3                 9.4             3.4
+5                 18.7              5.3                 9.4             3.4
+6                 18.7              5.3                 9.4             3.4
+7                 18.7              5.3                 9.4             3.4
+8                 18.7              5.3                 9.4             3.4
+9                 18.3              5.3                 9.4             3.4
+10                18.7              5.3                 9.4             3.4
+11                18.6              5.3                 9.3             3.4
+  cal0 M4_slow_inhib_down   predicted dB by f: {10: np.float64(-0.65), 15: np.float64(-3.4), 20: np.float64(-4.27)}
+  cal1 M4_slow_inhib_down   predicted dB by f: {10: np.float64(-0.23), 15: np.float64(-2.3), 20: np.float64(-4.01)}
+  cal0 M1_drive_gain_up     predicted dB by f: {10: np.float64(0.44), 15: np.float64(-0.04), 20: np.float64(-3.49)}
+  cal1 M1_drive_gain_up     predicted dB by f: {10: np.float64(-1.11), 15: np.float64(-4.75), 20: np.float64(-6.94)}
+
+--- restricted to the model's calibrated range (f >= 14 Hz) ---
+NULL chi2 = 2.92 (dof 2)
+  M4_slow_inhib_down   chi2 range over calibrations 0.96 - 1.60
+  M1_drive_gain_up     chi2 range over calibrations 0.87 - 1.62
+  M2_PV_to_E_down      chi2 range over calibrations 1.25 - 1.82
+  M5_input_EI_up       chi2 range over calibrations 2.92 - 2.92
+  20 Hz drive     evoked vs resting beta: rho all = +0.12, mean within-group = +0.05 (n=64)
+  20 Hz harmonic  evoked vs resting beta: rho all = +0.27, mean within-group = +0.21 (n=63)
+  15 Hz drive     evoked vs resting beta: rho all = +0.18, mean within-group = +0.23 (n=64)
+  10 Hz drive     evoked vs resting alpha: rho all = +0.25, mean within-group = +0.18 (n=63)

@@ -1,0 +1,9 @@
+mechanism,rest_signature,rest_agree,photic_signature,tissue_signature,cos_to_observed
+gain_up (M1+),"(0, 0, 0, 0, -1, 0)",1.0,"(1,)","(0, 0, 0)",-0.92
+gain_down / excitatory loss (M1-),"(0, 0, 0, 0, 1, 0)",1.0,"(-1,)","(-1, 0, 0)",0.93
+PV->E inhibition down (M2),"(0, 0, 0, -1, -1, 0)",0.92,"(0,)","(0, 0, 0)",-0.62
+recurrent E up (M3),"(0, 0, 0, -1, -1, 0)",1.0,"(1,)","(0, 0, 0)",-0.73
+slow/SST loop down (M4),"(0, 0, 0, 1, 1, 0)",0.92,"(0,)","(0, -1, 0)",0.94
+input E/I up (M5+),"(0, 0, 0, -1, -1, 0)",1.0,"(0,)","(0, 0, 0)",-0.75
+input E/I down (M5-),"(0, 0, 0, 1, 1, 0)",1.0,"(0,)","(0, 0, 0)",0.76
+"L2/3 loss, all outputs (tissue-scaled)","(0, 0, 0, 0, 1, 1)",0.92,"(-1,)","(-1, 0, 0)",0.97
