@@ -43,6 +43,9 @@ s55 = _load("s55", "55_band_instability_analysis.py")
 
 SEED = 20261116
 METRICS = ["if_sd", "slip_frac", "period_cv", "pf_sd_epochs", "burst_f_sd"]       # SNR-matched (sub-bin mean)
+# --subbin b1 uses the low-SNR sub-bin only (SNR 3-5.5; epoch peak ratio 4-8): measurable in far more subjects per
+# cell. The default (mean of both sub-bins) needs >= 4 s in EACH sub-bin, which at one electrode and a 4-Hz window
+# most subjects do not reach (ds004504 run 1: median coverage 5-39% in grid A, no cell at 80%). Added 2026-11-16.
 KINDS = ["", "__excess"]                                                             # raw, beyond the spectrum
 PRESENCE = ["snr_median"]
 BASE = s55.BASE
@@ -57,6 +60,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 
 def load(dataset, variant):
+    """Long table of the analysed metrics (METRICS is set from --subbin before this is called)."""
     fs = sorted((variant_dir(dataset, variant) / "freqinst").glob("sub-*.csv.gz"))
     keep = set(m + k for m in METRICS for k in KINDS) | set(PRESENCE)
     L = pd.concat([pd.read_csv(f).query("metric in @keep") for f in fs], ignore_index=True)
@@ -96,9 +100,13 @@ def main():
     ap.add_argument("--n-perm", type=int, default=1000)
     ap.add_argument("--n-perm-cv", type=int, default=200)
     ap.add_argument("--n-rep", type=int, default=20)
+    ap.add_argument("--subbin", choices=["mean", "b1"], default="mean")
     a = ap.parse_args()
+    global METRICS
+    if a.subbin == "b1":
+        METRICS = [m + "_b1" for m in METRICS]
     rng = np.random.default_rng(SEED)
-    out = OUT / a.dataset / a.variant / "freqinst"; (out / "maps").mkdir(parents=True, exist_ok=True)
+    out = OUT / a.dataset / a.variant / ("freqinst" if a.subbin == "mean" else "freqinst_b1"); (out / "maps").mkdir(parents=True, exist_ok=True)
     L = load(a.dataset, a.variant)
     subjects = sorted(L.subject.unique())
     chs = [c for c in ["Fp1", "Fp2", "F7", "F3", "Fz", "F4", "F8", "T3", "C3", "Cz", "C4", "T4", "T5", "P3",

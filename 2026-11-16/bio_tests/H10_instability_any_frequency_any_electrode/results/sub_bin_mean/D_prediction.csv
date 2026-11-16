@@ -1,0 +1,10 @@
+contrast,pool,n_cells,n,auc_baseline,auc_cell_alone,p_alone,auc_baseline_plus,p_plus,gain,gain_lo,gain_hi,top_picks_alone
+AD-CN,"grid A, beyond spectrum",0,,,,,,,,,,
+AD-CN,"grid A, raw",0,,,,,,,,,,
+AD-CN,"grid B, all instability",15,65.0,0.8183908045977011,0.5370689655172414,0.3283582089552239,0.8060344827586207,0.004975124378109453,-0.012356321839080475,-0.038912835249042134,0.015924329501915777,B|burst_f_sd|86-90|Cz (72%); B|slip_frac__excess|78-82|F4 (8%); B|slip_frac__excess|76-80|Pz (6%); B|pf_sd_epochs|70-74|C3 (5%); B|burst_f_sd__excess|82-86|F8 (4%)
+FTD-CN,"grid A, beyond spectrum",0,,,,,,,,,,
+FTD-CN,"grid A, raw",0,,,,,,,,,,
+FTD-CN,"grid B, all instability",15,52.0,0.7279610194902548,0.5208770614692655,0.3582089552238806,0.68215892053973,0.03980099502487562,-0.04580209895052472,-0.1221889055472264,0.014992503748125944,B|burst_f_sd|86-90|C4 (66%); B|burst_f_sd|70-74|T3 (12%); B|pf_sd_epochs|70-74|C3 (9%); B|slip_frac__excess|76-80|Pz (7%); B|burst_f_sd|86-90|Cz (3%)
+AD-FTD,"grid A, beyond spectrum",0,,,,,,,,,,
+AD-FTD,"grid A, raw",0,,,,,,,,,,
+AD-FTD,"grid B, all instability",15,59.0,0.5483091787439612,0.42478864734299515,0.7064676616915423,0.484963768115942,0.472636815920398,-0.06334541062801931,-0.12940821256038648,-0.0023550724637681295,B|burst_f_sd|86-90|C4 (43%); B|burst_f_sd__excess|82-86|F8 (31%); B|slip_frac__excess|78-82|F4 (14%); B|burst_f_sd|86-90|Cz (3%); B|burst_f_sd|70-74|T4 (3%)

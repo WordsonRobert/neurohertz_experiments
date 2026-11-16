@@ -1,0 +1,6 @@
+[13] synthetic/main: 88 clean subjects, 38 windows (21 in grid A, 17 in grid B), 4 surrogates
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=8)]: Done  64 tasks      | elapsed:    1.3s
+[Parallel(n_jobs=8)]: Done  88 out of  88 | elapsed:    1.4s finished
+[13] done: {'cached': 88}

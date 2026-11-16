@@ -1,0 +1,52 @@
+[57] reliability
+ grid              feature  cells  reliable  median_icc_sb
+   A           burst_f_sd    399         0   6.326965e-01
+   A   burst_f_sd__excess    399         0   2.871789e-01
+   A                if_sd    399         0   7.701945e-01
+   A        if_sd__excess    399         0   5.596895e-01
+   A            period_cv    399         0   4.498255e-01
+   A    period_cv__excess    399         0   2.245604e-01
+   A         pf_sd_epochs    399         0   7.945742e-01
+   A pf_sd_epochs__excess    399         0   9.053446e-02
+   A            slip_frac    399         0   3.661387e-16
+   A    slip_frac__excess    399         0   5.246165e-03
+   A           snr_median    399       330   8.871619e-01
+   B           burst_f_sd    323         5   6.098678e-02
+   B   burst_f_sd__excess    323         1  -4.493887e-02
+   B                if_sd    323         0   1.550506e-01
+   B        if_sd__excess    323         0   7.000095e-02
+   B            period_cv    323         1   4.297773e-03
+   B    period_cv__excess    323         0  -1.280381e-01
+   B         pf_sd_epochs    323         1   1.674880e-01
+   B pf_sd_epochs__excess    323         0  -2.169116e-01
+   B            slip_frac    323         2  -1.475137e-01
+   B    slip_frac__excess    323         5  -3.036427e-01
+   B           snr_median    323         3  -3.166298e-01
+Could not find a adjacency matrix for the data. Computing adjacency based on Delaunay triangulations.
+-- number of adjacent vertices : 19
+[57] grid A if_sd: cluster tests done
+[57] grid A if_sd__excess: cluster tests done
+[57] grid A slip_frac: cluster tests done
+[57] grid A slip_frac__excess: cluster tests done
+[57] grid A period_cv: cluster tests done
+[57] grid A period_cv__excess: cluster tests done
+[57] grid A pf_sd_epochs: cluster tests done
+[57] grid A pf_sd_epochs__excess: cluster tests done
+[57] grid A burst_f_sd: cluster tests done
+[57] grid A burst_f_sd__excess: cluster tests done
+[57] grid A snr_median: cluster tests done
+[57] grid B if_sd: cluster tests done
+[57] grid B if_sd__excess: cluster tests done
+[57] grid B slip_frac: cluster tests done
+[57] grid B slip_frac__excess: cluster tests done
+[57] grid B period_cv: cluster tests done
+[57] grid B period_cv__excess: cluster tests done
+[57] grid B pf_sd_epochs: cluster tests done
+[57] grid B pf_sd_epochs__excess: cluster tests done
+[57] grid B burst_f_sd: cluster tests done
+[57] grid B burst_f_sd__excess: cluster tests done
+[57] grid B snr_median: cluster tests done
+[57] AD-CN grid B, all instability: alone 0.537 base 0.818 base+ 0.806
+[57] FTD-CN grid B, all instability: alone 0.521 base 0.728 base+ 0.682
+[57] AD-FTD grid B, all instability: alone 0.425 base 0.548 base+ 0.485
+[57] done -> /media/wordson22/Expansion/projects2/neurohertz2/classification/results/ds004504/main/freqinst

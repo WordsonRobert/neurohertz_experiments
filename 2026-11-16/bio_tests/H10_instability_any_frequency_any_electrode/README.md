@@ -6,7 +6,7 @@
 
 **Type.** Exploratory (ds004504 labels were opened on 14 Nov 2026). Any separating cell is a candidate to freeze and test in a new cohort.
 **Relation to H9.** H9 measured instability in 6 fixed bands and averaged over electrodes. H10 uses 38 windows (2–46 Hz and 54–90 Hz) at each of the 19 electrodes.
-**Status at this snapshot.** Not yet run on real data. The synthetic control (P11) must pass first.
+**When / where.** Laptop, 16 Nov 2026: stage 13, 04:08–11:41 (453 min, 8 cores); stage 57, 11:41–11:56. The synthetic control (P11, run 2) passed first.
 
 **What the run does** (`../../code/classification_sweep/run_freq_instability.sh`, steps `f10`–`f11`).
 - **Stage 13** (no labels): the five SNR-matched instability measures and rhythm presence, in every window at every electrode, raw and beyond the spectrum (10 surrogates), on all data and on each half.
@@ -16,9 +16,16 @@
     - **C.** Reference cells: reliable, with the 90% CI of the group difference d within ±0.5 in all three contrasts; a looser tier requires |t| < 1.
     - **D.** Nested-CV prediction, one reliable cell selected inside each training fold, added to slowing + 1/f; whole-pipeline permutation.
 
-**Expected outputs** (written to `classification/results/ds004504/main/freqinst/`; to be copied into `results/`):
-- `REPORT_FREQ_INSTABILITY.md`
-- `A_reliability_cells.csv`, `A_reliability_summary.csv`
-- `B_clusters.csv`, `B_cells.csv`, `maps/`
-- `C_reference_cells.csv`
-- `D_prediction.csv`
+| Output in `results/` | Content |
+|---|---|
+| `sub_bin_mean/REPORT_FREQ_INSTABILITY.md` | Report (sections A–D) |
+| `sub_bin_mean/A_reliability_cells.csv`, `A_reliability_summary.csv` | Coverage and split-half reliability of every cell |
+| `sub_bin_mean/B_clusters.csv` | Every cluster: p within its map (`p_fwer`) and over maps (`p_family`) |
+| `sub_bin_mean/B_cells.csv` | t and standardized difference d (90% CI) for every cell, contrast and covariate set |
+| `sub_bin_mean/C_reference_cells.csv` | Reliable cells with their largest group difference |
+| `sub_bin_mean/D_prediction.csv` | Nested-CV prediction |
+| `logs/` | Logs of stages 13 and 57 |
+
+`sub_bin_mean` = instability measures averaged over both SNR sub-bins (the default of stage 57). The t-map figures (`maps/`) stay on the laptop under `classification/results/ds004504/main/freqinst/maps/`.
+
+**Follow-up defined after this run.** `run_freq_instability_b1.sh` repeats stages 57 and the synthetic check using only the low-SNR sub-bin (b1). Stage 13 already computed b1 for every cell, so no new feature extraction is needed. Its results go in `results/sub_bin_b1/`.

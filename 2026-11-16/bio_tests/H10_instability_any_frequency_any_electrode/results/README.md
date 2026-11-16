@@ -1,1 +1,1 @@
-Real-data outputs of the screen go here when run 2 finishes.
+`sub_bin_mean/`: screen with instability measures from both SNR sub-bins (run 2, 16 Nov 2026). `logs/`: stage 13 and 57 logs. `sub_bin_b1/` (low-SNR sub-bin) is added when `run_freq_instability_b1.sh` has run.

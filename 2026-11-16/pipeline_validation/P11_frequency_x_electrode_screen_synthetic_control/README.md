@@ -5,6 +5,7 @@
 **When / where.**
 - Cloud pilot: 15–16 Nov 2026 (28 subjects, 2 surrogates, 2–60 Hz).
 - Laptop run 1: 16 Nov 2026, 00:52–03:19 (88 subjects, 4 surrogates, 2–90 Hz).
+- Laptop run 2: 16 Nov 2026, 04:05–04:08 (same features, corrected rule).
 
 **Data.** The erratic-drive synthetic dataset from P10 control 2: 29 "CN", 36 "AD", 23 "FTD". Gamma (30–45 Hz) frequency instability was injected in the posterior circuit for "AD" and in the frontal circuit for "FTD". Nothing was injected at any other frequency.
 
@@ -38,3 +39,4 @@
 | `run1_uncorrected/B_clusters.csv` | Every cluster from run 1, with its p within its own map (`p_fwer`) |
 | `run1_uncorrected/A_reliability_summary.csv`, `C_reference_cells.csv`, `D_prediction.csv`, `REPORT_FREQ_INSTABILITY.md` | Other run-1 outputs |
 | `run1_clusters_with_correction_over_maps.csv` | The same clusters with `p_family` = min(1, 30 × p_fwer) added |
+| `run2_corrected/` | Run 2 (corrected rule): logs `f00`–`f03`, clusters and report |

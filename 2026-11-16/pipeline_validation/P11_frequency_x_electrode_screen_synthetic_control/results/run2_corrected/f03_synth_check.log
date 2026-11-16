@@ -1,0 +1,7 @@
+grid           feature contrast  sign  p_fwer  p_family  f_lo  f_hi peak_win ch_peak    t_peak
+   A     if_sd__excess    AD-CN     1  0.0005  0.014993    32  42.0    32-36      Pz  4.345655
+   A period_cv__excess   AD-FTD    -1  0.0005  0.014993    34  38.0    34-38      Fz -5.539686
+PASS injected gamma instability found (26-48 Hz, patients higher)
+PASS no significant cluster below 24 Hz
+PASS no significant cluster in grid B
+FREQ-INSTABILITY CONTROL PASSED

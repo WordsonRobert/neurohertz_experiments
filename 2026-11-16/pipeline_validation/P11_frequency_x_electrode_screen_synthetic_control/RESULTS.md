@@ -44,6 +44,18 @@ Every other cluster has p_family ≥ 0.18, including the grid B cluster (p_famil
 
 **Reference cells (synthetic):** 4 cells equivalent to no group difference (90% CI of d within ±0.5); 66 cells reliable with |t| < 1 in every contrast.
 
+**Run 2** (16 Nov 2026, 04:05–04:08; cached features, correction over maps, 2000 permutations):
+
+| Check | Result |
+|---|---|
+| 1. Injected gamma instability found | PASS. `if_sd__excess`, AD–CN, 32–42 Hz, peak Pz, AD higher, p_fwer 0.0005, p_family 0.015 |
+| 2. Nothing below 24 Hz | PASS |
+| 3. Nothing in grid B | PASS |
+
+Other significant clusters: `period_cv__excess`, AD–FTD, 34–38 Hz, peak Fz, FTD higher, p_family 0.015. Result: FREQ-INSTABILITY CONTROL PASSED. The run continued to the real-data stages (H10).
+
+**Coverage in the synthetic data.** The instability measures that need both SNR sub-bins were measurable in enough synthetic subjects (e.g. `if_sd`: 23 reliable cells in grid A). In the real data they were not (H10). The control therefore did not test coverage under real-data SNR.
+
 ## Consequences
 - **Criterion 3 as first written:** under the uncorrected rule it fails with probability of about 0.79 even when nothing was injected. The run-1 failure is consistent with that rate.
 - **With the correction over maps:**
@@ -52,4 +64,5 @@ Every other cluster has p_family ≥ 0.18, including the grid B cluster (p_famil
     - it gives no significant cluster below 24 Hz or in grid B.
 - **Price of the correction:** the frontal FTD–CN injection, found at p = 0.006–0.012 within its own maps, is not significant after correction. At n = 88, the corrected screen detects the strongest injected effects only.
 - **Beyond-spectrum measures in the synthetic data:** they were not reliable within subjects at 4 surrogates. The real-data run uses 10 surrogates.
-- **Run 2:** the synthetic features are cached, so run 2 repeats only the analysis and the check (2000 permutations) before the real-data stages.
+- **Run 2:** with the correction, the control passed, and the real-data screen ran (H10).
+- **Coverage:** in the synthetic data the injected rhythms are strong enough for the strict SNR-matched measures to be measured in most subjects; that does not hold for the real recordings (H10).

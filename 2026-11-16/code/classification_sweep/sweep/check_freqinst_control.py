@@ -16,7 +16,9 @@ import sys
 import pandas as pd
 from common import OUT
 
-CL = pd.read_csv(OUT / "synthetic" / "main" / "freqinst" / "B_clusters.csv")
+sub = sys.argv[1] if len(sys.argv) > 1 else "freqinst"          # freqinst (sub-bin mean) or freqinst_b1
+CL = pd.read_csv(OUT / "synthetic" / "main" / sub / "B_clusters.csv")
+print("results:", sub)
 CL = CL[(CL.ladder == "L0") & (CL.p_family < 0.05) & ~CL.feature.str.startswith("snr")]
 pk = CL.peak_win.str.split("-").apply(lambda v: float(v[0]))
 A = CL[(CL.grid == "A") & CL.contrast.isin(["AD-CN", "FTD-CN"])]

@@ -1,0 +1,6 @@
+[13] ds004504/main: 88 clean subjects, 38 windows (21 in grid A, 17 in grid B), 10 surrogates
+[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+[Parallel(n_jobs=8)]: Done   2 tasks      | elapsed: 40.5min
+[Parallel(n_jobs=8)]: Done  56 tasks      | elapsed: 296.5min
+[Parallel(n_jobs=8)]: Done  88 out of  88 | elapsed: 453.2min finished
+[13] done: {'ok': 88}
