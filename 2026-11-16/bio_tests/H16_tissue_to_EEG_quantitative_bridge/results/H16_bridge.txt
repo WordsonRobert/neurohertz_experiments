@@ -1,0 +1,26 @@
+TISSUE (AnG): L2/3 IT loss = 0.27 [0.07, 0.43]; implied total excitatory-drive loss = 0.120 [0.026, 0.214]
+EEG observed delta: {'b16_23': np.float64(-0.345), 'b24_30': np.float64(-0.181), 'b32_40': np.float64(-0.063), 'b42_47': np.float64(-0.038), 'slope24_47': np.float64(0.681), 'bump_h11': np.float64(0.035)}
+offset-only chi2 = 24.5   (6 features)
+
+--- variant: global  (prediction from tissue, no EEG fitting)
+   predicted (median, 95% over tissue bootstrap x calibrations):
+     b16_23      pred -0.185 [-0.227,-0.139]   observed -0.345 +- 0.090
+     b24_30      pred -0.152 [-0.196,-0.135]   observed -0.181 +- 0.078
+     b32_40      pred -0.114 [-0.129,-0.102]   observed -0.063 +- 0.068
+     b42_47      pred -0.101 [-0.127,-0.059]   observed -0.038 +- 0.069
+     slope24_47  pred +0.241 [+0.039,+0.637]   observed +0.681 +- 0.233
+     bump_h11    pred +0.009 [+0.001,+0.014]   observed +0.035 +- 0.013
+   chi2 median 12.3 [6.1, 22.3] vs offset-only 24.5
+   fraction of draws with right signs (beta down, slope flatter, bump up): 0.99
+
+--- variant: superficial  (prediction from tissue, no EEG fitting)
+   predicted (median, 95% over tissue bootstrap x calibrations):
+     b16_23      pred -0.379 [-0.565,-0.179]   observed -0.345 +- 0.090
+     b24_30      pred -0.264 [-0.373,-0.147]   observed -0.181 +- 0.078
+     b32_40      pred -0.087 [-0.120,-0.040]   observed -0.063 +- 0.068
+     b42_47      pred +0.072 [-0.099,+0.220]   observed -0.038 +- 0.069
+     slope24_47  pred +1.525 [+0.213,+2.717]   observed +0.681 +- 0.233
+     bump_h11    pred -0.016 [-0.021,+0.029]   observed +0.035 +- 0.013
+   chi2 median 33.7 [0.9, 113.2] vs offset-only 24.5
+   fraction of draws with right signs (beta down, slope flatter, bump up): 0.11
+

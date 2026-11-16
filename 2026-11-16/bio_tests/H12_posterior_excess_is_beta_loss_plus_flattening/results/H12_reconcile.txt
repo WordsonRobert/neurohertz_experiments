@@ -1,0 +1,35 @@
+freq range 0.0 70.0
+csd_bump_h11       g=+0.66  p=0.008
+csd_slope_h11      g=+0.71  p=0.009
+csd_bump_my        g=+0.59  p=0.027
+csd_slope_my       g=+0.77  p=0.004
+csd_beta           g=-0.95  p=0.000
+csd_lo             g=-0.59  p=0.013
+csd_mid            g=-0.23  p=0.417
+csd_hi             g=-0.14  p=0.707
+avg_bump_h11       g=+0.76  p=0.009
+avg_slope_h11      g=+0.79  p=0.004
+avg_bump_my        g=+0.66  p=0.030
+avg_slope_my       g=+0.84  p=0.004
+avg_beta           g=-0.96  p=0.000
+avg_lo             g=-0.56  p=0.013
+avg_mid            g=-0.21  p=0.359
+avg_hi             g=-0.10  p=0.678
+der_local_bump     g=-0.05  p=0.900
+der_local_slope    g=+1.00  p=0.000
+
+per-subject agreement (spearman):
+csd_bump_h11 avg_bump_h11 0.85
+csd_bump_h11 der_local_bump 0.28
+avg_bump_my der_local_bump 0.28
+csd_slope_h11 der_local_slope 0.67
+
+--- periodic vs aperiodic split (CSD, P3/P4/Pz) ---
+per_beta16_23    g=-1.16  p=0.000
+ap_beta16_23     g=-0.66  p=0.003
+per_b24_30       g=+0.07  p=0.756
+ap_b24_30        g=-0.62  p=0.008
+per_g32_40       g=+0.90  p=0.002
+ap_g32_40        g=-0.35  p=0.160
+ap_slope_24_45   g=+0.95  p=0.000
+sp_freqs range 2.0 47.5
