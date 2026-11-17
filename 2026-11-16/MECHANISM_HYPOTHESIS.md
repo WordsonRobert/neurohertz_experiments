@@ -58,9 +58,9 @@ This file states the hypothesis that the mechanism work (H12–H17) is testing. 
 | | | E4.4 | L3 | literature | Gao 2017: reduced excitation **steepens** the 30–50 Hz LFP slope | Gao 2017 *NeuroImage* | **conflicts** with reading the flattening as an aperiodic E/I change. H\*'s flattening comes from losing the beta shoulder and neural amplitude, not from E/I rotation (H13, H18) |
 | **S5** | The tissue-measured loss predicts the EEG, with nothing fitted | E5.1 | L2→L4 | tissue → circuit → EEG | L2/3 only: right signs 99%, about half the size, χ² 24.5 → 12.3 | `bio_tests/H16` | supported (partial) |
 | | | E5.2 | L2→L4 | tissue → circuit → EEG | L2/3 IT + vulnerable Sst: χ² 4.1, signs 100%, beta 78% and slope 90% of the observed effect | `2026-11-17/bio_tests/H19` | **supported** |
-| **S6** | Rest alone cannot identify the mechanism; multimodal + non-commuting probes can | E6.1 | L4 | Fisher / injectivity | REST: 5 signatures for 8 mechanisms, about 2–3 effective dimensions | `bio_tests/H17`, `P12` | **supported** (theory) |
+| **S6** | Rest alone cannot identify the mechanism; multimodal probes can (order not needed, P14) | E6.1 | L4 | Fisher / injectivity | REST: 5 signatures for 8 mechanisms, about 2–3 effective dimensions | `bio_tests/H17`, `P12` | **supported** (theory) |
 | | | E6.2 | L2+L4 | injectivity | REST+PHOTIC+TISSUE: 7 signatures for 8 mechanisms; the remaining collision is between two rejected mechanisms | `bio_tests/H17` | supported |
-| | | E6.3 | L5 | probe-order Fisher | rest → 40 Hz → rest + tissue: all three survivors estimable; order changes information (Δ log det up to 0.6) | `bio_tests/H17` | design-level (α assumed) |
+| | | E6.3 | L5 | probe-order Fisher | rest → 40 Hz → rest + tissue: all three survivors estimable. The order effect (local 0.15–0.36 nats) is ≥ 79% readout schedule; the non-commuting term is ≤ 0.08 and does not lift the null direction | `bio_tests/H17`, `../2026-11-17/pipeline_validation/P14` | **multimodal part supported; order part not supported** |
 | **S7** | A shared transfer function governs rest and drive | E7.1 | L5 | photic, same people | driven power lower in AD at 10/20 Hz with SNR unchanged; rest–drive ρ ≈ 0.2 | `bio_tests/H14` | weakly supported |
 | **S8** | Non-neural explanations are excluded | E8.1 | L4 | EEG controls | EMG sentinel, harmonics, transients, ocular sources | H8, H9, H11 | partly: muscle not excluded at the lowest-EMG quartile |
 | | | E8.2 | — | data integrity | ds006036 header bug found and corrected | `pipeline_validation/P13` | done |
@@ -86,7 +86,7 @@ Let B be the candidate mechanisms and Φ the characterizations, from any modalit
 |---|---|---|---|
 | Φ_rest | 5 | no | H17 |
 | Φ_rest ∪ Φ_photic ∪ Φ_tissue | 7 | almost; the remaining collision is between two excitation-up mechanisms that the data reject anyway | H17 |
-| plus a non-commuting probe sequence | the three data-compatible mechanisms become separately estimable | — | H17 |
+| plus driven responses (any order) | the three data-compatible mechanisms become separately estimable | — | H17, P14 |
 
 Over the mechanisms that the data allow, the multimodal map is injective; the resting-EEG map is not.
 

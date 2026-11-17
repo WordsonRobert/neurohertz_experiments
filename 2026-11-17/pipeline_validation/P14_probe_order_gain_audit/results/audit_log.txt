@@ -1,0 +1,28 @@
+P14 audit log (cloud, 17 Nov 2026). Sequences: AB = rest -> drive20 -> drive40 -> rest, BA = rest -> drive40 -> drive20 -> rest.
+G = log det F_AB - log det F_BA, median over 12 calibrations. full = adaptation increment depends on current state;
+commute = increment computed on the unadapted circuit (updates commute, final state order-free).
+
+Local limit (h -> 0), all readouts recorded:
+alpha  h      commute  full    bracket = full - commute
+0.05   0.001  0.1428   0.1513   0.0085
+0.05   0.050  0.1583   0.1548  -0.0035   <- step used in H17
+0.15   0.001  0.2854   0.3605   0.0751
+0.15   0.050  0.4075   0.4453   0.0378   <- H17 reported 0.45
+0.30   0.001  0.3319   0.2672  -0.0647
+0.30   0.050  0.6600   0.6059  -0.0541   <- H17 reported 0.61
+
+Controls:
+alpha = 0: G = 0.0000 in every mode / readout / step.
+tissue moved from last to first position (alpha .15): max |G| over calibrations = 1.8e-15.
+commute + terminal readout only: G = 0.0000 at every alpha (as Proposition 2 predicts).
+final adapted state a_AB - a_BA (alpha .15) at theta = 0, M4 .4, M1 .4, L23 .4:
+   full    [ 0.015106 -0.000519  0.005403  0.011981]
+   commute [ 0 0 0 0 ]
+
+Terminal readout only (final rest block), eigenvalues of F, median, h = .002:
+alpha 0     AB=BA=rest only   [8.5e-05  0.346  275.6]
+alpha .15   AB full [8.9e-08 0.127 61.9]  BA full [1.6e-05 0.026 88.6]  commute [8.8e-07 1.12 32.2]
+alpha .30   AB full [8.8e-07 1.30 24.1]   BA full [1.4e-08 0.269 55.7]  commute [1.8e-05 5.43 21.0]
+-> the smallest eigenvalue stays at 1e-8 to 1e-5 in every case: order does not lift the null direction.
+
+Labelled mixed-order design (alpha .15): Tr(F_AB^-1 F_BA) median 2.65 < d = 3, best mixture weight p* = 1.0 (pure AB), gain 0.

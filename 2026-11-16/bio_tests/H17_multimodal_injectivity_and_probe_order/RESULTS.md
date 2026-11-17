@@ -38,7 +38,9 @@
 | rest + tissue (static) | 0.24 | 7.16 | 0.95 / 1.8 / 0.23 |
 | rest → drive40 → rest + tissue | **6.4** | **10.98** | **0.18 / 0.35 / 0.23** |
 
-- **Order effect grows with adaptation strength** (same probes, different order):
+> **Correction (17 Nov, P14):** the order-effect numbers below used a finite-difference step of h = 0.05. In the local limit they are 0.15 / 0.36 / 0.27. Of these, 79–100% is a readout-schedule effect that commuting probes also produce. Only 0.01 / 0.08 / −0.07 comes from non-commutativity, and order does not lift the null direction. See `../../../2026-11-17/pipeline_validation/P14_probe_order_gain_audit`.
+
+- **Order effect, as originally reported** (same probes, different order; superseded by P14):
 
 | α | log det difference |
 |---|---|
@@ -53,8 +55,8 @@
 - **Multimodal characterization restores identifiability.**
     - Tissue (static, commuting) pins down the L2/3 component.
     - A perturbation sequence (non-commuting) separates slow-loop loss from lower gain.
-    - Together, all three become estimable, with the smallest eigenvalue up about 400× compared with either source alone.
-- **Probe order is a design variable.** With activity-dependent state change, the same probes in a different order carry different information. The ds006036 order (rest, then flicker) is not the best available one. This supports the claim: mechanism identifiability requires non-commuting probes, and probe order is part of the experimental design.
+    - Together, all three become estimable. The smallest eigenvalue goes up 27× over tissue alone (6.4 / 0.24) and 213× over the perturbation sequence alone (6.4 / 0.030). The earlier text said "about 400×", which was wrong.
+- ~~**Probe order is a design variable.**~~ **Retracted after P14.** The order effect in this model is mostly a readout-schedule term. The non-commuting part is small and changes sign, and order does not make any extra mechanism identifiable. The gain comes from adding probes (multi-experiment identifiability), not from their order.
 - **Limits:**
     - α and the adaptation form are assumptions;
     - the tissue map is assumed, not modelled;

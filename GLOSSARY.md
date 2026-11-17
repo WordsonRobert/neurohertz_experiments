@@ -38,3 +38,5 @@
 - **SEA-AD / CPS**: Seattle Alzheimer's Disease Brain Cell Atlas; CPS is its continuous score of how far each donor's pathology has progressed, per region.
 - **Injective map**: different inputs give different outputs. Here: different mechanisms give different signatures across the characterizations.
 - **Non-commuting probes**: measurements that change the state being measured, so their order changes what is learned.
+- **Readout-schedule term**: the part of an order effect that appears even when probes commute, because each probe is read at a different accumulated state. It must be subtracted before an order effect is called non-commutativity (P14).
+- **Bracket term**: the part of an order effect caused by non-commutativity. To leading order it is the θ-derivative of the Lie bracket of the two probes' state updates.
